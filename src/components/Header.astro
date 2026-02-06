@@ -1,0 +1,95 @@
+---
+// Header component - sticky navigation with logo, nav links, CTAs, and mobile menu
+---
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-accent-100 shadow-sm">
+  <nav class="max-w-7xl mx-auto px-6 lg:px-8 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 group">
+        <span class="text-3xl transition-transform group-hover:scale-110">&#128058;</span>
+        <span class="text-2xl font-bold text-dark-text">SubMeow</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/features" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Features</a>
+        <a href="/pricing" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Pricing</a>
+        <a href="/blog" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Blog</a>
+        <a href="/download" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Download</a>
+      </div>
+
+      <!-- Desktop CTAs -->
+      <div class="hidden md:flex items-center gap-4">
+        <a
+          href="https://app.submeow.com/auth/login"
+          class="text-dark-text hover:text-accent-500 transition-colors font-medium"
+        >
+          Sign In
+        </a>
+        <a
+          href="https://app.submeow.com/auth/signup"
+          class="bg-accent-500 hover:bg-accent-600 text-white px-6 py-2.5 rounded-xl font-semibold transition-all hover:shadow-lg"
+        >
+          Get Started Free
+        </a>
+      </div>
+
+      <!-- Mobile hamburger button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <!-- Hamburger icon -->
+        <svg id="menu-icon-open" class="w-6 h-6 text-dark-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- Close icon (hidden by default) -->
+        <svg id="menu-icon-close" class="w-6 h-6 text-dark-text hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
+      <div class="flex flex-col gap-4">
+        <a href="/features" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Features</a>
+        <a href="/pricing" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Pricing</a>
+        <a href="/blog" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Blog</a>
+        <a href="/download" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Download</a>
+        <hr class="border-gray-100" />
+        <a
+          href="https://app.submeow.com/auth/login"
+          class="text-dark-text hover:text-accent-500 transition-colors font-medium"
+        >
+          Sign In
+        </a>
+        <a
+          href="https://app.submeow.com/auth/signup"
+          class="bg-accent-500 hover:bg-accent-600 text-white px-6 py-2.5 rounded-xl font-semibold text-center transition-all"
+        >
+          Get Started Free
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden');
+    iconOpen?.classList.toggle('hidden');
+    iconClose?.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  });
+</script>

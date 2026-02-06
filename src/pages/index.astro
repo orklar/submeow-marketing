@@ -1,24 +1,22 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import MarketingLayout from '../layouts/MarketingLayout.astro';
 ---
 
-<BaseLayout title="SubMeow - Track Your Subscriptions">
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="text-center px-4">
-      <h1 class="text-5xl font-extrabold text-primary-500 mb-4">
-        SubMeow
-      </h1>
+<MarketingLayout title="SubMeow - Track Your Subscriptions">
+  <section class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+    <div class="text-center">
+      <h1 class="text-5xl font-extrabold text-primary-500 mb-4">SubMeow</h1>
       <p class="text-xl text-light-text max-w-md mx-auto">
         Track Every Subscription. Never Overpay Again.
       </p>
       <div class="mt-8">
         <a
-          href="#"
-          class="inline-block bg-accent-500 text-white font-semibold px-8 py-3 rounded-full hover:bg-accent-600 transition-colors"
+          href="https://app.submeow.com/auth/signup"
+          class="inline-block bg-accent-500 text-white font-semibold px-8 py-3 rounded-xl hover:bg-accent-600 transition-colors"
         >
           Coming Soon
         </a>
       </div>
     </div>
-  </div>
-</BaseLayout>
+  </section>
+</MarketingLayout>

@@ -1,0 +1,25 @@
+---
+interface Props {
+  variant?: 'default' | 'feature' | 'pricing';
+  highlighted?: boolean;
+  class?: string;
+}
+
+const { variant = 'default', highlighted = false, class: className = '' } = Astro.props;
+
+const base = 'rounded-2xl transition-all';
+
+const variantClasses: Record<string, string> = {
+  default: 'bg-white p-6 shadow-sm hover:shadow-md border border-gray-100',
+  feature: 'bg-white p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1',
+  pricing: highlighted
+    ? 'bg-white p-8 shadow-xl border-2 border-accent-500 relative'
+    : 'bg-white p-8 shadow-sm hover:shadow-lg border border-gray-200',
+};
+
+const classes = `${base} ${variantClasses[variant]} ${className}`.trim();
+---
+
+<div class={classes}>
+  <slot />
+</div>
