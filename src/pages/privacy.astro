@@ -1,0 +1,445 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+
+const lastUpdated = 'February 1, 2026';
+
+const sections = [
+  { id: 'introduction', title: 'Introduction' },
+  { id: 'information-we-collect', title: 'Information We Collect' },
+  { id: 'how-we-use-your-information', title: 'How We Use Your Information' },
+  { id: 'data-storage-security', title: 'Data Storage & Security' },
+  { id: 'third-party-services', title: 'Third-Party Services' },
+  { id: 'your-rights', title: 'Your Rights' },
+  { id: 'cookies', title: 'Cookies' },
+  { id: 'childrens-privacy', title: "Children's Privacy" },
+  { id: 'changes-to-policy', title: 'Changes to Policy' },
+  { id: 'contact', title: 'Contact' },
+];
+---
+
+<MarketingLayout title="Privacy Policy - SubMeow" description="SubMeow's privacy policy. Learn how we collect, use, and protect your data when you use our subscription tracking app.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-primary-50 via-cream/30 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Legal</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          Privacy <span class="text-primary-500">Policy</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-4 leading-relaxed">
+          Your privacy matters to us. This policy explains how SubMeow collects, uses, and protects your personal information.
+        </p>
+
+        <!-- Last updated -->
+        <p class="text-sm text-light-text">
+          Last updated: <time datetime="2026-02-01">{lastUpdated}</time>
+        </p>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-primary-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+
+    <!-- Bottom gradient fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Content Section (TOC sidebar + body)
+       ========================================== -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12 lg:gap-16">
+
+        <!-- Table of Contents (sidebar on desktop, inline on mobile) -->
+        <aside>
+          <nav class="lg:sticky lg:top-8" aria-label="Table of contents">
+            <h2 class="text-sm font-semibold text-dark-text uppercase tracking-wider mb-4">Table of Contents</h2>
+            <ol class="space-y-2">
+              {sections.map((section, index) => (
+                <li>
+                  <a
+                    href={`#${section.id}`}
+                    class="flex items-start gap-3 text-sm text-light-text hover:text-primary-500 transition-colors py-1 group"
+                  >
+                    <span class="shrink-0 w-6 h-6 rounded-full bg-primary-50 text-primary-500 text-xs font-semibold flex items-center justify-center group-hover:bg-primary-100 transition-colors">
+                      {index + 1}
+                    </span>
+                    <span class="leading-snug">{section.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </aside>
+
+        <!-- Policy Content -->
+        <div class="legal-content">
+
+          <!-- 1. Introduction -->
+          <section id="introduction" class="legal-section">
+            <h2>1. Introduction</h2>
+            <p>
+              Welcome to SubMeow ("we", "our", or "us"). SubMeow is a subscription tracking application designed to help you manage and monitor your recurring payments. We are committed to protecting your personal information and your right to privacy.
+            </p>
+            <p>
+              This Privacy Policy explains what information we collect, how we use it, and what rights you have in relation to it. By using SubMeow, you agree to the collection and use of information in accordance with this policy.
+            </p>
+            <p>
+              If you have any questions or concerns about this policy or our practices with regard to your personal information, please contact us at <a href="mailto:privacy@submeow.com">privacy@submeow.com</a>.
+            </p>
+          </section>
+
+          <!-- 2. Information We Collect -->
+          <section id="information-we-collect" class="legal-section">
+            <h2>2. Information We Collect</h2>
+            <p>We collect information that you provide directly to us, as well as information that is generated automatically when you use our services.</p>
+
+            <h3>Account Information</h3>
+            <p>When you create a SubMeow account, we collect:</p>
+            <ul>
+              <li>Email address</li>
+              <li>Display name (optional)</li>
+              <li>Profile picture (optional)</li>
+              <li>Authentication credentials (securely hashed, never stored in plain text)</li>
+            </ul>
+
+            <h3>Subscription Data</h3>
+            <p>To provide our core service, we collect the subscription information you enter:</p>
+            <ul>
+              <li>Service names and categories</li>
+              <li>Payment amounts and currencies</li>
+              <li>Billing cycles and renewal dates</li>
+              <li>Notes you add to subscriptions</li>
+            </ul>
+
+            <h3>Usage Analytics</h3>
+            <p>We collect anonymized usage data to improve our service:</p>
+            <ul>
+              <li>Feature usage patterns (which screens you visit, which features you use)</li>
+              <li>Session duration and frequency</li>
+              <li>Crash reports and error logs</li>
+              <li>App version and platform information</li>
+            </ul>
+
+            <h3>Device Information</h3>
+            <p>We may collect certain device-level information:</p>
+            <ul>
+              <li>Device type and operating system version</li>
+              <li>Language and timezone preferences</li>
+              <li>Screen resolution and display settings</li>
+            </ul>
+          </section>
+
+          <!-- 3. How We Use Your Information -->
+          <section id="how-we-use-your-information" class="legal-section">
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the information we collect for the following purposes:</p>
+
+            <h3>Providing the Service</h3>
+            <ul>
+              <li>Displaying your subscription dashboard and analytics</li>
+              <li>Syncing your data across devices</li>
+              <li>Calculating spending summaries and trends</li>
+              <li>Managing your account settings and preferences</li>
+            </ul>
+
+            <h3>Sending Reminders and Notifications</h3>
+            <ul>
+              <li>Alerting you before upcoming subscription renewals</li>
+              <li>Notifying you of free trial expirations</li>
+              <li>Sending payment reminders you have configured</li>
+            </ul>
+
+            <h3>Improving Our Service</h3>
+            <ul>
+              <li>Analyzing aggregated, anonymized usage patterns</li>
+              <li>Identifying and fixing bugs and performance issues</li>
+              <li>Developing new features based on user needs</li>
+              <li>Improving the user interface and experience</li>
+            </ul>
+
+            <h3>Communication</h3>
+            <ul>
+              <li>Responding to your support requests</li>
+              <li>Sending important service updates (security alerts, policy changes)</li>
+              <li>Providing optional product newsletters (you can opt out at any time)</li>
+            </ul>
+          </section>
+
+          <!-- 4. Data Storage & Security -->
+          <section id="data-storage-security" class="legal-section">
+            <h2>4. Data Storage & Security</h2>
+
+            <h3>Where We Store Your Data</h3>
+            <p>
+              SubMeow uses <strong>Supabase</strong> as our backend infrastructure provider. Your data is stored in Supabase's EU data center (eu-west-1 region), ensuring compliance with European data protection standards.
+            </p>
+
+            <h3>Security Measures</h3>
+            <p>We implement industry-standard security practices to protect your data:</p>
+            <ul>
+              <li><strong>Encryption at rest:</strong> All stored data is encrypted using AES-256 encryption</li>
+              <li><strong>Encryption in transit:</strong> All data transmitted between your device and our servers uses TLS 1.2 or higher</li>
+              <li><strong>Row-Level Security:</strong> Database-level access controls ensure you can only access your own data</li>
+              <li><strong>Secure authentication:</strong> Passwords are hashed using bcrypt; we support OAuth via Google and Apple</li>
+              <li><strong>Regular security audits:</strong> We regularly review and update our security practices</li>
+            </ul>
+
+            <h3>Data Retention</h3>
+            <p>
+              We retain your data for as long as your account is active. If you delete your account, we will remove your personal data within 30 days. Anonymized, aggregated data may be retained for analytics purposes.
+            </p>
+          </section>
+
+          <!-- 5. Third-Party Services -->
+          <section id="third-party-services" class="legal-section">
+            <h2>5. Third-Party Services</h2>
+            <p>SubMeow integrates with the following third-party services:</p>
+
+            <h3>Supabase</h3>
+            <p>
+              Our backend infrastructure provider. Handles authentication, database storage, and real-time data synchronization. Supabase's privacy policy is available at <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">supabase.com/privacy</a>.
+            </p>
+
+            <h3>Google Analytics</h3>
+            <p>
+              We use Google Analytics to understand how users interact with our marketing website. This data is anonymized and does not include your subscription information. You can opt out using browser extensions or privacy settings. Google's privacy policy is available at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.
+            </p>
+
+            <h3>Google Play / Apple App Store</h3>
+            <p>
+              If you purchase a SubMeow Premium subscription, the payment is processed by Google Play or the Apple App Store. We do not directly collect or store your payment card details. The respective platform's privacy policy applies to these transactions.
+            </p>
+
+            <p>
+              We do not sell, rent, or trade your personal information to any third party.
+            </p>
+          </section>
+
+          <!-- 6. Your Rights -->
+          <section id="your-rights" class="legal-section">
+            <h2>6. Your Rights</h2>
+            <p>You have the following rights regarding your personal data:</p>
+
+            <h3>Right to Access</h3>
+            <p>
+              You can request a copy of all personal data we hold about you. You can also view and export your subscription data directly from the app at any time.
+            </p>
+
+            <h3>Right to Deletion</h3>
+            <p>
+              You can delete your account and all associated data at any time through the app settings. Upon deletion, your data will be permanently removed from our servers within 30 days.
+            </p>
+
+            <h3>Right to Export</h3>
+            <p>
+              You can export your subscription data in standard formats (CSV, JSON) directly from the app, ensuring data portability.
+            </p>
+
+            <h3>Right to Correction</h3>
+            <p>
+              You can update or correct your personal information at any time through your account settings in the app.
+            </p>
+
+            <h3>Right to Object</h3>
+            <p>
+              You can opt out of non-essential communications and analytics tracking. Essential service communications (such as security alerts) cannot be opted out of while your account is active.
+            </p>
+
+            <p>
+              To exercise any of these rights, contact us at <a href="mailto:privacy@submeow.com">privacy@submeow.com</a> or use the relevant features within the app.
+            </p>
+          </section>
+
+          <!-- 7. Cookies -->
+          <section id="cookies" class="legal-section">
+            <h2>7. Cookies</h2>
+            <p>
+              SubMeow uses a minimal number of cookies, strictly for functional purposes. We do not use cookies for advertising or cross-site tracking.
+            </p>
+
+            <h3>Cookies We Use</h3>
+            <ul>
+              <li><strong>Authentication cookies:</strong> To keep you signed in to your account across sessions</li>
+              <li><strong>Preference cookies:</strong> To remember your settings such as theme, language, and currency preferences</li>
+              <li><strong>Security cookies:</strong> To protect against cross-site request forgery and other security threats</li>
+            </ul>
+
+            <h3>Third-Party Cookies</h3>
+            <p>
+              Our marketing website may use Google Analytics cookies to understand traffic patterns. These cookies are anonymized and can be blocked using standard browser privacy tools or the Google Analytics opt-out browser extension.
+            </p>
+          </section>
+
+          <!-- 8. Children's Privacy -->
+          <section id="childrens-privacy" class="legal-section">
+            <h2>8. Children's Privacy</h2>
+            <p>
+              SubMeow is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal data from a child under 13, we will take steps to delete that information as quickly as possible.
+            </p>
+            <p>
+              If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:privacy@submeow.com">privacy@submeow.com</a> so we can take appropriate action.
+            </p>
+          </section>
+
+          <!-- 9. Changes to Policy -->
+          <section id="changes-to-policy" class="legal-section">
+            <h2>9. Changes to Policy</h2>
+            <p>
+              We may update this Privacy Policy from time to time. When we make changes, we will:
+            </p>
+            <ul>
+              <li>Update the "Last updated" date at the top of this page</li>
+              <li>Notify registered users via email for significant changes</li>
+              <li>Display an in-app notification highlighting the key changes</li>
+              <li>Provide a summary of what changed and why</li>
+            </ul>
+            <p>
+              We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information. Your continued use of SubMeow after changes are posted constitutes your acceptance of the updated policy.
+            </p>
+          </section>
+
+          <!-- 10. Contact -->
+          <section id="contact" class="legal-section">
+            <h2>10. Contact</h2>
+            <p>
+              If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please reach out to us:
+            </p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:privacy@submeow.com">privacy@submeow.com</a></li>
+              <li><strong>Contact page:</strong> <a href="/contact">submeow.com/contact</a></li>
+            </ul>
+            <p>
+              We will respond to your inquiry within 30 days.
+            </p>
+          </section>
+
+          <!-- Cross-link to Terms -->
+          <div class="mt-16 pt-8 border-t border-gray-200">
+            <div class="bg-primary-50 rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-dark-text mb-1">Terms of Service</h3>
+                <p class="text-sm text-light-text">Review our Terms of Service to understand the rules and guidelines for using SubMeow.</p>
+              </div>
+              <a href="/terms" class="inline-flex items-center gap-2 bg-primary-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-primary-600 transition-colors shrink-0">
+                Read Terms
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* ==========================================
+     Legal Content Typography
+     ========================================== */
+  .legal-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-dark-text);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .legal-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-dark-text);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .legal-content p {
+    color: var(--color-light-text);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .legal-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .legal-content ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--color-light-text);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+  }
+
+  .legal-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-primary-400);
+  }
+
+  .legal-content a {
+    color: var(--color-primary-500);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+  }
+
+  .legal-content a:hover {
+    color: var(--color-primary-700);
+  }
+
+  .legal-content strong {
+    color: var(--color-dark-text);
+    font-weight: 600;
+  }
+
+  .legal-section {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .legal-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Smooth scroll for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (min-width: 1024px) {
+    .legal-content h2 {
+      font-size: 1.75rem;
+    }
+  }
+</style>

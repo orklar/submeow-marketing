@@ -1,0 +1,519 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<MarketingLayout title="Help Center - SubMeow" description="Find answers to your questions about SubMeow. Browse help categories, popular articles, and get support for managing your subscriptions.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-primary-50 via-cream/30 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Support</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          Help <span class="text-accent-500">Center</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-10 leading-relaxed">
+          Everything you need to get the most out of SubMeow. Browse topics, read guides, or search for answers below.
+        </p>
+
+        <!-- Search Bar (visual only) -->
+        <div class="max-w-xl mx-auto relative">
+          <div class="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true">
+            <svg class="w-5 h-5 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <input
+            type="text"
+            placeholder="Search for help articles..."
+            aria-label="Search help articles"
+            class="w-full pl-12 pr-6 py-4 rounded-2xl border border-gray-200 bg-white text-dark-text placeholder-gray-400 text-base shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-primary-500/40 focus:border-primary-500 focus:shadow-md"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-primary-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+
+    <!-- Bottom gradient fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Category Grid Section
+       ========================================== -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Browse Topics</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Help categories</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Find the answers you need, organized by topic</p>
+      </div>
+
+      <!-- Categories Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Getting Started -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-primary-500">
+          <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- Rocket icon -->
+            <svg class="w-7 h-7 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 003.02-10.23A15.07 15.07 0 008.38 1.12a14.98 14.98 0 00-3.02 10.23m10.23 3.02l-5.84 2.58M7.36 14.37L3.51 8.52m3.85 5.85l-3.85 5.85m3.85-5.85l5.84-2.58" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-4">Getting Started</h3>
+          <ul class="space-y-3 mb-6">
+            <li>
+              <a href="#" class="text-light-text hover:text-primary-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-primary-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Setting up your SubMeow account
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-primary-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-primary-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Adding your first subscription
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-primary-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-primary-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Understanding the dashboard
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="inline-flex items-center text-primary-500 hover:text-primary-600 text-sm font-semibold transition-colors group">
+            View all
+            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
+        </div>
+
+        <!-- Managing Subscriptions -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-success-500">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- List/clipboard icon -->
+            <svg class="w-7 h-7 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-4">Managing Subscriptions</h3>
+          <ul class="space-y-3 mb-6">
+            <li>
+              <a href="#" class="text-light-text hover:text-success-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-green-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Adding, editing, and deleting subscriptions
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-success-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-green-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Organizing with categories
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-success-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-green-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Using the subscription catalog
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-success-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-green-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Managing billing cycles and currencies
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="inline-flex items-center text-success-500 hover:text-green-600 text-sm font-semibold transition-colors group">
+            View all
+            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
+        </div>
+
+        <!-- Reminders & Notifications -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-accent-500">
+          <div class="w-14 h-14 bg-accent-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- Bell icon -->
+            <svg class="w-7 h-7 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-4">Reminders & Notifications</h3>
+          <ul class="space-y-3 mb-6">
+            <li>
+              <a href="#" class="text-light-text hover:text-accent-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-accent-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Setting up renewal reminders
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-accent-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-accent-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Notification types and channels
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-accent-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-accent-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Customizing reminder timing
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="inline-flex items-center text-accent-500 hover:text-accent-600 text-sm font-semibold transition-colors group">
+            View all
+            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
+        </div>
+
+        <!-- Premium Features -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-purple-500">
+          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- Star/sparkle icon -->
+            <svg class="w-7 h-7 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-4">Premium Features</h3>
+          <ul class="space-y-3 mb-6">
+            <li>
+              <a href="#" class="text-light-text hover:text-purple-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-purple-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Upgrading to SubMeow Premium
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-purple-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-purple-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Using OCR to scan receipts
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-purple-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-purple-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Advanced analytics and insights
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-purple-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-purple-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Exporting your data
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="inline-flex items-center text-purple-500 hover:text-purple-600 text-sm font-semibold transition-colors group">
+            View all
+            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
+        </div>
+
+        <!-- Account & Billing -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-warning-500">
+          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- User/cog icon -->
+            <svg class="w-7 h-7 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-4">Account & Billing</h3>
+          <ul class="space-y-3 mb-6">
+            <li>
+              <a href="#" class="text-light-text hover:text-warning-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-amber-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Managing your profile settings
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-warning-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-amber-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Payment and subscription plans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-warning-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-amber-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Cancelling your Premium plan
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-warning-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-amber-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Your data and privacy
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="inline-flex items-center text-warning-500 hover:text-amber-600 text-sm font-semibold transition-colors group">
+            View all
+            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-error-500">
+          <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- Wrench/tool icon -->
+            <svg class="w-7 h-7 text-error-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-4">Troubleshooting</h3>
+          <ul class="space-y-3 mb-6">
+            <li>
+              <a href="#" class="text-light-text hover:text-error-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-red-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Common issues and solutions
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-error-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-red-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Fixing sync problems
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-error-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-red-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                App crashes and performance
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-light-text hover:text-error-500 transition-colors text-sm flex items-start gap-2">
+                <svg class="w-4 h-4 text-red-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Reporting a bug
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="inline-flex items-center text-error-500 hover:text-red-600 text-sm font-semibold transition-colors group">
+            View all
+            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Popular Articles Section
+       ========================================== -->
+  <section class="bg-gradient-to-b from-cream/40 to-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Most Read</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Popular articles</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">The guides our users find most helpful</p>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Article 1 -->
+        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold text-primary-500 bg-primary-50 px-2.5 py-1 rounded-full">Getting Started</span>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-primary-500 transition-colors">How to add your first subscription</h3>
+          <p class="text-sm text-light-text leading-relaxed mb-4">A step-by-step walkthrough to adding your first subscription, choosing a category, and setting a billing cycle.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-light-text flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              3 min read
+            </span>
+            <svg class="w-4 h-4 text-light-text group-hover:text-primary-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </div>
+        </a>
+
+        <!-- Article 2 -->
+        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-accent-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold text-accent-500 bg-accent-50 px-2.5 py-1 rounded-full">Reminders</span>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-accent-500 transition-colors">Setting up smart reminders</h3>
+          <p class="text-sm text-light-text leading-relaxed mb-4">Learn how to configure reminders so you never miss a renewal date or forget about a free trial ending.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-light-text flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              4 min read
+            </span>
+            <svg class="w-4 h-4 text-light-text group-hover:text-accent-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </div>
+        </a>
+
+        <!-- Article 3 -->
+        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold text-purple-500 bg-purple-50 px-2.5 py-1 rounded-full">Premium</span>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-purple-500 transition-colors">Using OCR to scan receipts</h3>
+          <p class="text-sm text-light-text leading-relaxed mb-4">Snap a photo of any receipt or invoice and let SubMeow automatically extract subscription details for you.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-light-text flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              5 min read
+            </span>
+            <svg class="w-4 h-4 text-light-text group-hover:text-purple-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </div>
+        </a>
+
+        <!-- Article 4 -->
+        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold text-success-500 bg-green-50 px-2.5 py-1 rounded-full">Analytics</span>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-success-500 transition-colors">Understanding your analytics</h3>
+          <p class="text-sm text-light-text leading-relaxed mb-4">Dive into your spending trends, category breakdowns, and monthly comparisons to make smarter decisions.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-light-text flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              4 min read
+            </span>
+            <svg class="w-4 h-4 text-light-text group-hover:text-success-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </div>
+        </a>
+
+        <!-- Article 5 -->
+        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold text-warning-500 bg-amber-50 px-2.5 py-1 rounded-full">Account</span>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-warning-500 transition-colors">How to export your data</h3>
+          <p class="text-sm text-light-text leading-relaxed mb-4">Export all your subscription data as CSV or PDF for your records, tax purposes, or backup.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-light-text flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              2 min read
+            </span>
+            <svg class="w-4 h-4 text-light-text group-hover:text-warning-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </div>
+        </a>
+
+        <!-- Article 6 -->
+        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold text-purple-500 bg-purple-50 px-2.5 py-1 rounded-full">Premium</span>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-purple-500 transition-colors">Switching to Premium</h3>
+          <p class="text-sm text-light-text leading-relaxed mb-4">Compare plans, understand what you get with Premium, and learn how to upgrade in just a few taps.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-light-text flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              3 min read
+            </span>
+            <svg class="w-4 h-4 text-light-text group-hover:text-purple-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Contact Support CTA Section
+       ========================================== -->
+  <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <!-- Cat Mascot -->
+      <div class="text-7xl md:text-8xl mb-8 hero-bounce" aria-hidden="true">&#128572;</div>
+
+      <!-- Headline -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Can't find what you need?</h2>
+
+      <!-- Subtext -->
+      <p class="text-lg md:text-xl text-light-text mb-12 max-w-2xl mx-auto leading-relaxed">
+        Our support team is here to help. Reach out and we will get back to you within 24 hours. Sub is standing by to make sure your question gets answered.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+        <Button variant="primary" size="lg" href="/contact" class="px-10 py-4 text-lg">
+          <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Contact Support
+        </Button>
+        <Button variant="outline" size="lg" href="mailto:hello@submeow.com" class="px-10 py-4 text-lg">
+          <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          Email Us Directly
+        </Button>
+      </div>
+
+      <!-- Email info -->
+      <p class="text-sm text-light-text">
+        Or email us at
+        <a href="mailto:hello@submeow.com" class="text-primary-500 hover:text-primary-600 font-semibold transition-colors">hello@submeow.com</a>
+      </p>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* ==========================================
+     Hero Bounce Animation
+     ========================================== */
+  @keyframes heroBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .hero-bounce {
+    animation: heroBounce 2.5s ease-in-out infinite;
+  }
+
+  /* ==========================================
+     Reduced Motion
+     ========================================== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bounce {
+      animation: none;
+    }
+  }
+</style>

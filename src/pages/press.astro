@@ -1,0 +1,614 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<MarketingLayout title="Press Kit - SubMeow" description="Download SubMeow brand assets, logos, screenshots, and company information for media coverage and press inquiries.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-primary-50 via-cream/30 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Media Resources</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          Press <span class="text-accent-500">Kit</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-8 leading-relaxed">
+          Everything you need to write about SubMeow. Download brand assets, review company facts, and get in touch with our media team.
+        </p>
+
+        <!-- Bouncing Cat -->
+        <div class="text-6xl md:text-7xl hero-bounce" aria-hidden="true">&#128240;</div>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-primary-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+
+    <!-- Bottom gradient fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Brand Assets Section
+       ========================================== -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Brand Assets</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Downloadable resources</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Official logos, icons, mascot illustrations, and app screenshots for your coverage</p>
+      </div>
+
+      <!-- Assets Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Logo Card -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-full aspect-square bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl flex items-center justify-center mb-6">
+            <div class="flex items-center gap-2">
+              <span class="text-4xl" aria-hidden="true">&#128570;</span>
+              <span class="text-2xl font-bold text-dark-text">SubMeow</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2">Logo</h3>
+          <p class="text-sm text-light-text mb-4">Primary logo with wordmark. Available in light and dark variants.</p>
+          <div class="flex items-center justify-center gap-2 mb-5">
+            <span class="text-xs bg-gray-100 text-light-text px-2.5 py-1 rounded-full font-medium">SVG</span>
+            <span class="text-xs bg-gray-100 text-light-text px-2.5 py-1 rounded-full font-medium">PNG</span>
+          </div>
+          <Button variant="secondary" size="sm" href="#" class="w-full">
+            <svg class="w-4 h-4 mr-1.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download Logo
+          </Button>
+        </div>
+
+        <!-- App Icon Card -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-full aspect-square bg-gradient-to-br from-accent-50 to-amber-50 rounded-2xl flex items-center justify-center mb-6">
+            <div class="w-24 h-24 bg-gradient-to-br from-accent-500 to-accent-600 rounded-3xl shadow-lg flex items-center justify-center">
+              <span class="text-4xl" aria-hidden="true">&#128570;</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2">App Icon</h3>
+          <p class="text-sm text-light-text mb-4">Application icon in multiple resolutions for stores and articles.</p>
+          <div class="flex items-center justify-center gap-2 mb-5">
+            <span class="text-xs bg-gray-100 text-light-text px-2.5 py-1 rounded-full font-medium">512px</span>
+            <span class="text-xs bg-gray-100 text-light-text px-2.5 py-1 rounded-full font-medium">1024px</span>
+          </div>
+          <Button variant="secondary" size="sm" href="#" class="w-full">
+            <svg class="w-4 h-4 mr-1.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download Icon
+          </Button>
+        </div>
+
+        <!-- Mascot Card -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-full aspect-square bg-gradient-to-br from-green-50 to-cyan-50 rounded-2xl flex items-center justify-center mb-6">
+            <div class="grid grid-cols-2 gap-3">
+              <span class="text-4xl mascot-bob mascot-bob-1" aria-hidden="true">&#128570;</span>
+              <span class="text-4xl mascot-bob mascot-bob-2" aria-hidden="true">&#128568;</span>
+              <span class="text-4xl mascot-bob mascot-bob-3" aria-hidden="true">&#128572;</span>
+              <span class="text-4xl mascot-bob mascot-bob-4" aria-hidden="true">&#128575;</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2">Mascot</h3>
+          <p class="text-sm text-light-text mb-4">Sub the cat in various expressions. Perfect for editorial use.</p>
+          <div class="flex items-center justify-center gap-2 mb-5">
+            <span class="text-xs bg-gray-100 text-light-text px-2.5 py-1 rounded-full font-medium">SVG</span>
+            <span class="text-xs bg-gray-100 text-light-text px-2.5 py-1 rounded-full font-medium">PNG</span>
+          </div>
+          <Button variant="secondary" size="sm" href="#" class="w-full">
+            <svg class="w-4 h-4 mr-1.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download Mascot
+          </Button>
+        </div>
+
+        <!-- Screenshots Card -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-full aspect-square bg-gradient-to-br from-purple-50 to-primary-50 rounded-2xl flex items-center justify-center mb-6 overflow-hidden p-4">
+            <div class="flex gap-2">
+              <!-- Mini phone mockup 1 -->
+              <div class="w-16 bg-white rounded-lg shadow-md border border-gray-200 p-1.5">
+                <div class="bg-primary-100 rounded h-4 mb-1"></div>
+                <div class="space-y-0.5">
+                  <div class="bg-gray-100 rounded h-2"></div>
+                  <div class="bg-gray-100 rounded h-2"></div>
+                  <div class="bg-gray-100 rounded h-2"></div>
+                </div>
+              </div>
+              <!-- Mini phone mockup 2 -->
+              <div class="w-16 bg-white rounded-lg shadow-md border border-gray-200 p-1.5">
+                <div class="bg-accent-100 rounded h-4 mb-1"></div>
+                <div class="space-y-0.5">
+                  <div class="bg-gray-100 rounded h-2"></div>
+                  <div class="bg-gray-100 rounded h-2"></div>
+                  <div class="bg-gray-100 rounded h-2"></div>
+                </div>
+              </div>
+              <!-- Mini phone mockup 3 -->
+              <div class="w-16 bg-white rounded-lg shadow-md border border-gray-200 p-1.5">
+                <div class="bg-green-100 rounded h-4 mb-1"></div>
+                <div class="space-y-0.5">
+                  <div class="bg-gray-100 rounded h-2"></div>
+                  <div class="bg-gray-100 rounded h-2"></div>
+                  <div class="bg-gray-100 rounded h-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-dark-text mb-2">Screenshots</h3>
+          <p class="text-sm text-light-text mb-4">High-resolution app screenshots from Android and web platforms.</p>
+          <div class="flex items-center justify-center gap-2 mb-5">
+            <span class="text-xs bg-gray-100 text-light-text px-2.5 py-1 rounded-full font-medium">PNG</span>
+            <span class="text-xs bg-gray-100 text-light-text px-2.5 py-1 rounded-full font-medium">ZIP</span>
+          </div>
+          <Button variant="secondary" size="sm" href="#" class="w-full">
+            <svg class="w-4 h-4 mr-1.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download Screenshots
+          </Button>
+        </div>
+
+      </div>
+
+      <!-- Usage Guidelines Note -->
+      <div class="mt-12 max-w-3xl mx-auto bg-cream/50 rounded-2xl p-6 border border-accent-200">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 bg-accent-100 rounded-xl flex items-center justify-center shrink-0" aria-hidden="true">
+            <svg class="w-5 h-5 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-semibold text-dark-text mb-1">Usage Guidelines</p>
+            <p class="text-sm text-light-text leading-relaxed">Please do not alter, rotate, or recolor the SubMeow logo. Maintain clear space around the logo equal to the height of the cat icon. For questions about asset usage, contact <a href="mailto:press@submeow.com" class="text-primary-500 hover:text-primary-600 font-medium transition-colors">press@submeow.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Color Palette Section
+       ========================================== -->
+  <section class="bg-gradient-to-b from-cream/40 to-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Brand Colors</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Color palette</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Our brand colors communicate trust, energy, and approachability</p>
+      </div>
+
+      <!-- Color Swatches Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
+
+        <!-- Primary Blue -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="h-28 sm:h-32 bg-primary-500"></div>
+          <div class="p-4 text-center">
+            <p class="text-sm font-bold text-dark-text mb-1">Primary Blue</p>
+            <p class="text-xs text-light-text font-mono">#3B82F6</p>
+          </div>
+        </div>
+
+        <!-- Accent Orange -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="h-28 sm:h-32 bg-accent-500"></div>
+          <div class="p-4 text-center">
+            <p class="text-sm font-bold text-dark-text mb-1">Accent Orange</p>
+            <p class="text-xs text-light-text font-mono">#F97316</p>
+          </div>
+        </div>
+
+        <!-- Success Green -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="h-28 sm:h-32 bg-success-500"></div>
+          <div class="p-4 text-center">
+            <p class="text-sm font-bold text-dark-text mb-1">Success Green</p>
+            <p class="text-xs text-light-text font-mono">#10B981</p>
+          </div>
+        </div>
+
+        <!-- Warning Amber -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="h-28 sm:h-32 bg-warning-500"></div>
+          <div class="p-4 text-center">
+            <p class="text-sm font-bold text-dark-text mb-1">Warning Amber</p>
+            <p class="text-xs text-light-text font-mono">#F59E0B</p>
+          </div>
+        </div>
+
+        <!-- Soft Cream -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="h-28 sm:h-32 bg-cream border-b border-gray-100"></div>
+          <div class="p-4 text-center">
+            <p class="text-sm font-bold text-dark-text mb-1">Soft Cream</p>
+            <p class="text-xs text-light-text font-mono">#FEF3C7</p>
+          </div>
+        </div>
+
+        <!-- Dark Text -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="h-28 sm:h-32 bg-dark-text"></div>
+          <div class="p-4 text-center">
+            <p class="text-sm font-bold text-dark-text mb-1">Dark Text</p>
+            <p class="text-xs text-light-text font-mono">#1F2937</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Company Facts Section
+       ========================================== -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Company Facts</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">SubMeow at a glance</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Key facts and figures for your coverage</p>
+      </div>
+
+      <!-- Facts Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+        <!-- Founded -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm text-light-text font-medium mb-1">Founded</p>
+              <p class="text-2xl font-bold text-dark-text">2025</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Headquarters -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm text-light-text font-medium mb-1">Headquarters</p>
+              <p class="text-2xl font-bold text-dark-text">Remote</p>
+              <p class="text-sm text-light-text">Worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Users -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm text-light-text font-medium mb-1">Users</p>
+              <p class="text-2xl font-bold text-dark-text">10,000+</p>
+              <p class="text-sm text-light-text">Active users worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platforms -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm text-light-text font-medium mb-1">Platforms</p>
+              <p class="text-2xl font-bold text-dark-text">Android, Web</p>
+              <p class="text-sm text-light-text">iOS coming soon</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm text-light-text font-medium mb-1">Languages</p>
+              <p class="text-2xl font-bold text-dark-text">13</p>
+              <p class="text-sm text-light-text">Fully localized</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subscriptions Tracked -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm text-light-text font-medium mb-1">Subscriptions Tracked</p>
+              <p class="text-2xl font-bold text-dark-text">$2M+</p>
+              <p class="text-sm text-light-text">In recurring payments</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Press Releases Section
+       ========================================== -->
+  <section class="bg-gradient-to-b from-cream/40 to-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">News</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Press releases</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Recent announcements and milestones from SubMeow</p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="max-w-3xl mx-auto">
+        <div class="relative pl-8 md:pl-10 border-l-2 border-primary-200 space-y-10">
+
+          <!-- Press Release 1 -->
+          <div class="relative">
+            <div class="absolute -left-[2.45rem] md:-left-[2.85rem] w-6 h-6 md:w-7 md:h-7 bg-primary-500 rounded-full flex items-center justify-center">
+              <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-lg border border-gray-100 p-6 md:p-8 transition-all hover:-translate-y-1">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-primary-500">
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  February 2026
+                </span>
+                <span class="text-xs bg-primary-100 text-primary-500 px-2.5 py-1 rounded-full font-semibold">Latest</span>
+              </div>
+              <h3 class="text-xl md:text-2xl font-bold text-dark-text mb-3">SubMeow Web App Now Available</h3>
+              <p class="text-light-text leading-relaxed mb-4">
+                SubMeow expands beyond mobile with the launch of its web application, giving users the ability to manage their subscriptions from any browser. The web app features full feature parity with the Android version, including real-time cloud sync, spending analytics, and smart reminders. Users can now seamlessly switch between their phone and computer without missing a beat.
+              </p>
+              <div class="flex items-center gap-2 text-sm text-light-text">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                </svg>
+                Product Launch, Web, Cross-platform
+              </div>
+            </div>
+          </div>
+
+          <!-- Press Release 2 -->
+          <div class="relative">
+            <div class="absolute -left-[2.45rem] md:-left-[2.85rem] w-6 h-6 md:w-7 md:h-7 bg-accent-500 rounded-full flex items-center justify-center">
+              <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-lg border border-gray-100 p-6 md:p-8 transition-all hover:-translate-y-1">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-accent-500">
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  January 2026
+                </span>
+              </div>
+              <h3 class="text-xl md:text-2xl font-bold text-dark-text mb-3">SubMeow Launches on Google Play Store</h3>
+              <p class="text-light-text leading-relaxed mb-4">
+                SubMeow, the subscription tracking app with a friendly cat mascot, officially launches on the Google Play Store. The app helps users track all their recurring payments in one place, featuring OCR receipt scanning, smart renewal reminders, spending analytics, and support for 13 languages. Available as a free download with an optional premium tier, SubMeow aims to make subscription management simple, private, and even a little fun.
+              </p>
+              <div class="flex items-center gap-2 text-sm text-light-text">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                </svg>
+                Product Launch, Android, Google Play
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Media Contact Section
+       ========================================== -->
+  <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <!-- Cat Mascot -->
+        <div class="text-7xl md:text-8xl mb-8" aria-hidden="true">&#128570;</div>
+
+        <!-- Headline -->
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Media inquiries</h2>
+
+        <!-- Subtext -->
+        <p class="text-lg md:text-xl text-light-text mb-12 max-w-2xl mx-auto leading-relaxed">
+          Writing about SubMeow or need additional information? Our press team is happy to help with interviews, quotes, and any assets you may need.
+        </p>
+      </div>
+
+      <!-- Contact Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+        <!-- Email -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-white text-center">
+          <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <p class="text-sm text-light-text font-medium mb-1">Press Email</p>
+          <a href="mailto:press@submeow.com" class="text-primary-500 hover:text-primary-600 font-semibold transition-colors">press@submeow.com</a>
+        </div>
+
+        <!-- Response Time -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-white text-center">
+          <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <p class="text-sm text-light-text font-medium mb-1">Response Time</p>
+          <p class="text-dark-text font-semibold">Within 24 hours</p>
+        </div>
+
+        <!-- Social -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-white text-center">
+          <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+            </svg>
+          </div>
+          <p class="text-sm text-light-text font-medium mb-2">Follow Us</p>
+          <div class="flex items-center justify-center gap-3">
+            <!-- X / Twitter -->
+            <a
+              href="https://x.com/submeow"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-light-text hover:text-dark-text hover:bg-gray-200 transition-all"
+              aria-label="Follow us on X"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/submeow"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-light-text hover:text-dark-text hover:bg-gray-200 transition-all"
+              aria-label="Follow us on Instagram"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <!-- TikTok -->
+            <a
+              href="https://tiktok.com/@submeow"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-light-text hover:text-dark-text hover:bg-gray-200 transition-all"
+              aria-label="Follow us on TikTok"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.98a8.2 8.2 0 004.76 1.52V7.05a4.84 4.84 0 01-1-.36z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="text-center">
+        <Button variant="primary" size="lg" href="/contact" class="px-10 py-4 text-lg">
+          <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Contact Our Press Team
+        </Button>
+      </div>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* ==========================================
+     Hero Bounce Animation
+     ========================================== */
+  @keyframes heroBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .hero-bounce {
+    animation: heroBounce 2.5s ease-in-out infinite;
+  }
+
+  /* ==========================================
+     Mascot Bob Animation (staggered)
+     ========================================== */
+  @keyframes mascotBob {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .mascot-bob {
+    animation: mascotBob 3s ease-in-out infinite;
+  }
+
+  .mascot-bob-1 {
+    animation-delay: 0s;
+  }
+
+  .mascot-bob-2 {
+    animation-delay: 0.5s;
+  }
+
+  .mascot-bob-3 {
+    animation-delay: 1s;
+  }
+
+  .mascot-bob-4 {
+    animation-delay: 1.5s;
+  }
+
+  /* ==========================================
+     Reduced Motion
+     ========================================== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bounce,
+    .mascot-bob {
+      animation: none;
+    }
+  }
+</style>

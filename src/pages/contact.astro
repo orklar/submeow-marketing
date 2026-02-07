@@ -1,0 +1,386 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<MarketingLayout title="Contact - SubMeow" description="Get in touch with the SubMeow team. Whether you have a question, feedback, or a partnership idea, we would love to hear from you.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-primary-50 via-cream/30 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Contact</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          Get in <span class="text-accent-500">Touch</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-8 leading-relaxed">
+          Have a question, suggestion, or just want to say hello? We are always happy to hear from our users and would love to help.
+        </p>
+
+        <!-- Bouncing Cat -->
+        <div class="text-6xl md:text-7xl hero-bounce" aria-hidden="true">&#128570;</div>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-primary-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+
+    <!-- Bottom gradient fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Contact Form + Info Section
+       ========================================== -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+
+        <!-- Left Column: Contact Form (3/5) -->
+        <div class="lg:col-span-3">
+          <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Send a Message</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-3">We would love to hear from you</h2>
+          <p class="text-light-text mb-8 leading-relaxed">Fill out the form below and we will get back to you as soon as possible.</p>
+
+          <form action="#" method="POST" class="space-y-6">
+            <!-- Name + Email Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <!-- Name -->
+              <div>
+                <label for="contact-name" class="block text-sm font-semibold text-dark-text mb-2">Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  required
+                  placeholder="Your name"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-dark-text placeholder-gray-400 text-sm transition-all focus:outline-none focus:ring-2 focus:ring-primary-500/40 focus:border-primary-500"
+                />
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="contact-email" class="block text-sm font-semibold text-dark-text mb-2">Email</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-dark-text placeholder-gray-400 text-sm transition-all focus:outline-none focus:ring-2 focus:ring-primary-500/40 focus:border-primary-500"
+                />
+              </div>
+            </div>
+
+            <!-- Subject -->
+            <div>
+              <label for="contact-subject" class="block text-sm font-semibold text-dark-text mb-2">Subject</label>
+              <div class="relative">
+                <select
+                  id="contact-subject"
+                  name="subject"
+                  required
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-dark-text text-sm appearance-none transition-all focus:outline-none focus:ring-2 focus:ring-primary-500/40 focus:border-primary-500"
+                >
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="bug">Bug Report</option>
+                  <option value="feature">Feature Request</option>
+                  <option value="billing">Billing</option>
+                  <option value="partnership">Partnership</option>
+                </select>
+                <!-- Dropdown arrow icon -->
+                <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true">
+                  <svg class="w-4 h-4 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="contact-message" class="block text-sm font-semibold text-dark-text mb-2">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                required
+                rows="6"
+                placeholder="Tell us what is on your mind..."
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-dark-text placeholder-gray-400 text-sm transition-all resize-y focus:outline-none focus:ring-2 focus:ring-primary-500/40 focus:border-primary-500"
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <Button variant="primary" size="lg" class="w-full sm:w-auto px-10">
+              <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Send Message
+            </Button>
+          </form>
+        </div>
+
+        <!-- Right Column: Contact Info Cards (2/5) -->
+        <div class="lg:col-span-2 space-y-6">
+          <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-2">Contact Info</span>
+
+          <!-- Email Card -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-dark-text mb-1">Email</h3>
+                <a href="mailto:hello@submeow.com" class="text-primary-500 hover:text-primary-600 font-medium transition-colors">hello@submeow.com</a>
+                <p class="text-sm text-light-text mt-1">For any questions or feedback</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Response Time Card -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-dark-text mb-1">Response Time</h3>
+                <p class="text-dark-text font-medium">Within 24 hours</p>
+                <p class="text-sm text-light-text mt-1">We aim to reply as quickly as possible</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Card -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-dark-text mb-2">Social</h3>
+                <div class="flex items-center gap-3">
+                  <!-- X / Twitter -->
+                  <a
+                    href="https://x.com/submeow"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-light-text hover:text-dark-text hover:bg-gray-200 transition-all"
+                    aria-label="Follow us on X"
+                  >
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </a>
+                  <!-- Instagram -->
+                  <a
+                    href="https://instagram.com/submeow"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-light-text hover:text-dark-text hover:bg-gray-200 transition-all"
+                    aria-label="Follow us on Instagram"
+                  >
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                  </a>
+                </div>
+                <p class="text-sm text-light-text mt-2">Follow us for updates and tips</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-dark-text mb-1">Location</h3>
+                <p class="text-dark-text font-medium">Remote team, worldwide</p>
+                <p class="text-sm text-light-text mt-1">Building from wherever cats nap best</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Quick FAQ Section
+       ========================================== -->
+  <section class="bg-gradient-to-b from-cream/40 to-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Quick FAQ</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Common questions</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Quick answers to the things people ask us most</p>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- FAQ 1 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">How quickly do you respond?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">We aim to respond to all inquiries within 24 hours on business days. Premium users with priority support typically receive a response within a few hours. If your issue is urgent, please mention it in the subject line and we will prioritize it.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">Can I request a feature?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">Absolutely! We love hearing from our users about what features would make SubMeow even better. Simply select "Feature Request" as the subject in the contact form and describe your idea. Many of our best features started as user suggestions, and we review every single request.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">How do I report a bug?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">Select "Bug Report" as the subject in the contact form above. Please include as much detail as possible: your device model, operating system version, the steps to reproduce the issue, and any screenshots if available. The more detail you provide, the faster we can identify and fix the problem.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">Do you offer partnerships?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">Yes, we are always open to exploring partnerships that align with our mission of helping people manage their subscriptions better. Whether you are a content creator, a financial education platform, or a complementary service, select "Partnership" in the subject dropdown and tell us about your idea. We look forward to hearing from you.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CTA Section
+       ========================================== -->
+  <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <!-- Cat Mascot -->
+      <div class="text-7xl md:text-8xl mb-8" aria-hidden="true">&#128572;</div>
+
+      <!-- Headline -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Prefer to explore?</h2>
+
+      <!-- Subtext -->
+      <p class="text-lg md:text-xl text-light-text mb-12 max-w-2xl mx-auto leading-relaxed">
+        You might find what you need without waiting for a reply. Check out our help resources or browse commonly asked questions.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <Button variant="primary" size="lg" href="/features" class="px-10 py-4 text-lg">
+          <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Explore Features
+        </Button>
+        <Button variant="outline" size="lg" href="/pricing" class="px-10 py-4 text-lg">
+          <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          View FAQ &amp; Pricing
+        </Button>
+      </div>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* ==========================================
+     Hero Bounce Animation
+     ========================================== */
+  @keyframes heroBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .hero-bounce {
+    animation: heroBounce 2.5s ease-in-out infinite;
+  }
+
+  /* ==========================================
+     Details/Summary Styles
+     ========================================== */
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] > div {
+    animation: slideDown 0.2s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ==========================================
+     Reduced Motion
+     ========================================== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bounce {
+      animation: none;
+    }
+
+    details[open] > div {
+      animation: none;
+    }
+  }
+</style>

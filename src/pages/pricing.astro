@@ -1,0 +1,653 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+---
+
+<MarketingLayout title="Pricing - SubMeow" description="Choose the perfect SubMeow plan for tracking your subscriptions. Free forever, Premium for power users, or Lifetime for the best value.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-cream/40 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Pricing</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          Choose your <span class="text-primary-500">purr-fect</span> plan
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-10 leading-relaxed">
+          Start free, upgrade when you need more. No hidden fees, no surprises &mdash; just like a good subscription tracker should be.
+        </p>
+
+        <!-- Billing Toggle -->
+        <div class="inline-flex items-center gap-4 bg-white rounded-full px-2 py-2 shadow-sm border border-gray-200">
+          <span class="px-5 py-2 rounded-full bg-dark-text text-white text-sm font-semibold transition-all">Monthly</span>
+          <span class="px-5 py-2 rounded-full text-light-text text-sm font-semibold transition-all cursor-pointer hover:text-dark-text">
+            Yearly
+            <span class="ml-1.5 inline-block bg-success-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">Save 20%</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-200/30 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Pricing Cards Section
+       ========================================== -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+        <!-- Free Plan -->
+        <Card variant="pricing" class="hover:shadow-2xl transition-all">
+          <div class="text-center mb-8">
+            <span class="text-5xl block mb-4" aria-hidden="true">&#128570;</span>
+            <p class="text-sm font-semibold text-light-text mb-2">For curious cats</p>
+            <h3 class="text-2xl font-bold text-dark-text mb-2">Free</h3>
+            <p class="text-5xl font-bold text-dark-text mb-1">$0</p>
+            <p class="text-light-text">Forever</p>
+          </div>
+
+          <!-- Included features -->
+          <ul class="space-y-3.5 mb-6">
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Track up to 7 subscriptions
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              5 OCR scans per month
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Push notifications
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Basic analytics
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Manual entry
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Community support
+            </li>
+          </ul>
+
+          <!-- Excluded features -->
+          <ul class="space-y-3.5 mb-6 opacity-40">
+            <li class="flex items-start gap-3 text-light-text text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              Email reminders
+            </li>
+            <li class="flex items-start gap-3 text-light-text text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              Telegram bot
+            </li>
+            <li class="flex items-start gap-3 text-light-text text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              Calendar sync
+            </li>
+            <li class="flex items-start gap-3 text-light-text text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              Data export
+            </li>
+          </ul>
+
+          <!-- Ad note -->
+          <p class="text-xs text-light-text text-center mb-6">Includes ads</p>
+
+          <!-- CTA -->
+          <Button variant="outline" size="lg" href="https://app.submeow.com/auth/signup" class="w-full text-center">
+            Get Started Free
+          </Button>
+        </Card>
+
+        <!-- Premium Plan (Highlighted) -->
+        <div class="bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl p-8 shadow-2xl border-2 border-accent-400 relative md:scale-105">
+          <!-- Badge -->
+          <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-warning-500 text-white px-6 py-1.5 rounded-full text-sm font-bold whitespace-nowrap">Most Popular</span>
+
+          <div class="text-center mb-8">
+            <span class="text-5xl block mb-4" aria-hidden="true">&#11088;</span>
+            <p class="text-sm font-semibold text-orange-100 mb-2">For smart savers</p>
+            <h3 class="text-2xl font-bold text-white mb-2">Premium</h3>
+            <p class="text-5xl font-bold text-white mb-1">$0.99</p>
+            <p class="text-orange-100">Per month</p>
+          </div>
+
+          <!-- All features -->
+          <p class="text-xs font-semibold text-orange-200 uppercase tracking-wider mb-3">Everything in Free, plus:</p>
+          <ul class="space-y-3.5 mb-8">
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Unlimited subscriptions
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Unlimited OCR scans
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Email reminders
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Telegram bot
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Advanced analytics
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Calendar sync
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Export data
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Custom categories
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Priority support
+            </li>
+            <li class="flex items-start gap-3 text-white text-sm">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Ad-free experience
+            </li>
+          </ul>
+
+          <!-- CTA -->
+          <a href="https://app.submeow.com/auth/signup" class="block w-full bg-white text-accent-500 hover:bg-gray-100 py-3.5 rounded-xl font-semibold text-lg transition-all text-center">
+            Upgrade to Premium
+          </a>
+        </div>
+
+        <!-- Lifetime Plan -->
+        <Card variant="pricing" class="border-2 border-primary-300 hover:shadow-2xl transition-all">
+          <div class="text-center mb-8">
+            <span class="text-5xl block mb-4" aria-hidden="true">&#128142;</span>
+            <p class="text-sm font-semibold text-light-text mb-2">One-time payment &#127881;</p>
+            <h3 class="text-2xl font-bold text-dark-text mb-2">Lifetime</h3>
+            <p class="text-5xl font-bold text-dark-text mb-1">$9.99</p>
+            <p class="text-light-text">One-time</p>
+          </div>
+
+          <!-- Features -->
+          <ul class="space-y-3.5 mb-6">
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Track up to 7 subscriptions
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              5 OCR scans per month
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Push notifications
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Basic analytics
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Manual entry
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Community support
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Ad-free experience
+            </li>
+            <li class="flex items-start gap-3 text-dark-text text-sm">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              Lifetime updates
+            </li>
+          </ul>
+
+          <!-- Value note -->
+          <p class="text-sm font-semibold text-success-500 text-center mb-6">Pay once, use forever!</p>
+
+          <!-- CTA -->
+          <Button variant="secondary" size="lg" href="https://app.submeow.com/auth/signup" class="w-full text-center">
+            Get Lifetime Access
+          </Button>
+        </Card>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Feature Comparison Table
+       ========================================== -->
+  <section class="bg-gradient-to-b from-cream/40 to-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Compare</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Compare all features</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">See exactly what you get with each plan</p>
+      </div>
+
+      <!-- Responsive table wrapper -->
+      <div class="overflow-x-auto -mx-6 px-6">
+        <table class="w-full min-w-[640px] border-collapse">
+          <!-- Table Header -->
+          <thead>
+            <tr class="border-b-2 border-gray-200">
+              <th class="text-left py-4 pr-4 text-sm font-semibold text-dark-text w-1/3">Feature</th>
+              <th class="text-center py-4 px-4 text-sm font-semibold text-dark-text">
+                <span class="block text-2xl mb-1" aria-hidden="true">&#128570;</span>
+                Free
+              </th>
+              <th class="text-center py-4 px-4 text-sm font-semibold text-white">
+                <span class="inline-block bg-accent-500 rounded-xl px-4 py-2">
+                  <span class="block text-2xl mb-1" aria-hidden="true">&#11088;</span>
+                  Premium
+                </span>
+              </th>
+              <th class="text-center py-4 px-4 text-sm font-semibold text-dark-text">
+                <span class="block text-2xl mb-1" aria-hidden="true">&#128142;</span>
+                Lifetime
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Core Features Category -->
+            <tr>
+              <td colspan="4" class="pt-8 pb-3 text-xs font-bold text-accent-500 uppercase tracking-wider">Core Features</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Subscription tracking</td>
+              <td class="py-3.5 px-4 text-center text-sm text-light-text">Up to 7</td>
+              <td class="py-3.5 px-4 text-center text-sm font-semibold text-dark-text">Unlimited</td>
+              <td class="py-3.5 px-4 text-center text-sm text-light-text">Up to 7</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">OCR receipt scanning</td>
+              <td class="py-3.5 px-4 text-center text-sm text-light-text">5/month</td>
+              <td class="py-3.5 px-4 text-center text-sm font-semibold text-dark-text">Unlimited</td>
+              <td class="py-3.5 px-4 text-center text-sm text-light-text">5/month</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Manual entry</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Custom categories</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Ad-free experience</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+
+            <!-- Reminders & Notifications Category -->
+            <tr>
+              <td colspan="4" class="pt-8 pb-3 text-xs font-bold text-accent-500 uppercase tracking-wider">Reminders &amp; Notifications</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Push notifications</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Email reminders</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Telegram bot</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Calendar sync</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+
+            <!-- Analytics & Insights Category -->
+            <tr>
+              <td colspan="4" class="pt-8 pb-3 text-xs font-bold text-accent-500 uppercase tracking-wider">Analytics &amp; Insights</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Basic analytics</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Advanced analytics</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+
+            <!-- Data Management Category -->
+            <tr>
+              <td colspan="4" class="pt-8 pb-3 text-xs font-bold text-accent-500 uppercase tracking-wider">Data Management</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Data export</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Cloud sync</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Lifetime updates</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+
+            <!-- Support Category -->
+            <tr>
+              <td colspan="4" class="pt-8 pb-3 text-xs font-bold text-accent-500 uppercase tracking-wider">Support</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Community support</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="py-3.5 pr-4 text-sm text-dark-text">Priority support</td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              </td>
+              <td class="py-3.5 px-4 text-center">
+                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Pricing FAQ Section
+       ========================================== -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-blue-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">FAQ</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Pricing questions answered</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Everything you need to know about SubMeow plans and billing</p>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- FAQ 1 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">Can I switch between plans?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">Yes, you can upgrade or downgrade your plan at any time. When upgrading, the change takes effect immediately and you'll be charged the prorated difference. When downgrading, your current plan features remain active until the end of your billing period.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">Is there a free trial for Premium?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">Our Free plan works as an unlimited trial -- you can use it forever with no time restriction. When you're ready for advanced features like unlimited subscriptions, email reminders, and advanced analytics, simply upgrade to Premium.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">What payment methods do you accept?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">Payments are processed through the Google Play Store (Android) or Apple App Store (iOS). Both stores support credit cards, debit cards, carrier billing, gift cards, and various local payment methods depending on your region.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">What is your refund policy?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">For Premium monthly subscriptions, refunds are handled through your app store's standard refund process. For the Lifetime plan, we offer a 30-day money-back guarantee -- if you're not satisfied, contact us and we'll process a full refund, no questions asked.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">Do I need a credit card for the Free plan?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">No, absolutely not. The Free plan requires only an email address to sign up. No credit card, no payment information, no hidden charges. You can even use SubMeow in guest mode without creating an account at all.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 6 -->
+        <details class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+            <h3 class="text-lg md:text-xl font-bold text-dark-text pr-4">How do I cancel my subscription?</h3>
+            <span class="shrink-0 transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
+              <svg class="w-6 h-6 text-light-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </span>
+          </summary>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+            <p class="text-light-text leading-relaxed">You can cancel anytime from your app store's subscription settings. There are no contracts, no cancellation fees, and no hoops to jump through. After cancellation, you'll keep Premium features until the end of your current billing period, then automatically switch to the Free plan.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Final CTA Section
+       ========================================== -->
+  <section class="bg-gradient-to-br from-cream to-accent-100 py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <!-- Cat Mascot -->
+      <div class="text-7xl md:text-8xl mb-8" aria-hidden="true">&#128570;</div>
+
+      <!-- Headline -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Ready to start saving?</h2>
+
+      <!-- Subtext -->
+      <p class="text-lg md:text-xl text-light-text mb-12 max-w-2xl mx-auto leading-relaxed">
+        Join thousands of users who track their subscriptions and save money every month with SubMeow.
+      </p>
+
+      <!-- CTA Button -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+        <Button variant="primary" size="lg" href="https://app.submeow.com/auth/signup" class="px-10 py-4 text-lg">
+          Start Free &mdash; No Card Required
+        </Button>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-light-text">
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          Free forever plan
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          No credit card needed
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          Cancel anytime
+        </span>
+      </div>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* Remove default marker from details/summary */
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Smooth open/close for details content */
+  details[open] > div {
+    animation: slideDown 0.2s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Respect reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    details[open] > div {
+      animation: none;
+    }
+  }
+</style>

@@ -1,0 +1,452 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<MarketingLayout title="About - SubMeow" description="Learn the story behind SubMeow, the subscription tracker with a friendly cat mascot. Our mission is to help people take control of their recurring payments.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-primary-50 via-cream/30 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">About Us</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          About <span class="text-accent-500">SubMeow</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-8 leading-relaxed">
+          We are on a mission to help everyone take control of their subscriptions, save money, and never be surprised by an unexpected charge again.
+        </p>
+
+        <!-- Bouncing Cat -->
+        <div class="text-6xl md:text-7xl hero-bounce" aria-hidden="true">&#128570;</div>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-primary-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+
+    <!-- Bottom gradient fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Our Story Section
+       ========================================== -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Text Column -->
+        <div>
+          <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Our Story</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-6">How SubMeow was born</h2>
+          <div class="space-y-4 text-light-text leading-relaxed">
+            <p>
+              It started with a credit card statement that made no sense. A developer staring at $247 in monthly charges for services they barely remembered signing up for. Three forgotten trials that had auto-renewed. A gym membership from two cities ago. Sound familiar?
+            </p>
+            <p>
+              Frustrated by the lack of simple, privacy-respecting tools to track recurring payments, they decided to build one. The goal was straightforward: create a beautiful, intuitive app that anyone could use to see exactly where their money goes every month.
+            </p>
+            <p>
+              But it needed personality. Financial tools are often cold and intimidating. That is when <strong class="text-dark-text">Sub</strong> appeared -- a friendly cat mascot who watches over your subscriptions, nudges you before renewals, and celebrates when you save money. Because managing finances should feel good, not stressful.
+            </p>
+            <p>
+              Today, SubMeow helps thousands of people across 13 languages save money and stay organized. And Sub is still here, purring away, making sure no subscription slips through the cracks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Illustration Column: Story Timeline -->
+        <div class="relative" aria-hidden="true">
+          <div class="max-w-md mx-auto lg:ml-auto">
+            <!-- Timeline -->
+            <div class="relative pl-8 border-l-2 border-accent-200 space-y-8">
+              <!-- Timeline Item 1 -->
+              <div class="relative">
+                <div class="absolute -left-[2.45rem] w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center">
+                  <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-5">
+                  <p class="text-xs font-semibold text-accent-500 mb-1">The Problem</p>
+                  <p class="text-sm text-dark-text font-semibold mb-1">$247 in surprise charges</p>
+                  <p class="text-xs text-light-text">Forgotten trials and unused subscriptions piling up</p>
+                  <span class="text-2xl mt-2 block">&#128553;</span>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2 -->
+              <div class="relative">
+                <div class="absolute -left-[2.45rem] w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center">
+                  <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-5">
+                  <p class="text-xs font-semibold text-primary-500 mb-1">The Idea</p>
+                  <p class="text-sm text-dark-text font-semibold mb-1">Build something better</p>
+                  <p class="text-xs text-light-text">A simple, privacy-first subscription tracker</p>
+                  <span class="text-2xl mt-2 block">&#128161;</span>
+                </div>
+              </div>
+
+              <!-- Timeline Item 3 -->
+              <div class="relative">
+                <div class="absolute -left-[2.45rem] w-6 h-6 bg-success-500 rounded-full flex items-center justify-center">
+                  <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-5">
+                  <p class="text-xs font-semibold text-success-500 mb-1">The Mascot</p>
+                  <p class="text-sm text-dark-text font-semibold mb-1">Sub the cat joins the team</p>
+                  <p class="text-xs text-light-text">Because money management needs more personality</p>
+                  <span class="text-2xl mt-2 block">&#128570;</span>
+                </div>
+              </div>
+
+              <!-- Timeline Item 4 -->
+              <div class="relative">
+                <div class="absolute -left-[2.45rem] w-6 h-6 bg-warning-500 rounded-full flex items-center justify-center">
+                  <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-5">
+                  <p class="text-xs font-semibold text-warning-500 mb-1">Today</p>
+                  <p class="text-sm text-dark-text font-semibold mb-1">10,000+ happy users</p>
+                  <p class="text-xs text-light-text">Saving money across 13 languages worldwide</p>
+                  <span class="text-2xl mt-2 block">&#127881;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative blob -->
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-accent-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Mission & Values Section
+       ========================================== -->
+  <section class="bg-gradient-to-b from-cream/40 to-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Mission Statement -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Our Mission</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Making subscription management effortless for everyone</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-3xl mx-auto leading-relaxed">
+          We believe that everyone deserves a clear picture of their recurring expenses. SubMeow exists to give you that clarity -- without requiring your bank credentials, without selling your data, and without making it feel like a chore.
+        </p>
+      </div>
+
+      <!-- Values Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Simplicity -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-primary-500">
+          <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- Sparkles icon -->
+            <svg class="w-7 h-7 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Simplicity</h3>
+          <p class="text-light-text leading-relaxed">Making subscription management effortless. Add a subscription in seconds, see your totals instantly, and never wrestle with confusing dashboards.</p>
+        </div>
+
+        <!-- Transparency -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-accent-500">
+          <div class="w-14 h-14 bg-accent-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- Eye icon -->
+            <svg class="w-7 h-7 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Transparency</h3>
+          <p class="text-light-text leading-relaxed">No hidden fees, clear pricing, honest product. What you see is what you get. We practice the same transparency we help you achieve with your subscriptions.</p>
+        </div>
+
+        <!-- Privacy -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-success-500">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- Shield check icon -->
+            <svg class="w-7 h-7 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Privacy</h3>
+          <p class="text-light-text leading-relaxed">Your data belongs to you, not advertisers. We never ask for bank credentials, never sell your information, and encrypt everything end-to-end.</p>
+        </div>
+
+        <!-- Joy -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-warning-500">
+          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-5">
+            <!-- Heart icon -->
+            <svg class="w-7 h-7 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Joy</h3>
+          <p class="text-light-text leading-relaxed">Because managing money should not be boring. With Sub the cat by your side, tracking subscriptions becomes something you actually look forward to.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Meet Sub (Mascot) Section
+       ========================================== -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Meet the Mascot</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Say hello to Sub</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Your friendly feline companion who watches over all your subscriptions and keeps you informed</p>
+      </div>
+
+      <!-- Mascot Mood Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <!-- Happy Sub -->
+        <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 shadow-sm border border-green-100 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="text-6xl mb-4 mascot-bob mascot-bob-1">&#128570;</div>
+          <h3 class="text-lg font-bold text-dark-text mb-2">Happy Sub</h3>
+          <p class="text-sm text-light-text">When you save money by cancelling an unused subscription</p>
+          <span class="inline-block mt-3 bg-green-100 text-success-500 px-3 py-1 rounded-full text-xs font-semibold">Saving mode</span>
+        </div>
+
+        <!-- Sad Sub -->
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 shadow-sm border border-blue-100 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="text-6xl mb-4 mascot-bob mascot-bob-2">&#128575;</div>
+          <h3 class="text-lg font-bold text-dark-text mb-2">Worried Sub</h3>
+          <p class="text-sm text-light-text">When you might be overpaying for a service you rarely use</p>
+          <span class="inline-block mt-3 bg-blue-100 text-primary-500 px-3 py-1 rounded-full text-xs font-semibold">Alert mode</span>
+        </div>
+
+        <!-- Excited Sub -->
+        <div class="bg-gradient-to-br from-accent-50 to-white rounded-2xl p-6 shadow-sm border border-accent-100 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="text-6xl mb-4 mascot-bob mascot-bob-3">&#128568;</div>
+          <h3 class="text-lg font-bold text-dark-text mb-2">Excited Sub</h3>
+          <p class="text-sm text-light-text">When new features drop and there is something cool to explore</p>
+          <span class="inline-block mt-3 bg-accent-100 text-accent-500 px-3 py-1 rounded-full text-xs font-semibold">Celebration mode</span>
+        </div>
+
+        <!-- Smart Sub -->
+        <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6 shadow-sm border border-purple-100 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="text-6xl mb-4 mascot-bob mascot-bob-4">&#128572;</div>
+          <h3 class="text-lg font-bold text-dark-text mb-2">Smart Sub</h3>
+          <p class="text-sm text-light-text">When crunching your analytics and finding insights to share</p>
+          <span class="inline-block mt-3 bg-purple-100 text-purple-500 px-3 py-1 rounded-full text-xs font-semibold">Insights mode</span>
+        </div>
+      </div>
+
+      <!-- Fun fact -->
+      <div class="mt-12 max-w-2xl mx-auto bg-cream/50 rounded-2xl p-6 border border-accent-200 text-center">
+        <p class="text-light-text">
+          <span class="text-2xl mr-2" aria-hidden="true">&#128062;</span>
+          <strong class="text-dark-text">Fun fact:</strong> Sub changes expressions in the app based on your spending patterns. Saving money? Sub is thrilled. Overpaying? Sub will let you know with a gentle nudge.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       By The Numbers Section
+       ========================================== -->
+  <section class="bg-gradient-to-r from-cream/80 to-accent-100/80 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <span class="inline-block bg-white text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">By The Numbers</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-4">SubMeow in numbers</h2>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+        <!-- Users -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-sm border border-white">
+          <p class="text-3xl md:text-4xl font-bold text-dark-text mb-2">10K+</p>
+          <p class="text-sm text-light-text font-medium">Active Users</p>
+        </div>
+
+        <!-- Tracked -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-sm border border-white">
+          <p class="text-3xl md:text-4xl font-bold text-dark-text mb-2">$2M+</p>
+          <p class="text-sm text-light-text font-medium">Subscriptions Tracked</p>
+        </div>
+
+        <!-- Services -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-sm border border-white">
+          <p class="text-3xl md:text-4xl font-bold text-dark-text mb-2">270+</p>
+          <p class="text-sm text-light-text font-medium">Supported Services</p>
+        </div>
+
+        <!-- Languages -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-sm border border-white">
+          <p class="text-3xl md:text-4xl font-bold text-dark-text mb-2">13</p>
+          <p class="text-sm text-light-text font-medium">Languages</p>
+        </div>
+
+        <!-- Rating -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-sm border border-white col-span-2 md:col-span-1">
+          <p class="text-3xl md:text-4xl font-bold text-dark-text mb-2">4.9 <span class="text-warning-500">&#9733;</span></p>
+          <p class="text-sm text-light-text font-medium">App Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Contact CTA Section
+       ========================================== -->
+  <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <!-- Cat Mascot -->
+      <div class="text-7xl md:text-8xl mb-8" aria-hidden="true">&#128570;</div>
+
+      <!-- Headline -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Want to say hi?</h2>
+
+      <!-- Subtext -->
+      <p class="text-lg md:text-xl text-light-text mb-12 max-w-2xl mx-auto leading-relaxed">
+        We would love to hear from you. Whether you have feedback, a question, or just want to chat about cats and subscriptions, reach out anytime.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+        <Button variant="primary" size="lg" href="/contact" class="px-10 py-4 text-lg">
+          <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Contact Us
+        </Button>
+        <Button variant="outline" size="lg" href="https://x.com/submeow" class="px-10 py-4 text-lg">
+          <svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+          Follow on X
+        </Button>
+      </div>
+
+      <!-- Social links row -->
+      <div class="flex items-center justify-center gap-6">
+        <!-- X / Twitter -->
+        <a
+          href="https://x.com/submeow"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center text-light-text hover:text-dark-text hover:shadow-md transition-all"
+          aria-label="Follow us on X"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://instagram.com/submeow"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center text-light-text hover:text-dark-text hover:shadow-md transition-all"
+          aria-label="Follow us on Instagram"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a
+          href="https://tiktok.com/@submeow"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center text-light-text hover:text-dark-text hover:shadow-md transition-all"
+          aria-label="Follow us on TikTok"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.98a8.2 8.2 0 004.76 1.52V7.05a4.84 4.84 0 01-1-.36z" />
+          </svg>
+        </a>
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/orklar"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center text-light-text hover:text-dark-text hover:shadow-md transition-all"
+          aria-label="View our GitHub"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* ==========================================
+     Hero Bounce Animation
+     ========================================== */
+  @keyframes heroBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .hero-bounce {
+    animation: heroBounce 2.5s ease-in-out infinite;
+  }
+
+  /* ==========================================
+     Mascot Bob Animation (staggered)
+     ========================================== */
+  @keyframes mascotBob {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .mascot-bob {
+    animation: mascotBob 3s ease-in-out infinite;
+  }
+
+  .mascot-bob-1 {
+    animation-delay: 0s;
+  }
+
+  .mascot-bob-2 {
+    animation-delay: 0.5s;
+  }
+
+  .mascot-bob-3 {
+    animation-delay: 1s;
+  }
+
+  .mascot-bob-4 {
+    animation-delay: 1.5s;
+  }
+
+  /* ==========================================
+     Reduced Motion
+     ========================================== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bounce,
+    .mascot-bob {
+      animation: none;
+    }
+  }
+</style>

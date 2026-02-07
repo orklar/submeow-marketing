@@ -1,0 +1,489 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+
+const lastUpdated = 'February 1, 2026';
+
+const sections = [
+  { id: 'acceptance-of-terms', title: 'Acceptance of Terms' },
+  { id: 'description-of-service', title: 'Description of Service' },
+  { id: 'account-registration', title: 'Account Registration' },
+  { id: 'free-and-premium-plans', title: 'Free and Premium Plans' },
+  { id: 'user-conduct', title: 'User Conduct' },
+  { id: 'intellectual-property', title: 'Intellectual Property' },
+  { id: 'data-ownership', title: 'Data Ownership' },
+  { id: 'limitation-of-liability', title: 'Limitation of Liability' },
+  { id: 'termination', title: 'Termination' },
+  { id: 'governing-law', title: 'Governing Law' },
+  { id: 'changes-to-terms', title: 'Changes to Terms' },
+  { id: 'contact', title: 'Contact' },
+];
+---
+
+<MarketingLayout title="Terms of Service - SubMeow" description="SubMeow's terms of service. Review the rules and guidelines for using our subscription tracking app and services.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-primary-50 via-cream/30 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Legal</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          Terms of <span class="text-primary-500">Service</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-4 leading-relaxed">
+          Please read these terms carefully before using SubMeow. They outline the rules and guidelines that govern your use of our subscription tracking service.
+        </p>
+
+        <!-- Last updated -->
+        <p class="text-sm text-light-text">
+          Last updated: <time datetime="2026-02-01">{lastUpdated}</time>
+        </p>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-primary-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+
+    <!-- Bottom gradient fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Content Section (TOC sidebar + body)
+       ========================================== -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12 lg:gap-16">
+
+        <!-- Table of Contents (sidebar on desktop, inline on mobile) -->
+        <aside>
+          <nav class="lg:sticky lg:top-8" aria-label="Table of contents">
+            <h2 class="text-sm font-semibold text-dark-text uppercase tracking-wider mb-4">Table of Contents</h2>
+            <ol class="space-y-2">
+              {sections.map((section, index) => (
+                <li>
+                  <a
+                    href={`#${section.id}`}
+                    class="flex items-start gap-3 text-sm text-light-text hover:text-primary-500 transition-colors py-1 group"
+                  >
+                    <span class="shrink-0 w-6 h-6 rounded-full bg-primary-50 text-primary-500 text-xs font-semibold flex items-center justify-center group-hover:bg-primary-100 transition-colors">
+                      {index + 1}
+                    </span>
+                    <span class="leading-snug">{section.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </aside>
+
+        <!-- Terms Content -->
+        <div class="legal-content">
+
+          <!-- 1. Acceptance of Terms -->
+          <section id="acceptance-of-terms" class="legal-section">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+              By accessing or using SubMeow ("the Service"), including our mobile applications, web application, and marketing website, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not use the Service.
+            </p>
+            <p>
+              These Terms constitute a legally binding agreement between you ("User", "you", or "your") and SubMeow ("we", "us", or "our"). By creating an account, downloading our app, or otherwise accessing the Service, you acknowledge that you have read, understood, and agree to be bound by these Terms.
+            </p>
+            <p>
+              You must be at least 13 years of age to use SubMeow. If you are between the ages of 13 and 18, you must have the consent of a parent or legal guardian to use the Service.
+            </p>
+          </section>
+
+          <!-- 2. Description of Service -->
+          <section id="description-of-service" class="legal-section">
+            <h2>2. Description of Service</h2>
+            <p>
+              SubMeow is a subscription tracking application that helps users manage and monitor their recurring payments. The Service provides the following features:
+            </p>
+            <ul>
+              <li>Tracking and organizing active subscriptions across multiple categories</li>
+              <li>Calculating total monthly, yearly, and lifetime spending on subscriptions</li>
+              <li>Sending reminders before subscription renewals and free trial expirations</li>
+              <li>Providing analytics and insights into spending patterns</li>
+              <li>Syncing subscription data across multiple devices</li>
+              <li>Supporting multiple currencies and 13 languages</li>
+              <li>A guest mode for local-only usage without account creation</li>
+            </ul>
+            <p>
+              SubMeow is an information management tool. We do not directly interact with your bank, payment providers, or subscription services. We do not process payments, cancel subscriptions, or make changes to your accounts with third-party services on your behalf.
+            </p>
+          </section>
+
+          <!-- 3. Account Registration -->
+          <section id="account-registration" class="legal-section">
+            <h2>3. Account Registration</h2>
+            <p>
+              To access certain features of SubMeow, you may need to create an account. When registering, you agree to:
+            </p>
+            <ul>
+              <li>Provide accurate, current, and complete information during registration</li>
+              <li>Keep your account information up to date</li>
+              <li>Maintain the security of your password and account credentials</li>
+              <li>Immediately notify us of any unauthorized use of your account</li>
+              <li>Accept responsibility for all activities that occur under your account</li>
+            </ul>
+
+            <h3>Authentication Methods</h3>
+            <p>You may create an account using:</p>
+            <ul>
+              <li>Email and password</li>
+              <li>Google OAuth (Sign in with Google)</li>
+              <li>Apple OAuth (Sign in with Apple)</li>
+            </ul>
+
+            <h3>Guest Mode</h3>
+            <p>
+              SubMeow offers a guest mode that allows you to use the app without creating an account. In guest mode, your data is stored locally on your device only and is not synced to our servers. If you uninstall the app or clear its data, your guest mode information will be permanently lost. You may convert a guest session to a full account at any time.
+            </p>
+          </section>
+
+          <!-- 4. Free and Premium Plans -->
+          <section id="free-and-premium-plans" class="legal-section">
+            <h2>4. Free and Premium Plans</h2>
+
+            <h3>Free Plan</h3>
+            <p>SubMeow offers a free tier that includes:</p>
+            <ul>
+              <li>Tracking up to 5 active subscriptions</li>
+              <li>Basic spending summaries and analytics</li>
+              <li>Reminder notifications for upcoming renewals</li>
+              <li>Access to the subscription library of 270+ services</li>
+            </ul>
+
+            <h3>Premium Plan</h3>
+            <p>SubMeow Premium unlocks additional features, including:</p>
+            <ul>
+              <li>Unlimited subscription tracking</li>
+              <li>Advanced analytics, charts, and spending insights</li>
+              <li>OCR-based receipt scanning for automatic subscription detection</li>
+              <li>Custom categories and tags</li>
+              <li>Data export in CSV and JSON formats</li>
+              <li>Priority support</li>
+            </ul>
+
+            <h3>Billing and Payments</h3>
+            <p>
+              Premium subscriptions are billed through the Google Play Store or Apple App Store, depending on your platform. All payments are processed by the respective app store, and their terms and refund policies apply. SubMeow does not directly collect or store your payment card details.
+            </p>
+
+            <h3>Refunds</h3>
+            <p>
+              Refund requests for Premium subscriptions should be directed to the app store through which the purchase was made. We will cooperate with app store refund processes as applicable. Refund eligibility is determined by the policies of Google Play or the Apple App Store.
+            </p>
+          </section>
+
+          <!-- 5. User Conduct -->
+          <section id="user-conduct" class="legal-section">
+            <h2>5. User Conduct</h2>
+            <p>When using SubMeow, you agree not to:</p>
+            <ul>
+              <li>Use the Service for any unlawful purpose or in violation of any applicable laws</li>
+              <li>Attempt to gain unauthorized access to the Service, other accounts, or our systems</li>
+              <li>Interfere with or disrupt the integrity or performance of the Service</li>
+              <li>Reverse engineer, decompile, or disassemble any part of the Service</li>
+              <li>Use automated scripts, bots, or scrapers to access or interact with the Service</li>
+              <li>Upload or transmit malicious code, viruses, or harmful data</li>
+              <li>Impersonate another person or entity</li>
+              <li>Use the Service to harass, abuse, or harm others</li>
+              <li>Attempt to circumvent any access restrictions or usage limits</li>
+            </ul>
+            <p>
+              We reserve the right to suspend or terminate your account if we reasonably believe you are violating these conduct guidelines, with or without prior notice.
+            </p>
+          </section>
+
+          <!-- 6. Intellectual Property -->
+          <section id="intellectual-property" class="legal-section">
+            <h2>6. Intellectual Property</h2>
+            <p>
+              The SubMeow Service, including but not limited to its software, design, text, graphics, logos, icons, the Sub cat mascot and all associated artwork, user interface elements, and underlying code, is the intellectual property of SubMeow and is protected by copyright, trademark, and other intellectual property laws.
+            </p>
+
+            <h3>Your License</h3>
+            <p>
+              We grant you a limited, non-exclusive, non-transferable, revocable license to use SubMeow for your personal, non-commercial purposes in accordance with these Terms. This license does not include the right to:
+            </p>
+            <ul>
+              <li>Modify, copy, or distribute the Service or any part of it</li>
+              <li>Use SubMeow's branding, mascot, or design elements without written permission</li>
+              <li>Create derivative works based on the Service</li>
+              <li>Sublicense, sell, or otherwise commercially exploit the Service</li>
+            </ul>
+
+            <h3>Trademarks</h3>
+            <p>
+              "SubMeow", the SubMeow logo, and the Sub cat mascot are trademarks of SubMeow. You may not use these marks without our prior written consent, except as reasonably necessary to refer to our Service (for example, in an app review or blog post).
+            </p>
+          </section>
+
+          <!-- 7. Data Ownership -->
+          <section id="data-ownership" class="legal-section">
+            <h2>7. Data Ownership</h2>
+
+            <h3>Your Data</h3>
+            <p>
+              You retain full ownership of the subscription data and personal information you enter into SubMeow. We do not claim any ownership rights over your content. Your data belongs to you.
+            </p>
+
+            <h3>License to Use Your Data</h3>
+            <p>
+              By using the Service, you grant SubMeow a limited license to store, process, and display your data solely for the purpose of providing the Service to you. This includes:
+            </p>
+            <ul>
+              <li>Storing your subscription data on our servers for cross-device synchronization</li>
+              <li>Processing your data to calculate analytics, summaries, and insights</li>
+              <li>Displaying your data within the app interface</li>
+              <li>Creating anonymized, aggregated statistics to improve the Service (your individual data is never shared)</li>
+            </ul>
+
+            <h3>Data Portability</h3>
+            <p>
+              You may export your data at any time using the export features available in the app. We support export in CSV and JSON formats. Upon account deletion, you will have the opportunity to export your data before it is permanently removed.
+            </p>
+
+            <h3>Data Handling</h3>
+            <p>
+              For detailed information about how we collect, use, and protect your data, please refer to our <a href="/privacy">Privacy Policy</a>.
+            </p>
+          </section>
+
+          <!-- 8. Limitation of Liability -->
+          <section id="limitation-of-liability" class="legal-section">
+            <h2>8. Limitation of Liability</h2>
+            <p>
+              To the maximum extent permitted by applicable law, SubMeow and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:
+            </p>
+            <ul>
+              <li>Your use of or inability to use the Service</li>
+              <li>Any unauthorized access to or alteration of your data</li>
+              <li>Any errors, inaccuracies, or omissions in the Service's content or features</li>
+              <li>Any interruption or cessation of the Service</li>
+              <li>Any financial decisions you make based on information displayed in the Service</li>
+            </ul>
+
+            <h3>Disclaimer of Warranties</h3>
+            <p>
+              The Service is provided on an "as is" and "as available" basis without warranties of any kind, whether express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Service will be uninterrupted, error-free, or completely secure.
+            </p>
+
+            <h3>Financial Disclaimer</h3>
+            <p>
+              SubMeow is an information management tool and does not provide financial, tax, or legal advice. The spending summaries, analytics, and insights provided by the Service are for informational purposes only. You should not rely solely on SubMeow for making financial decisions. We recommend consulting a qualified financial advisor for financial planning.
+            </p>
+          </section>
+
+          <!-- 9. Termination -->
+          <section id="termination" class="legal-section">
+            <h2>9. Termination</h2>
+
+            <h3>Termination by You</h3>
+            <p>
+              You may terminate your account at any time by using the account deletion feature in the app settings. Upon termination:
+            </p>
+            <ul>
+              <li>Your account and associated data will be scheduled for permanent deletion</li>
+              <li>Data deletion will be completed within 30 days of your request</li>
+              <li>Any active Premium subscription will continue until the end of the current billing period (no pro-rata refunds)</li>
+              <li>You should cancel your Premium subscription through the respective app store before deleting your account</li>
+            </ul>
+
+            <h3>Termination by Us</h3>
+            <p>
+              We reserve the right to suspend or terminate your account if:
+            </p>
+            <ul>
+              <li>You violate these Terms of Service or our User Conduct guidelines</li>
+              <li>Your account has been inactive for more than 24 months</li>
+              <li>We are required to do so by law or legal process</li>
+              <li>We reasonably believe your account has been compromised</li>
+              <li>Continued provision of the Service to you is no longer commercially viable</li>
+            </ul>
+            <p>
+              Where possible, we will provide advance notice before terminating your account and give you an opportunity to export your data. In cases of severe Terms violations or legal requirements, immediate termination may occur without prior notice.
+            </p>
+          </section>
+
+          <!-- 10. Governing Law -->
+          <section id="governing-law" class="legal-section">
+            <h2>10. Governing Law</h2>
+            <p>
+              These Terms shall be governed by and construed in accordance with the laws of the European Union and the applicable national laws of the jurisdiction in which SubMeow operates, without regard to conflict of law principles.
+            </p>
+
+            <h3>Dispute Resolution</h3>
+            <p>
+              In the event of any dispute arising from or relating to these Terms or the Service, the parties agree to first attempt to resolve the matter through good-faith negotiation. If the dispute cannot be resolved through negotiation within 30 days, either party may pursue resolution through the courts of competent jurisdiction.
+            </p>
+
+            <h3>EU Consumer Rights</h3>
+            <p>
+              If you are a consumer residing in the European Union, you benefit from mandatory provisions of the consumer protection laws of your country of residence. Nothing in these Terms shall affect your rights as a consumer under applicable EU law, including the right to withdraw from a digital content purchase within 14 days where applicable.
+            </p>
+          </section>
+
+          <!-- 11. Changes to Terms -->
+          <section id="changes-to-terms" class="legal-section">
+            <h2>11. Changes to Terms</h2>
+            <p>
+              We may update these Terms of Service from time to time to reflect changes to our Service, legal requirements, or business practices. When we make changes, we will:
+            </p>
+            <ul>
+              <li>Update the "Last updated" date at the top of this page</li>
+              <li>Notify registered users via email at least 14 days before significant changes take effect</li>
+              <li>Display a prominent in-app notification summarizing the key changes</li>
+              <li>Provide a clear comparison of what has changed</li>
+            </ul>
+            <p>
+              Your continued use of SubMeow after the updated Terms take effect constitutes your acceptance of the revised Terms. If you do not agree to the updated Terms, you must stop using the Service and may delete your account.
+            </p>
+          </section>
+
+          <!-- 12. Contact -->
+          <section id="contact" class="legal-section">
+            <h2>12. Contact</h2>
+            <p>
+              If you have any questions, concerns, or feedback regarding these Terms of Service, please reach out to us:
+            </p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:legal@submeow.com">legal@submeow.com</a></li>
+              <li><strong>Contact page:</strong> <a href="/contact">submeow.com/contact</a></li>
+            </ul>
+            <p>
+              For privacy-related inquiries, please contact <a href="mailto:privacy@submeow.com">privacy@submeow.com</a> or review our <a href="/privacy">Privacy Policy</a>.
+            </p>
+            <p>
+              We will respond to your inquiry within 30 days.
+            </p>
+          </section>
+
+          <!-- Cross-link to Privacy Policy -->
+          <div class="mt-16 pt-8 border-t border-gray-200">
+            <div class="bg-primary-50 rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-dark-text mb-1">Privacy Policy</h3>
+                <p class="text-sm text-light-text">Learn how SubMeow collects, uses, and protects your personal information.</p>
+              </div>
+              <a href="/privacy" class="inline-flex items-center gap-2 bg-primary-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-primary-600 transition-colors shrink-0">
+                Read Policy
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* ==========================================
+     Legal Content Typography
+     ========================================== */
+  .legal-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-dark-text);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .legal-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-dark-text);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .legal-content p {
+    color: var(--color-light-text);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .legal-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .legal-content ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--color-light-text);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+  }
+
+  .legal-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-primary-400);
+  }
+
+  .legal-content a {
+    color: var(--color-primary-500);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+  }
+
+  .legal-content a:hover {
+    color: var(--color-primary-700);
+  }
+
+  .legal-content strong {
+    color: var(--color-dark-text);
+    font-weight: 600;
+  }
+
+  .legal-section {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .legal-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Smooth scroll for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (min-width: 1024px) {
+    .legal-content h2 {
+      font-size: 1.75rem;
+    }
+  }
+</style>

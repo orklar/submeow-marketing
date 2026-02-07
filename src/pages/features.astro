@@ -1,0 +1,831 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<MarketingLayout title="Features - SubMeow" description="Discover all the powerful features SubMeow offers to help you track subscriptions, get smart reminders, scan receipts, and save money.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-white via-orange-50 to-amber-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Features</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          Everything <span class="text-accent-500">Sub</span> can do for you
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-8 leading-relaxed">
+          Powerful, cat-themed features that make subscription tracking effortless. From smart reminders to receipt scanning, Sub has you covered.
+        </p>
+
+        <!-- Bouncing Cat -->
+        <div class="text-6xl md:text-7xl mb-10 hero-bounce" aria-hidden="true">&#128570;</div>
+
+        <!-- Trust Pills -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+          <span class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm border border-gray-100 text-sm text-dark-text font-medium">
+            <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+            No credit card
+          </span>
+          <span class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm border border-gray-100 text-sm text-dark-text font-medium">
+            <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+            Privacy-first
+          </span>
+          <span class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm border border-gray-100 text-sm text-dark-text font-medium">
+            <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+            Works offline
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-accent-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-primary-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+
+    <!-- Bottom gradient fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Feature Deep Dives
+       ========================================== -->
+
+  <!-- Feature 1: Subscription Tracking (Blue) — text left, mockup right -->
+  <section class="py-16 md:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Text -->
+        <div>
+          <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">All your subscriptions in one place</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Stop juggling spreadsheets and sticky notes. Sub keeps every recurring payment organized, searchable, and always up to date.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Manual Entry</p>
+                <p class="text-sm text-light-text">Add any subscription in seconds with our intuitive form</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Popular Services Library (270+)</p>
+                <p class="text-sm text-light-text">Pick from pre-loaded services with pricing already filled in</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Custom Categories</p>
+                <p class="text-sm text-light-text">Organize by entertainment, productivity, health, and more</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Mockup: Subscription List -->
+        <div class="relative" aria-hidden="true">
+          <div class="bg-white rounded-3xl shadow-2xl border border-gray-200 p-6 max-w-sm mx-auto lg:ml-auto">
+            <!-- Mock header -->
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="text-lg font-bold text-dark-text">My Subscriptions</h3>
+              <span class="text-xs bg-primary-100 text-primary-500 px-2.5 py-1 rounded-full font-semibold">3 active</span>
+            </div>
+            <!-- Mock items -->
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-3">
+                <div class="w-10 h-10 rounded-lg bg-red-500 shrink-0 flex items-center justify-center text-white text-sm font-bold">N</div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm font-semibold text-dark-text">Netflix</p>
+                  <p class="text-xs text-light-text">Entertainment</p>
+                </div>
+                <p class="text-sm font-bold text-dark-text">$15.99</p>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-3">
+                <div class="w-10 h-10 rounded-lg bg-green-500 shrink-0 flex items-center justify-center text-white text-sm font-bold">S</div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm font-semibold text-dark-text">Spotify</p>
+                  <p class="text-xs text-light-text">Music</p>
+                </div>
+                <p class="text-sm font-bold text-dark-text">$9.99</p>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-3">
+                <div class="w-10 h-10 rounded-lg bg-purple-600 shrink-0 flex items-center justify-center text-white text-sm font-bold">A</div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm font-semibold text-dark-text">Adobe CC</p>
+                  <p class="text-xs text-light-text">Productivity</p>
+                </div>
+                <p class="text-sm font-bold text-dark-text">$54.99</p>
+              </div>
+            </div>
+            <!-- Mock total -->
+            <div class="mt-4 pt-4 border-t border-gray-200 flex items-center justify-between">
+              <p class="text-sm text-light-text">Monthly Total</p>
+              <p class="text-lg font-bold text-primary-500">$80.97</p>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-primary-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 2: Smart Reminders (Orange) — mockup left, text right -->
+  <section class="py-16 md:py-24 bg-gradient-to-b from-white to-accent-50/30 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Mockup: Reminder Notifications (first on mobile, second on desktop) -->
+        <div class="relative order-2 lg:order-1" aria-hidden="true">
+          <div class="max-w-sm mx-auto lg:mr-auto space-y-4">
+            <!-- Notification 1 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-accent-200 p-4 flex items-start gap-3 mockup-slide-in-1">
+              <div class="w-10 h-10 rounded-full bg-accent-100 shrink-0 flex items-center justify-center">
+                <svg class="w-5 h-5 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-dark-text">Trial Ending Soon</p>
+                <p class="text-xs text-light-text mt-0.5">Adobe CC trial expires in 3 days. Cancel or keep?</p>
+                <p class="text-xs text-accent-500 font-medium mt-1">2 min ago</p>
+              </div>
+            </div>
+            <!-- Notification 2 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-amber-200 p-4 flex items-start gap-3 mockup-slide-in-2">
+              <div class="w-10 h-10 rounded-full bg-amber-100 shrink-0 flex items-center justify-center">
+                <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-dark-text">Renewal Tomorrow</p>
+                <p class="text-xs text-light-text mt-0.5">Netflix ($15.99) renews tomorrow. Ready?</p>
+                <p class="text-xs text-amber-500 font-medium mt-1">1 hour ago</p>
+              </div>
+            </div>
+            <!-- Notification 3 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-green-200 p-4 flex items-start gap-3 mockup-slide-in-3">
+              <div class="w-10 h-10 rounded-full bg-green-100 shrink-0 flex items-center justify-center">
+                <svg class="w-5 h-5 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-dark-text">Saved $12.99!</p>
+                <p class="text-xs text-light-text mt-0.5">You cancelled Hulu before the trial ended.</p>
+                <p class="text-xs text-success-500 font-medium mt-1">Yesterday</p>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-accent-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+        <!-- Text -->
+        <div class="order-1 lg:order-2">
+          <div class="w-14 h-14 bg-accent-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">Never miss a payment or trial end</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Sub watches your subscriptions around the clock and nudges you at the right moment, so forgotten trials and surprise charges become a thing of the past.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Trial Expiry Alerts</p>
+                <p class="text-sm text-light-text">Get notified days before free trials auto-convert to paid</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Renewal Reminders</p>
+                <p class="text-sm text-light-text">Know exactly when each subscription renews and how much</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Custom Notification Timing</p>
+                <p class="text-sm text-light-text">Choose when to be reminded: 1 day, 3 days, or 1 week ahead</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 3: OCR Scanning (Green) — text left, mockup right -->
+  <section class="py-16 md:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Text -->
+        <div>
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">Snap a receipt, we do the rest</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Point your camera at any receipt or confirmation email, and Sub will read the details automatically. Adding subscriptions has never been faster.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Receipt Recognition</p>
+                <p class="text-sm text-light-text">Advanced OCR reads service names, amounts, and dates</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Auto-fill Details</p>
+                <p class="text-sm text-light-text">Scanned data fills the form so you just tap confirm</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Multi-language Support</p>
+                <p class="text-sm text-light-text">Reads receipts in 13 supported languages</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Mockup: Camera / Scan UI -->
+        <div class="relative" aria-hidden="true">
+          <div class="bg-gray-900 rounded-3xl shadow-2xl p-6 max-w-sm mx-auto lg:ml-auto overflow-hidden">
+            <!-- Mock viewfinder -->
+            <div class="relative bg-gray-800 rounded-2xl aspect-[3/4] flex items-center justify-center">
+              <!-- Scan corners -->
+              <div class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-success-500 rounded-tl-lg"></div>
+              <div class="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-success-500 rounded-tr-lg"></div>
+              <div class="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-success-500 rounded-bl-lg"></div>
+              <div class="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-success-500 rounded-br-lg"></div>
+              <!-- Scan line -->
+              <div class="absolute left-6 right-6 h-0.5 bg-gradient-to-r from-transparent via-success-500 to-transparent scan-line"></div>
+              <!-- Fake receipt in center -->
+              <div class="bg-white rounded-lg p-4 w-48 shadow-lg">
+                <div class="text-center mb-3">
+                  <p class="text-xs font-bold text-gray-800">RECEIPT</p>
+                  <div class="w-full h-px bg-gray-200 mt-2"></div>
+                </div>
+                <div class="space-y-1.5">
+                  <div class="flex justify-between">
+                    <span class="text-[10px] text-gray-600">Spotify Premium</span>
+                    <span class="text-[10px] font-bold text-gray-800">$9.99</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-[10px] text-gray-600">Date</span>
+                    <span class="text-[10px] text-gray-600">Feb 01, 2026</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-[10px] text-gray-600">Billing</span>
+                    <span class="text-[10px] text-gray-600">Monthly</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Detected badge -->
+            <div class="mt-4 bg-success-500/20 border border-success-500/40 rounded-xl px-4 py-2.5 flex items-center gap-2">
+              <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <p class="text-xs text-success-500 font-semibold">Detected: Spotify Premium - $9.99/mo</p>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-green-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 4: Spending Analytics (Purple/Indigo) — mockup left, text right -->
+  <section class="py-16 md:py-24 bg-gradient-to-b from-white to-purple-50/30 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Mockup: Charts (first on mobile, second on desktop) -->
+        <div class="relative order-2 lg:order-1" aria-hidden="true">
+          <div class="bg-white rounded-3xl shadow-2xl border border-gray-200 p-6 max-w-sm mx-auto lg:mr-auto">
+            <!-- Mock header -->
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="text-lg font-bold text-dark-text">Spending</h3>
+              <span class="text-xs bg-purple-100 text-purple-600 px-2.5 py-1 rounded-full font-semibold">This Month</span>
+            </div>
+            <!-- Mock total -->
+            <p class="text-3xl font-bold text-dark-text mb-1">$142.96</p>
+            <p class="text-sm text-success-500 font-medium mb-6">-$23.00 vs last month</p>
+            <!-- Mock bar chart -->
+            <div class="flex items-end gap-2 h-32 mb-6">
+              <div class="flex-1 flex flex-col items-center gap-1">
+                <div class="w-full bg-purple-200 rounded-t-md" style="height: 45%"></div>
+                <span class="text-[10px] text-light-text">Sep</span>
+              </div>
+              <div class="flex-1 flex flex-col items-center gap-1">
+                <div class="w-full bg-purple-300 rounded-t-md" style="height: 62%"></div>
+                <span class="text-[10px] text-light-text">Oct</span>
+              </div>
+              <div class="flex-1 flex flex-col items-center gap-1">
+                <div class="w-full bg-purple-400 rounded-t-md" style="height: 80%"></div>
+                <span class="text-[10px] text-light-text">Nov</span>
+              </div>
+              <div class="flex-1 flex flex-col items-center gap-1">
+                <div class="w-full bg-purple-300 rounded-t-md" style="height: 55%"></div>
+                <span class="text-[10px] text-light-text">Dec</span>
+              </div>
+              <div class="flex-1 flex flex-col items-center gap-1">
+                <div class="w-full bg-purple-500 rounded-t-md" style="height: 70%"></div>
+                <span class="text-[10px] text-light-text">Jan</span>
+              </div>
+              <div class="flex-1 flex flex-col items-center gap-1">
+                <div class="w-full bg-indigo-500 rounded-t-md" style="height: 50%"></div>
+                <span class="text-[10px] text-dark-text font-semibold">Feb</span>
+              </div>
+            </div>
+            <!-- Mock category breakdown -->
+            <div class="space-y-2.5">
+              <div class="flex items-center gap-3">
+                <div class="w-2.5 h-2.5 rounded-full bg-red-400 shrink-0"></div>
+                <span class="text-xs text-dark-text flex-1">Entertainment</span>
+                <span class="text-xs font-semibold text-dark-text">$45.97</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-2.5 h-2.5 rounded-full bg-purple-400 shrink-0"></div>
+                <span class="text-xs text-dark-text flex-1">Productivity</span>
+                <span class="text-xs font-semibold text-dark-text">$67.98</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-2.5 h-2.5 rounded-full bg-blue-400 shrink-0"></div>
+                <span class="text-xs text-dark-text flex-1">Cloud & Storage</span>
+                <span class="text-xs font-semibold text-dark-text">$29.01</span>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-purple-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+        <!-- Text -->
+        <div class="order-1 lg:order-2">
+          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">See where your money really goes</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Beautiful charts and breakdowns show your spending patterns over time. Spot wasteful subscriptions and find opportunities to save.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-purple-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Monthly Trends</p>
+                <p class="text-sm text-light-text">Track how your spending changes month over month</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-purple-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Category Breakdown</p>
+                <p class="text-sm text-light-text">See spending by category at a glance</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-purple-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Savings Insights</p>
+                <p class="text-sm text-light-text">Get tips on subscriptions you could downgrade or cancel</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 5: Multi-Currency (Amber) — text left, mockup right -->
+  <section class="py-16 md:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Text -->
+        <div>
+          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">Track subscriptions in any currency</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Whether you pay in dollars, euros, yen, or lira, Sub converts everything to your preferred currency so you always see the true cost.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-amber-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">10+ Currencies</p>
+                <p class="text-sm text-light-text">USD, EUR, GBP, JPY, TRY, and many more supported</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-amber-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Auto-conversion</p>
+                <p class="text-sm text-light-text">See all totals converted to your home currency automatically</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-amber-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Regional Pricing</p>
+                <p class="text-sm text-light-text">Pre-loaded services show local prices for your region</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Mockup: Currency Cards -->
+        <div class="relative" aria-hidden="true">
+          <div class="max-w-sm mx-auto lg:ml-auto space-y-3">
+            <div class="bg-white rounded-2xl shadow-lg border border-amber-200 p-4 flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-blue-100 shrink-0 flex items-center justify-center text-xl font-bold text-blue-600">$</div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold text-dark-text">US Dollar</p>
+                <p class="text-xs text-light-text">Primary currency</p>
+              </div>
+              <p class="text-lg font-bold text-dark-text">$142.96</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-4 flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-green-100 shrink-0 flex items-center justify-center text-xl font-bold text-green-600">&euro;</div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold text-dark-text">Euro</p>
+                <p class="text-xs text-light-text">2 subscriptions</p>
+              </div>
+              <p class="text-lg font-bold text-dark-text">&euro;24.98</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-4 flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-red-100 shrink-0 flex items-center justify-center text-xl font-bold text-red-600">&pound;</div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold text-dark-text">British Pound</p>
+                <p class="text-xs text-light-text">1 subscription</p>
+              </div>
+              <p class="text-lg font-bold text-dark-text">&pound;9.99</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-4 flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-amber-100 shrink-0 flex items-center justify-center text-xl font-bold text-amber-600">&yen;</div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold text-dark-text">Japanese Yen</p>
+                <p class="text-xs text-light-text">1 subscription</p>
+              </div>
+              <p class="text-lg font-bold text-dark-text">&yen;1,280</p>
+            </div>
+            <!-- Converted total -->
+            <div class="bg-amber-50 rounded-2xl border-2 border-amber-300 p-4 text-center">
+              <p class="text-sm text-light-text mb-1">Converted Total (USD)</p>
+              <p class="text-2xl font-bold text-amber-600">$193.41</p>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-amber-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 6: Cloud Sync (Teal/Cyan) — mockup left, text right -->
+  <section class="py-16 md:py-24 bg-gradient-to-b from-white to-cyan-50/30 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Mockup: Device Sync (first on mobile, second on desktop) -->
+        <div class="relative order-2 lg:order-1" aria-hidden="true">
+          <div class="max-w-md mx-auto lg:mr-auto flex items-end justify-center gap-4">
+            <!-- Phone mockup -->
+            <div class="bg-gray-900 rounded-2xl p-2 w-36 shadow-2xl">
+              <div class="bg-white rounded-xl p-3">
+                <div class="flex items-center gap-1.5 mb-3">
+                  <div class="w-5 h-5 rounded bg-accent-500"></div>
+                  <p class="text-[9px] font-bold text-dark-text">SubMeow</p>
+                </div>
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-1.5 bg-gray-50 rounded-md p-1.5">
+                    <div class="w-4 h-4 rounded bg-red-500 shrink-0"></div>
+                    <span class="text-[8px] text-dark-text">Netflix</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-gray-50 rounded-md p-1.5">
+                    <div class="w-4 h-4 rounded bg-green-500 shrink-0"></div>
+                    <span class="text-[8px] text-dark-text">Spotify</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-gray-50 rounded-md p-1.5">
+                    <div class="w-4 h-4 rounded bg-purple-600 shrink-0"></div>
+                    <span class="text-[8px] text-dark-text">Adobe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Sync arrows -->
+            <div class="flex flex-col items-center gap-2 pb-8">
+              <svg class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" /></svg>
+              <span class="text-[10px] font-semibold text-cyan-500">Synced</span>
+            </div>
+            <!-- Desktop mockup -->
+            <div class="bg-gray-900 rounded-xl p-2 w-52 shadow-2xl">
+              <div class="bg-white rounded-lg p-3">
+                <div class="flex items-center gap-1.5 mb-3">
+                  <div class="w-5 h-5 rounded bg-accent-500"></div>
+                  <p class="text-[9px] font-bold text-dark-text">SubMeow Web</p>
+                  <span class="ml-auto text-[8px] bg-cyan-100 text-cyan-600 px-1.5 py-0.5 rounded-full font-medium">Live</span>
+                </div>
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-1.5 bg-gray-50 rounded-md p-1.5">
+                    <div class="w-4 h-4 rounded bg-red-500 shrink-0"></div>
+                    <span class="text-[8px] text-dark-text flex-1">Netflix</span>
+                    <span class="text-[8px] text-light-text">$15.99</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-gray-50 rounded-md p-1.5">
+                    <div class="w-4 h-4 rounded bg-green-500 shrink-0"></div>
+                    <span class="text-[8px] text-dark-text flex-1">Spotify</span>
+                    <span class="text-[8px] text-light-text">$9.99</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-gray-50 rounded-md p-1.5">
+                    <div class="w-4 h-4 rounded bg-purple-600 shrink-0"></div>
+                    <span class="text-[8px] text-dark-text flex-1">Adobe</span>
+                    <span class="text-[8px] text-light-text">$54.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-cyan-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+        <!-- Text -->
+        <div class="order-1 lg:order-2">
+          <div class="w-14 h-14 bg-cyan-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">Your data, everywhere</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Add a subscription on your phone and see it instantly on the web. Sub keeps everything in sync across all your devices securely.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-cyan-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Real-time Sync</p>
+                <p class="text-sm text-light-text">Changes appear on all devices within seconds</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-cyan-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Secure Encryption</p>
+                <p class="text-sm text-light-text">Your data is encrypted in transit and at rest</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-cyan-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Cross-platform</p>
+                <p class="text-sm text-light-text">Android, iOS, and web -- all perfectly in sync</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Integration Grid
+       ========================================== -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Integrations</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Works with your favorites</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">SubMeow comes pre-loaded with 270+ popular services. Just pick and go.</p>
+      </div>
+
+      <!-- Service Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <!-- Netflix -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-red-500 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">N</div>
+          <p class="text-sm font-semibold text-dark-text">Netflix</p>
+        </div>
+        <!-- Spotify -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-green-500 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">S</div>
+          <p class="text-sm font-semibold text-dark-text">Spotify</p>
+        </div>
+        <!-- Disney+ -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-blue-600 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">D+</div>
+          <p class="text-sm font-semibold text-dark-text">Disney+</p>
+        </div>
+        <!-- Adobe -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-red-600 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">Ai</div>
+          <p class="text-sm font-semibold text-dark-text">Adobe</p>
+        </div>
+        <!-- GitHub -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-gray-900 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">G</div>
+          <p class="text-sm font-semibold text-dark-text">GitHub</p>
+        </div>
+        <!-- Slack -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-purple-500 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">S</div>
+          <p class="text-sm font-semibold text-dark-text">Slack</p>
+        </div>
+        <!-- AWS -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-amber-500 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">A</div>
+          <p class="text-sm font-semibold text-dark-text">AWS</p>
+        </div>
+        <!-- Google Workspace -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-blue-500 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">G</div>
+          <p class="text-sm font-semibold text-dark-text">Google</p>
+        </div>
+        <!-- Apple -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-gray-800 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">A</div>
+          <p class="text-sm font-semibold text-dark-text">Apple</p>
+        </div>
+        <!-- Microsoft 365 -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-blue-700 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">M</div>
+          <p class="text-sm font-semibold text-dark-text">Microsoft</p>
+        </div>
+        <!-- Dropbox -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-blue-400 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">D</div>
+          <p class="text-sm font-semibold text-dark-text">Dropbox</p>
+        </div>
+        <!-- Notion -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-gray-900 mx-auto mb-3 flex items-center justify-center text-white text-xl font-bold">N</div>
+          <p class="text-sm font-semibold text-dark-text">Notion</p>
+        </div>
+      </div>
+
+      <!-- More services note -->
+      <p class="text-center text-light-text mt-8 text-sm">...and 258 more services pre-loaded and ready to track</p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Stats Bar
+       ========================================== -->
+  <section class="bg-gradient-to-r from-accent-500 to-accent-600 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+        <div>
+          <p class="text-4xl md:text-5xl font-bold mb-2">270+</p>
+          <p class="text-base text-orange-100">Services</p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold mb-2">10+</p>
+          <p class="text-base text-orange-100">Currencies</p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold mb-2">13</p>
+          <p class="text-base text-orange-100">Languages</p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold mb-2">99.9%</p>
+          <p class="text-base text-orange-100">Uptime</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Final CTA
+       ========================================== -->
+  <section class="bg-gradient-to-br from-cream to-accent-100 py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <!-- Cat Mascot -->
+      <div class="text-7xl md:text-8xl mb-8" aria-hidden="true">&#128570;</div>
+
+      <!-- Headline -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Ready to meet Sub?</h2>
+
+      <!-- Subtext -->
+      <p class="text-lg md:text-xl text-light-text mb-12 max-w-2xl mx-auto leading-relaxed">
+        Join thousands of users who save money and stay organized with SubMeow. Start tracking today -- it only takes a minute.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+        <Button variant="primary" size="lg" href="https://app.submeow.com/auth/signup" class="px-10 py-4 text-lg">
+          Start Free &mdash; No Card Required
+        </Button>
+        <Button variant="outline" size="lg" href="/pricing" class="px-10 py-4 text-lg">
+          View Pricing
+        </Button>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-light-text">
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          Free forever plan
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          No credit card needed
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          Cancel anytime
+        </span>
+      </div>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* ==========================================
+     Hero Bounce Animation
+     ========================================== */
+  @keyframes heroBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .hero-bounce {
+    animation: heroBounce 2.5s ease-in-out infinite;
+  }
+
+  /* ==========================================
+     OCR Scan Line Animation
+     ========================================== */
+  @keyframes scanMove {
+    0% {
+      top: 15%;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      top: 85%;
+      opacity: 0;
+    }
+  }
+
+  .scan-line {
+    animation: scanMove 2.5s ease-in-out infinite;
+  }
+
+  /* ==========================================
+     Notification Slide-in Animations
+     ========================================== */
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .mockup-slide-in-1 {
+    animation: slideInLeft 0.6s ease-out both;
+  }
+
+  .mockup-slide-in-2 {
+    animation: slideInLeft 0.6s ease-out 0.2s both;
+  }
+
+  .mockup-slide-in-3 {
+    animation: slideInLeft 0.6s ease-out 0.4s both;
+  }
+
+  /* ==========================================
+     Reduced Motion
+     ========================================== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bounce,
+    .scan-line,
+    .mockup-slide-in-1,
+    .mockup-slide-in-2,
+    .mockup-slide-in-3 {
+      animation: none;
+    }
+  }
+</style>

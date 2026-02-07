@@ -1,0 +1,482 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<MarketingLayout title="Download - SubMeow" description="Download SubMeow on Android, use it on the web, or get notified when iOS launches. Track your subscriptions on every platform.">
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-primary-50 via-accent-50/20 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">Download</span>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-dark-text leading-tight mb-6">
+          Download <span class="text-accent-500">SubMeow</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-8 leading-relaxed">
+          Available on Android, Web, and coming soon to iOS. Track your subscriptions anywhere, on any device.
+        </p>
+
+        <!-- Bouncing Cat -->
+        <div class="text-6xl md:text-7xl hero-bounce" aria-hidden="true">&#128570;</div>
+      </div>
+    </div>
+
+    <!-- Decorative blurred circles -->
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-primary-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/3 w-48 h-48 bg-accent-200/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+
+    <!-- Bottom gradient fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================
+       Platform Cards Section
+       ========================================== -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+        <!-- ===== Android Card ===== -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all border-t-4 border-t-success-500">
+          <!-- Platform Icon -->
+          <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+            <svg class="w-9 h-9 text-success-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.523 2.226a.75.75 0 0 0-1.046-.223L14.87 3.05A7.46 7.46 0 0 0 12 2.5a7.46 7.46 0 0 0-2.87.55L7.523 2.003a.75.75 0 1 0-.823 1.254L8.2 4.2A7.5 7.5 0 0 0 4.5 10h15a7.5 7.5 0 0 0-3.7-5.8l1.5-.943a.75.75 0 0 0 .223-1.03zM9 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm6 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM5 11.5A1.5 1.5 0 0 0 3.5 13v4A1.5 1.5 0 0 0 5 18.5h.5v-7H5zm1.5 0v8a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-8h-11zm12 0v7h.5a1.5 1.5 0 0 0 1.5-1.5v-4a1.5 1.5 0 0 0-1.5-1.5h-.5zM8 20.5v2.25a1.25 1.25 0 1 0 2.5 0V20.5H8zm5.5 0v2.25a1.25 1.25 0 1 0 2.5 0V20.5h-2.5z"/>
+            </svg>
+          </div>
+
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-dark-text mb-2">Android</h3>
+            <!-- Available badge -->
+            <span class="inline-flex items-center gap-1.5 bg-green-50 text-success-500 px-3 py-1 rounded-full text-sm font-semibold">
+              <span class="w-2 h-2 bg-success-500 rounded-full"></span>
+              Available Now
+            </span>
+          </div>
+
+          <!-- Version info -->
+          <div class="flex justify-center gap-6 mb-6 text-sm text-light-text">
+            <div class="text-center">
+              <p class="font-semibold text-dark-text">v2.1.0</p>
+              <p>Version</p>
+            </div>
+            <div class="text-center">
+              <p class="font-semibold text-dark-text">~25MB</p>
+              <p>Size</p>
+            </div>
+            <div class="text-center">
+              <p class="font-semibold text-dark-text">6.0+</p>
+              <p>Android</p>
+            </div>
+          </div>
+
+          <!-- Google Play Button -->
+          <a
+            href="#"
+            class="flex items-center justify-center gap-3 w-full bg-dark-text hover:bg-gray-800 text-white rounded-xl px-6 py-3.5 font-semibold transition-all hover:shadow-lg mb-6"
+          >
+            <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.609 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734c0-.382.218-.72.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zM5.864 3.15L16.8 9.484l-2.302 2.302L5.864 3.15zm11.53 5.63l2.926 1.695a1 1 0 0 1 0 1.73l-2.927 1.696-2.544-2.544 2.544-2.577z"/>
+            </svg>
+            Get on Google Play
+          </a>
+
+          <!-- QR Code Placeholder -->
+          <div class="bg-gray-50 border-2 border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <div class="w-24 h-24 bg-white border border-gray-200 rounded-lg mx-auto mb-3 flex items-center justify-center">
+              <!-- QR grid placeholder -->
+              <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm11-2h2v2h-2v-2zm-4 0h2v2h-2v-2zm0 4h2v2h-2v-2zm4 0h2v2h-2v-2zm4-4h2v2h-2v-2zm0 4h2v2h-2v-2zm-4 4h2v2h-2v-2zm4 0h2v2h-2v-2z"/>
+              </svg>
+            </div>
+            <p class="text-sm text-light-text font-medium">Scan to download</p>
+          </div>
+        </div>
+
+        <!-- ===== iOS Card ===== -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all border-t-4 border-t-primary-500">
+          <!-- Platform Icon -->
+          <div class="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+            <svg class="w-9 h-9 text-primary-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+          </div>
+
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-dark-text mb-2">iOS</h3>
+            <!-- Coming Soon badge -->
+            <span class="inline-flex items-center gap-1.5 bg-amber-50 text-warning-500 px-3 py-1 rounded-full text-sm font-semibold">
+              <span class="w-2 h-2 bg-warning-500 rounded-full"></span>
+              Coming Soon
+            </span>
+          </div>
+
+          <!-- Grayed out App Store button -->
+          <div class="flex items-center justify-center gap-3 w-full bg-gray-200 text-gray-400 rounded-xl px-6 py-3.5 font-semibold cursor-not-allowed mb-6">
+            <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            App Store (Soon)
+          </div>
+
+          <!-- Cat mascot working on it -->
+          <div class="text-center mb-6">
+            <div class="text-5xl mb-3" aria-hidden="true">&#128571;</div>
+            <p class="text-sm text-light-text font-medium">Sub is working hard on the iOS version!</p>
+          </div>
+
+          <!-- Notify me form -->
+          <div class="bg-primary-50 rounded-xl p-5">
+            <p class="text-sm font-semibold text-dark-text mb-3 text-center">Get notified when iOS launches</p>
+            <form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
+              <input
+                type="email"
+                placeholder="your@email.com"
+                class="w-full px-4 py-2.5 rounded-xl border border-primary-200 bg-white text-dark-text placeholder:text-light-text text-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all"
+                required
+              />
+              <Button variant="secondary" size="md" class="w-full text-center justify-center">
+                <svg class="w-4 h-4 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                </svg>
+                Notify Me
+              </Button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ===== Web App Card ===== -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all border-t-4 border-t-accent-500">
+          <!-- Platform Icon -->
+          <div class="w-16 h-16 bg-accent-50 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+            <svg class="w-9 h-9 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            </svg>
+          </div>
+
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-dark-text mb-2">Web App</h3>
+            <!-- Available badge -->
+            <span class="inline-flex items-center gap-1.5 bg-accent-50 text-accent-500 px-3 py-1 rounded-full text-sm font-semibold">
+              <span class="w-2 h-2 bg-accent-500 rounded-full"></span>
+              Available Now
+            </span>
+          </div>
+
+          <!-- No download text -->
+          <div class="bg-accent-50 rounded-xl px-4 py-3 text-center mb-6">
+            <p class="text-sm text-accent-700 font-medium">No download required -- use it right in your browser</p>
+          </div>
+
+          <!-- Use in Browser Button -->
+          <Button variant="primary" size="lg" href="https://app.submeow.com" class="w-full text-center justify-center mb-6">
+            <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Use in Browser
+          </Button>
+
+          <!-- Browser support pills -->
+          <p class="text-sm text-light-text font-medium text-center mb-3">Works on all modern browsers</p>
+          <div class="flex flex-wrap justify-center gap-2">
+            <!-- Chrome -->
+            <span class="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-200 text-dark-text px-3 py-1.5 rounded-full text-xs font-semibold">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 8.5a3.5 3.5 0 0 1 3.03 1.75l4.27-2.47A10 10 0 0 0 4.7 7.78l4.27 2.47A3.49 3.49 0 0 1 12 8.5z" opacity="0.8"/>
+                <path d="M15.03 10.25A3.5 3.5 0 0 1 13.75 15.3l-.02 4.93A10 10 0 0 0 21.3 7.78l-4.27 2.47z" opacity="0.6"/>
+                <path d="M13.75 15.3a3.5 3.5 0 0 1-4.78-1.55L4.7 16.22A10 10 0 0 0 13.73 20.23l.02-4.93z" opacity="0.4"/>
+              </svg>
+              Chrome
+            </span>
+            <!-- Firefox -->
+            <span class="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-200 text-dark-text px-3 py-1.5 rounded-full text-xs font-semibold">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-1.85.63-3.55 1.69-4.9.16.72.56 1.5 1.31 2.4.87 1.05 2.08 1.29 2.62.52.27-.39.16-.98-.08-1.57-.36-.86-.51-1.67-.25-2.47A7.96 7.96 0 0 1 12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+              Firefox
+            </span>
+            <!-- Safari -->
+            <span class="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-200 text-dark-text px-3 py-1.5 rounded-full text-xs font-semibold">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                <path d="M16.5 7.5l-6.2 3.8-3.8 6.2 6.2-3.8 3.8-6.2zm-4.5 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+              </svg>
+              Safari
+            </span>
+            <!-- Edge -->
+            <span class="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-200 text-dark-text px-3 py-1.5 rounded-full text-xs font-semibold">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M21 12a9 9 0 0 1-9 9c-2.39 0-4.56-.94-6.16-2.46a6.52 6.52 0 0 0 3.66 1.12c3.59 0 6.5-2.91 6.5-6.5 0-1.83-.76-3.49-1.97-4.67A9 9 0 0 1 21 12zM12 3a9 9 0 0 0-9 9c0 1.97.64 3.79 1.72 5.27C4.26 15.36 4 13.18 4 12.5 4 7.81 7.81 4 12.5 4c1.68 0 3.24.49 4.55 1.34A8.95 8.95 0 0 0 12 3z"/>
+                <circle cx="12" cy="12" r="3.5"/>
+              </svg>
+              Edge
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Why SubMeow Section
+       ========================================== -->
+  <section class="bg-gradient-to-b from-cream/40 to-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-accent-100 text-accent-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Why SubMeow?</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Built for everyone</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Simple, private, and always available -- everything a subscription tracker should be</p>
+      </div>
+
+      <!-- Benefits Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Free Forever -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-success-500 text-center">
+          <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-5 mx-auto">
+            <svg class="w-7 h-7 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Free Forever</h3>
+          <p class="text-light-text leading-relaxed">Core features are always free. Track up to 7 subscriptions, get push notifications, and use basic analytics without paying a cent.</p>
+        </div>
+
+        <!-- Privacy First -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-primary-500 text-center">
+          <div class="w-14 h-14 bg-primary-50 rounded-2xl flex items-center justify-center mb-5 mx-auto">
+            <svg class="w-7 h-7 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Privacy First</h3>
+          <p class="text-light-text leading-relaxed">No bank linking required. Your financial data stays private. We never sell your information or share it with third parties.</p>
+        </div>
+
+        <!-- Offline Mode -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-accent-500 text-center">
+          <div class="w-14 h-14 bg-accent-50 rounded-2xl flex items-center justify-center mb-5 mx-auto">
+            <svg class="w-7 h-7 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Offline Mode</h3>
+          <p class="text-light-text leading-relaxed">Works without internet. All your data is stored locally so you can check your subscriptions anytime, even without a connection.</p>
+        </div>
+
+        <!-- Cross-Platform -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-warning-500 text-center">
+          <div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mb-5 mx-auto">
+            <svg class="w-7 h-7 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Cross-Platform</h3>
+          <p class="text-light-text leading-relaxed">Sync across all your devices. Start on your phone, continue on the web. Your subscriptions follow you everywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       System Requirements Section
+       ========================================== -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-primary-100 text-primary-500 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Compatibility</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">System requirements</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">SubMeow runs on virtually any modern device. Here is what you need.</p>
+      </div>
+
+      <!-- Requirements Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Android Requirements -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all">
+          <div class="flex items-center gap-3 mb-5 pb-4 border-b border-gray-100">
+            <div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-success-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.523 2.226a.75.75 0 0 0-1.046-.223L14.87 3.05A7.46 7.46 0 0 0 12 2.5a7.46 7.46 0 0 0-2.87.55L7.523 2.003a.75.75 0 1 0-.823 1.254L8.2 4.2A7.5 7.5 0 0 0 4.5 10h15a7.5 7.5 0 0 0-3.7-5.8l1.5-.943a.75.75 0 0 0 .223-1.03zM9 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm6 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM5 11.5A1.5 1.5 0 0 0 3.5 13v4A1.5 1.5 0 0 0 5 18.5h.5v-7H5zm1.5 0v8a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-8h-11zm12 0v7h.5a1.5 1.5 0 0 0 1.5-1.5v-4a1.5 1.5 0 0 0-1.5-1.5h-.5zM8 20.5v2.25a1.25 1.25 0 1 0 2.5 0V20.5H8zm5.5 0v2.25a1.25 1.25 0 1 0 2.5 0V20.5h-2.5z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-dark-text">Android</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">OS Version</span>
+              <span class="font-semibold text-dark-text">Android 6.0+</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Storage</span>
+              <span class="font-semibold text-dark-text">~25 MB</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">RAM</span>
+              <span class="font-semibold text-dark-text">2 GB+</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Internet</span>
+              <span class="font-semibold text-dark-text">Optional</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- iOS Requirements -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all relative">
+          <span class="absolute -top-3 right-4 bg-warning-500 text-white text-xs font-bold px-3 py-1 rounded-full">Coming Soon</span>
+          <div class="flex items-center gap-3 mb-5 pb-4 border-b border-gray-100">
+            <div class="w-10 h-10 bg-primary-50 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-primary-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-dark-text">iOS</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">OS Version</span>
+              <span class="font-semibold text-dark-text">iOS 15.0+</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Storage</span>
+              <span class="font-semibold text-dark-text">~30 MB</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Devices</span>
+              <span class="font-semibold text-dark-text">iPhone, iPad</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Internet</span>
+              <span class="font-semibold text-dark-text">Optional</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Web Requirements -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all">
+          <div class="flex items-center gap-3 mb-5 pb-4 border-b border-gray-100">
+            <div class="w-10 h-10 bg-accent-50 rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-dark-text">Web Browser</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Chrome</span>
+              <span class="font-semibold text-dark-text">90+</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Firefox</span>
+              <span class="font-semibold text-dark-text">90+</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Safari</span>
+              <span class="font-semibold text-dark-text">15+</span>
+            </li>
+            <li class="flex items-center justify-between text-sm">
+              <span class="text-light-text">Edge</span>
+              <span class="font-semibold text-dark-text">90+</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CTA Section
+       ========================================== -->
+  <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <!-- Cat Mascot -->
+      <div class="text-7xl md:text-8xl mb-8 hero-bounce" aria-hidden="true">&#128570;</div>
+
+      <!-- Headline -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Ready to take control?</h2>
+
+      <!-- Subtext -->
+      <p class="text-lg md:text-xl text-light-text mb-12 max-w-2xl mx-auto leading-relaxed">
+        Join thousands of people who use SubMeow to track subscriptions, save money, and never get surprised by an unexpected charge again.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+        <Button variant="primary" size="lg" href="https://app.submeow.com/auth/signup" class="px-10 py-4 text-lg">
+          <svg class="w-5 h-5 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          Get Started Free
+        </Button>
+        <Button variant="outline" size="lg" href="#" class="px-10 py-4 text-lg">
+          <svg class="w-6 h-6 mr-2 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.609 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734c0-.382.218-.72.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zM5.864 3.15L16.8 9.484l-2.302 2.302L5.864 3.15zm11.53 5.63l2.926 1.695a1 1 0 0 1 0 1.73l-2.927 1.696-2.544-2.544 2.544-2.577z"/>
+          </svg>
+          Download for Android
+        </Button>
+      </div>
+
+      <!-- Trust indicators -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-light-text">
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          Free forever plan
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          No credit card required
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          Works offline
+        </span>
+      </div>
+    </div>
+  </section>
+
+</MarketingLayout>
+
+<style>
+  /* ==========================================
+     Hero Bounce Animation
+     ========================================== */
+  @keyframes heroBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .hero-bounce {
+    animation: heroBounce 2.5s ease-in-out infinite;
+  }
+
+  /* ==========================================
+     Reduced Motion
+     ========================================== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bounce {
+      animation: none;
+    }
+  }
+</style>
