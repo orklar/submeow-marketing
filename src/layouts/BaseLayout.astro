@@ -4,12 +4,28 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
+  schemaMarkup?: string[];
 }
 
 const {
   title,
   description = 'Track every subscription. Never overpay again. SubMeow helps you manage all your subscriptions in one place.',
+  ogImage = 'https://submeow.com/favicon.svg',
+  schemaMarkup = [],
 } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, 'https://submeow.com').href;
+
+const organizationSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SubMeow",
+  "url": "https://submeow.com",
+  "logo": "https://submeow.com/favicon.svg",
+  "description": "SubMeow - Track your subscriptions, save money with your cat companion",
+  "sameAs": []
+});
 ---
 
 <!doctype html>
@@ -20,8 +36,25 @@ const {
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalUrl} />
     <title>{title}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="SubMeow" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,6 +63,14 @@ const {
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Organization Schema (all pages) -->
+    <script type="application/ld+json" set:html={organizationSchema} />
+
+    <!-- Page-specific Schema Markup -->
+    {schemaMarkup.map((schema) => (
+      <script type="application/ld+json" set:html={schema} />
+    ))}
   </head>
   <body class="bg-background text-dark-text font-sans antialiased">
     <slot />

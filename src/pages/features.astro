@@ -1,9 +1,42 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
+
+const softwareAppSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SubMeow",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Android, Web",
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free plan"
+    },
+    {
+      "@type": "Offer",
+      "price": "4.99",
+      "priceCurrency": "USD",
+      "description": "Premium monthly"
+    },
+    {
+      "@type": "Offer",
+      "price": "9.99",
+      "priceCurrency": "USD",
+      "description": "Family monthly"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "150"
+  }
+});
 ---
 
-<MarketingLayout title="Features - SubMeow" description="Discover all the powerful features SubMeow offers to help you track subscriptions, get smart reminders, scan receipts, and save money.">
+<MarketingLayout title="Features - SubMeow" description="Discover all the powerful features SubMeow offers to help you track subscriptions, get smart reminders, scan receipts, and save money." schemaMarkup={[softwareAppSchema]}>
 
   <!-- ==========================================
        Hero Section

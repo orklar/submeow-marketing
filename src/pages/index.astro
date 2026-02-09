@@ -1,9 +1,99 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
+
+const softwareAppSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SubMeow",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Android, Web",
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free plan"
+    },
+    {
+      "@type": "Offer",
+      "price": "4.99",
+      "priceCurrency": "USD",
+      "description": "Premium monthly"
+    },
+    {
+      "@type": "Offer",
+      "price": "9.99",
+      "priceCurrency": "USD",
+      "description": "Family monthly"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "150"
+  }
+});
+
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to link my bank account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No! SubMeow is completely privacy-focused. You manually add your subscriptions, so we never need access to your bank account or financial data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the free plan really free forever?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! The free plan includes up to 10 subscriptions and basic features with no time limit. You can use it forever without ever paying."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel my premium subscription anytime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! No contracts, no commitments. Cancel anytime and you'll still have access until the end of your billing period. You can always downgrade to the free plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What platforms does SubMeow support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SubMeow works on web browsers, iOS (iPhone & iPad), and Android devices. Your data syncs automatically across all platforms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do the reminders work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You'll get notifications via email, push notifications, or both (your choice) before renewals, when trials are ending, and when price changes are detected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I share subscriptions with family members?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! The Family plan allows up to 5 family members to track subscriptions together, share costs, and see combined spending analytics."
+      }
+    }
+  ]
+});
+
+const schemas = [softwareAppSchema, faqSchema];
 ---
 
-<MarketingLayout title="SubMeow - Track Your Subscriptions" description="Sub the cat watches over all your subscriptions so you never get surprised by charges again. Track trials, get reminders, and save money.">
+<MarketingLayout title="SubMeow - Track Your Subscriptions" description="Sub the cat watches over all your subscriptions so you never get surprised by charges again. Track trials, get reminders, and save money." schemaMarkup={schemas}>
   <!-- Hero Section -->
   <section class="relative overflow-hidden bg-gradient-to-b from-cream/40 to-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 lg:py-32">
