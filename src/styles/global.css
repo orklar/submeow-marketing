@@ -31,8 +31,10 @@
 
   /* Semantic Colors */
   --color-success-500: #10B981;
+  --color-success-800: #065F46;
   --color-error-500: #EF4444;
   --color-warning-500: #F59E0B;
+  --color-warning-700: #B45309;
 
   /* Brand Neutrals */
   --color-cream: #FEF3C7;
