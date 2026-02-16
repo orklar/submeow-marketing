@@ -114,7 +114,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
 
           <!-- CTA -->
           <Button variant="outline" size="lg" href="https://app.submeow.com/auth/signup" class="w-full text-center">
-            Get Started Free
+            Start Free
           </Button>
         </Card>
 
@@ -183,7 +183,10 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
         </div>
 
         <!-- Lifetime Plan -->
-        <Card variant="pricing" class="border-2 border-primary-300 hover:shadow-2xl transition-all">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-warning-400 hover:shadow-2xl transition-all relative">
+          <!-- Best Value Badge -->
+          <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-warning-600 text-white px-6 py-1.5 rounded-full text-sm font-bold whitespace-nowrap">BEST VALUE</span>
+          
           <div class="text-center mb-8">
             <span class="text-5xl block mb-4" aria-hidden="true">&#128142;</span>
             <p class="text-sm font-semibold text-light-text mb-2">One-time payment &#127881;</p>
@@ -192,39 +195,32 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
             <p class="text-light-text">One-time</p>
           </div>
 
-          <!-- Features -->
+          <!-- All Premium features -->
+          <p class="text-xs font-semibold text-light-text uppercase tracking-wider mb-3">Everything in Premium:</p>
           <ul class="space-y-3.5 mb-6">
             <li class="flex items-start gap-3 text-dark-text text-sm">
               <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
-              Track up to 7 subscriptions
+              Unlimited subscriptions
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
               <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
-              5 OCR scans per month
+              Unlimited OCR scans
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
               <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
-              Push notifications
+              All Premium features
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
               <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
-              Basic analytics
+              <strong>Lifetime updates</strong>
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
               <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
-              Manual entry
+              <strong>Future features included</strong>
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
               <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
-              Community support
-            </li>
-            <li class="flex items-start gap-3 text-dark-text text-sm">
-              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
-              Ad-free experience
-            </li>
-            <li class="flex items-start gap-3 text-dark-text text-sm">
-              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
-              Lifetime updates
+              <strong>One-time payment</strong>
             </li>
           </ul>
 
@@ -235,7 +231,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
           <Button variant="secondary" size="lg" href="https://app.submeow.com/auth/signup" class="w-full text-center">
             Get Lifetime Access
           </Button>
-        </Card>
+        </div>
 
       </div>
     </div>
@@ -283,15 +279,15 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Subscription tracking</td>
-              <td class="py-3.5 px-4 text-center text-sm text-light-text">Up to 7</td>
+              <td class="py-3.5 px-4 text-center text-sm text-light-text">Up to 10</td>
               <td class="py-3.5 px-4 text-center text-sm font-semibold text-dark-text">Unlimited</td>
-              <td class="py-3.5 px-4 text-center text-sm text-light-text">Up to 7</td>
+              <td class="py-3.5 px-4 text-center text-sm font-semibold text-dark-text">Unlimited</td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">OCR receipt scanning</td>
               <td class="py-3.5 px-4 text-center text-sm text-light-text">5/month</td>
               <td class="py-3.5 px-4 text-center text-sm font-semibold text-dark-text">Unlimited</td>
-              <td class="py-3.5 px-4 text-center text-sm text-light-text">5/month</td>
+              <td class="py-3.5 px-4 text-center text-sm font-semibold text-dark-text">Unlimited</td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Manual entry</td>
@@ -314,7 +310,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
                 <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
@@ -355,7 +351,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
                 <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
@@ -367,7 +363,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
                 <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
@@ -379,7 +375,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
                 <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
 
@@ -408,7 +404,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
                 <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
 
@@ -425,7 +421,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
                 <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
@@ -478,7 +474,7 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
                 <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
           </tbody>
