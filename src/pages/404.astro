@@ -1,6 +1,7 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
+import Mascot from '../components/Mascot.astro';
 ---
 
 <MarketingLayout title="Page Not Found - SubMeow" description="The page you are looking for could not be found. Let Sub help you find your way back.">
@@ -15,8 +16,8 @@ import Button from '../components/Button.astro';
       <div class="relative mb-6">
         <span class="text-[10rem] sm:text-[12rem] md:text-[14rem] font-bold leading-none text-primary-100 select-none" aria-hidden="true">404</span>
         <!-- Floating Cat Mascot overlaid on the number -->
-        <div class="absolute inset-0 flex items-center justify-center">
-          <span class="text-7xl sm:text-8xl md:text-9xl mascot-float" role="img" aria-label="Confused cat">&#128575;</span>
+        <div class="absolute inset-0 flex items-center justify-center mascot-float">
+          <Mascot emotion="sad" size={160} loading="eager" />
         </div>
       </div>
 
@@ -124,7 +125,7 @@ import Button from '../components/Button.astro';
 
       <!-- Cat-themed bottom message -->
       <p class="mt-10 text-sm text-light-text">
-        <span class="text-lg mr-1" aria-hidden="true">&#128062;</span>
+        <Mascot emotion="sad" size={20} class="mr-1" />
         Sub says: "Every lost page is just an adventure waiting to happen!"
       </p>
 

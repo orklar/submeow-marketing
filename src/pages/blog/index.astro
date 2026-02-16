@@ -1,6 +1,7 @@
 ---
 import MarketingLayout from '../../layouts/MarketingLayout.astro';
 import Button from '../../components/Button.astro';
+import Mascot from '../../components/Mascot.astro';
 
 // ============================================
 // Blog Post Data (mirrors [slug].astro)
@@ -119,7 +120,7 @@ function getCategoryClasses(color: string): string {
           <div class="relative bg-gradient-to-br from-accent-500 to-accent-600 p-8 md:p-12 flex items-center justify-center min-h-[240px] lg:min-h-[320px]">
             <!-- Decorative cat and text elements -->
             <div class="text-center">
-              <span class="text-7xl md:text-8xl block mb-4" aria-hidden="true">&#128058;</span>
+              <Mascot emotion="happy" size={128} class="block mb-4" />
               <span class="inline-block bg-white/20 text-white px-4 py-1.5 rounded-full text-sm font-semibold">Featured Article</span>
             </div>
             <!-- Decorative blobs -->
@@ -148,7 +149,7 @@ function getCategoryClasses(color: string): string {
             <div class="flex flex-wrap items-center gap-3 text-sm text-light-text mb-6">
               <div class="flex items-center gap-1.5">
                 <div class="w-6 h-6 rounded-full bg-accent-200 flex items-center justify-center shrink-0">
-                  <span class="text-xs" aria-hidden="true">&#128058;</span>
+                  <Mascot emotion="happy" size={16} />
                 </div>
                 <span>{featuredPost.author}</span>
               </div>
@@ -213,7 +214,7 @@ function getCategoryClasses(color: string): string {
                 <div class="flex items-center gap-3 text-xs text-light-text">
                   <div class="flex items-center gap-1.5">
                     <div class="w-5 h-5 rounded-full bg-accent-200 flex items-center justify-center shrink-0">
-                      <span class="text-[10px]" aria-hidden="true">&#128058;</span>
+                      <Mascot emotion="happy" size={14} />
                     </div>
                     <span>{post.author}</span>
                   </div>
@@ -250,7 +251,7 @@ function getCategoryClasses(color: string): string {
   <section class="py-16 md:py-24 bg-gradient-to-br from-cream to-accent-100">
     <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
       <!-- Cat Mascot -->
-      <div class="text-6xl md:text-7xl mb-6" aria-hidden="true">&#128570;</div>
+      <Mascot emotion="happy" size={128} class="mx-auto mb-6" />
 
       <!-- Headline -->
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-text mb-4">

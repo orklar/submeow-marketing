@@ -1,6 +1,7 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
+import Mascot from '../components/Mascot.astro';
 ---
 
 <MarketingLayout title="Under Maintenance - SubMeow" description="SubMeow is currently undergoing scheduled maintenance. We will be back shortly with improvements.">
@@ -13,8 +14,8 @@ import Button from '../components/Button.astro';
 
       <!-- Builder Cat Mascot -->
       <div class="mb-8">
-        <div class="inline-flex items-center justify-center relative">
-          <span class="text-7xl sm:text-8xl md:text-9xl mascot-work" role="img" aria-label="Working cat">&#128570;</span>
+        <div class="inline-flex items-center justify-center relative mascot-work">
+          <Mascot emotion="sleeping" size={160} loading="eager" />
           <!-- Wrench floating next to cat -->
           <span class="absolute -top-4 -right-6 sm:-right-8 text-3xl sm:text-4xl md:text-5xl tool-spin" aria-hidden="true">&#128295;</span>
           <!-- Gear on other side -->
@@ -186,7 +187,7 @@ import Button from '../components/Button.astro';
       <!-- Cat-themed bottom message -->
       <div class="bg-cream/50 rounded-2xl border border-accent-200 p-5 max-w-md mx-auto">
         <p class="text-sm text-light-text">
-          <span class="text-lg mr-1" aria-hidden="true">&#128062;</span>
+          <Mascot emotion="sleeping" size={20} class="mr-1" />
           Sub says: "Good things come to those who wait... especially when the engineering team has treats!"
         </p>
       </div>

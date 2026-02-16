@@ -2,6 +2,9 @@
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
 import Card from '../components/Card.astro';
+import Mascot from '../components/Mascot.astro';
+import CheckmarkIcon from '../components/icons/CheckmarkIcon.astro';
+import XCrossIcon from '../components/icons/XCrossIcon.astro';
 ---
 
 <MarketingLayout title="Pricing - SubMeow" description="Choose the perfect SubMeow plan for tracking your subscriptions. Free forever, Premium for power users, or Lifetime for the best value.">
@@ -51,7 +54,7 @@ import Card from '../components/Card.astro';
         <!-- Free Plan -->
         <Card variant="pricing" class="hover:shadow-2xl transition-all">
           <div class="text-center mb-8">
-            <span class="text-5xl block mb-4" aria-hidden="true">&#128570;</span>
+            <Mascot emotion="happy" size={80} class="mx-auto mb-4" />
             <p class="text-sm font-semibold text-light-text mb-2">For curious cats</p>
             <h3 class="text-2xl font-bold text-dark-text mb-2">Free</h3>
             <p class="text-5xl font-bold text-dark-text mb-1">$0</p>
@@ -61,27 +64,27 @@ import Card from '../components/Card.astro';
           <!-- Included features -->
           <ul class="space-y-3.5 mb-6">
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Track up to 7 subscriptions
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               5 OCR scans per month
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Push notifications
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Basic analytics
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Manual entry
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Community support
             </li>
           </ul>
@@ -89,19 +92,19 @@ import Card from '../components/Card.astro';
           <!-- Excluded features -->
           <ul class="space-y-3.5 mb-6 opacity-40">
             <li class="flex items-start gap-3 text-light-text text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              <XCrossIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Email reminders
             </li>
             <li class="flex items-start gap-3 text-light-text text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              <XCrossIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Telegram bot
             </li>
             <li class="flex items-start gap-3 text-light-text text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              <XCrossIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Calendar sync
             </li>
             <li class="flex items-start gap-3 text-light-text text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              <XCrossIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Data export
             </li>
           </ul>
@@ -132,43 +135,43 @@ import Card from '../components/Card.astro';
           <p class="text-xs font-semibold text-orange-200 uppercase tracking-wider mb-3">Everything in Free, plus:</p>
           <ul class="space-y-3.5 mb-8">
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Unlimited subscriptions
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Unlimited OCR scans
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Email reminders
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Telegram bot
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Advanced analytics
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Calendar sync
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Export data
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Custom categories
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Priority support
             </li>
             <li class="flex items-start gap-3 text-white text-sm">
-              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 shrink-0 mt-0.5" />
               Ad-free experience
             </li>
           </ul>
@@ -192,35 +195,35 @@ import Card from '../components/Card.astro';
           <!-- Features -->
           <ul class="space-y-3.5 mb-6">
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Track up to 7 subscriptions
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               5 OCR scans per month
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Push notifications
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Basic analytics
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Manual entry
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Community support
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Ad-free experience
             </li>
             <li class="flex items-start gap-3 text-dark-text text-sm">
-              <svg class="w-5 h-5 text-success-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <CheckmarkIcon class="w-5 h-5 text-success-500 shrink-0 mt-0.5" />
               Lifetime updates
             </li>
           </ul>
@@ -258,7 +261,7 @@ import Card from '../components/Card.astro';
             <tr class="border-b-2 border-gray-200">
               <th class="text-left py-4 pr-4 text-sm font-semibold text-dark-text w-1/3">Feature</th>
               <th class="text-center py-4 px-4 text-sm font-semibold text-dark-text">
-                <span class="block text-2xl mb-1" aria-hidden="true">&#128570;</span>
+                <Mascot emotion="happy" size={40} class="mx-auto mb-1" />
                 Free
               </th>
               <th class="text-center py-4 px-4 text-sm font-semibold text-white">
@@ -293,37 +296,37 @@ import Card from '../components/Card.astro';
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Manual entry</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Custom categories</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Ad-free experience</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
 
@@ -334,49 +337,49 @@ import Card from '../components/Card.astro';
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Push notifications</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Email reminders</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Telegram bot</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Calendar sync</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
             </tr>
 
@@ -387,25 +390,25 @@ import Card from '../components/Card.astro';
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Basic analytics</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Advanced analytics</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
             </tr>
 
@@ -416,37 +419,37 @@ import Card from '../components/Card.astro';
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Data export</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Cloud sync</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Lifetime updates</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
 
@@ -457,25 +460,25 @@ import Card from '../components/Card.astro';
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Community support</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="py-3.5 pr-4 text-sm text-dark-text">Priority support</td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-success-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <CheckmarkIcon class="w-5 h-5 text-success-500 mx-auto" />
               </td>
               <td class="py-3.5 px-4 text-center">
-                <svg class="w-5 h-5 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <XCrossIcon class="w-5 h-5 text-gray-300 mx-auto" />
               </td>
             </tr>
           </tbody>
@@ -585,7 +588,9 @@ import Card from '../components/Card.astro';
   <section class="bg-gradient-to-br from-cream to-accent-100 py-20 md:py-28">
     <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
       <!-- Cat Mascot -->
-      <div class="text-7xl md:text-8xl mb-8" aria-hidden="true">&#128570;</div>
+      <div class="mb-8">
+        <Mascot emotion="celebrating" size={128} />
+      </div>
 
       <!-- Headline -->
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Ready to start saving?</h2>
@@ -605,15 +610,15 @@ import Card from '../components/Card.astro';
       <!-- Trust Indicators -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-light-text">
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          <CheckmarkIcon class="w-4 h-4 text-success-500 shrink-0" />
           Free forever plan
         </span>
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          <CheckmarkIcon class="w-4 h-4 text-success-500 shrink-0" />
           No credit card needed
         </span>
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          <CheckmarkIcon class="w-4 h-4 text-success-500 shrink-0" />
           Cancel anytime
         </span>
       </div>

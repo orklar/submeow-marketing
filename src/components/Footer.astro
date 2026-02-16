@@ -1,5 +1,6 @@
 ---
 // Footer component - dark footer with 4 link columns, social icons, and copyright
+import Logo from './Logo.astro';
 const currentYear = new Date().getFullYear();
 ---
 
@@ -10,8 +11,7 @@ const currentYear = new Date().getFullYear();
       <!-- Brand column (wider) -->
       <div class="lg:col-span-2">
         <a href="/" class="flex items-center gap-2 mb-4">
-          <span class="text-3xl">&#128058;</span>
-          <span class="text-2xl font-bold text-white">SubMeow</span>
+          <Logo size="sm" />
         </a>
         <p class="text-gray-400 mb-6 max-w-sm">
           Track every subscription. Never overpay again. Your friendly cat companion for smarter spending.

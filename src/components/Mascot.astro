@@ -1,0 +1,48 @@
+---
+export interface Props {
+  emotion: 'celebrating' | 'curious' | 'sad' | 'sleeping' | 'happy' | 'worried';
+  size?: number;
+  loading?: 'lazy' | 'eager';
+  class?: string;
+}
+
+const { 
+  emotion, 
+  size = 128, 
+  loading = 'lazy',
+  class: className = ''
+} = Astro.props;
+
+// Map emotions to SVG filenames
+const emotionMap = {
+  celebrating: 'celebrating.svg',
+  curious: 'curious.svg',
+  sad: 'sad.svg',
+  sleeping: 'sleeping.svg',
+  happy: 'very_happy_walking.svg',
+  worried: 'worried_alot.svg'
+};
+
+const emotionDescriptions = {
+  celebrating: 'SubMeow cat mascot celebrating',
+  curious: 'SubMeow cat mascot looking curious',
+  sad: 'SubMeow cat mascot looking sad',
+  sleeping: 'SubMeow cat mascot sleeping peacefully',
+  happy: 'SubMeow cat mascot happy and energetic',
+  worried: 'SubMeow cat mascot looking worried'
+};
+
+const svgFile = emotionMap[emotion];
+const altText = emotionDescriptions[emotion];
+---
+
+<img
+  src={`/images/mascot/${svgFile}`}
+  alt={altText}
+  width={size}
+  height={size}
+  loading={loading}
+  class={`mascot-${emotion} ${className}`}
+  role="img"
+  aria-label={altText}
+/>

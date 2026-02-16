@@ -1,6 +1,7 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
+import Mascot from '../components/Mascot.astro';
 ---
 
 <MarketingLayout title="Contact - SubMeow" description="Get in touch with the SubMeow team. Whether you have a question, feedback, or a partnership idea, we would love to hear from you.">
@@ -25,7 +26,9 @@ import Button from '../components/Button.astro';
         </p>
 
         <!-- Bouncing Cat -->
-        <div class="text-6xl md:text-7xl hero-bounce" aria-hidden="true">&#128570;</div>
+        <div class="hero-bounce">
+          <Mascot emotion="curious" size={112} loading="eager" />
+        </div>
       </div>
     </div>
 
@@ -302,7 +305,9 @@ import Button from '../components/Button.astro';
   <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-20 md:py-28">
     <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
       <!-- Cat Mascot -->
-      <div class="text-7xl md:text-8xl mb-8" aria-hidden="true">&#128572;</div>
+      <div class="mb-8">
+        <Mascot emotion="curious" size={128} />
+      </div>
 
       <!-- Headline -->
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Prefer to explore?</h2>

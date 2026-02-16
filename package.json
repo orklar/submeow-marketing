@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "astro build && wrangler pages deploy dist --project-name=submeow-marketing",
+    "deploy:preview": "astro build && wrangler pages deploy dist --project-name=submeow-marketing --branch=preview"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",

@@ -1,6 +1,9 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
+import Mascot from '../components/Mascot.astro';
+import CheckmarkIcon from '../components/icons/CheckmarkIcon.astro';
+import XCrossIcon from '../components/icons/XCrossIcon.astro';
 
 const softwareAppSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -104,7 +107,7 @@ const schemas = [softwareAppSchema, faqSchema];
           <!-- Tagline -->
           <p class="inline-flex items-center gap-1.5 text-sm font-semibold tracking-wide uppercase text-accent-700 mb-6">
             Track &middot; Manage &middot; Save
-            <span class="text-base" aria-hidden="true">&#128062;</span>
+            <Mascot emotion="happy" size={20} class="inline-block align-middle" />
           </p>
 
           <!-- Headline -->
@@ -134,21 +137,15 @@ const schemas = [softwareAppSchema, faqSchema];
           <!-- Trust Indicators -->
           <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start text-sm text-light-text">
             <span class="inline-flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
               Free forever plan
             </span>
             <span class="inline-flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
               No bank linking
             </span>
             <span class="inline-flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
               10,000+ users
             </span>
           </div>
@@ -157,8 +154,8 @@ const schemas = [softwareAppSchema, faqSchema];
         <!-- Right Column: Visual / Floating Cards -->
         <div class="relative order-1 lg:order-2 flex items-center justify-center min-h-[340px] sm:min-h-[420px] lg:min-h-[500px]">
           <!-- Central Cat -->
-          <div class="relative z-10 text-center select-none" aria-hidden="true">
-            <span class="text-[7rem] sm:text-[9rem] lg:text-[10rem] leading-none drop-shadow-lg hero-cat">&#128570;</span>
+          <div class="relative z-10 text-center select-none hero-cat">
+            <Mascot emotion="happy" size={200} loading="eager" />
           </div>
 
           <!-- Floating Subscription Cards (hidden on small screens) -->
@@ -497,7 +494,7 @@ const schemas = [softwareAppSchema, faqSchema];
         <!-- Free Plan -->
         <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-200 hover:shadow-2xl transition-all">
           <div class="text-center mb-8">
-            <span class="text-5xl block mb-4" aria-hidden="true">&#128570;</span>
+            <Mascot emotion="happy" size={80} class="mx-auto mb-4" />
             <h3 class="text-2xl font-bold text-dark-text mb-2">Free</h3>
             <p class="text-5xl font-bold text-dark-text mb-1">$0</p>
             <p class="text-light-text">Forever</p>
@@ -529,7 +526,7 @@ const schemas = [softwareAppSchema, faqSchema];
         <div class="bg-gradient-to-br from-accent-500 to-accent-600 rounded-3xl p-8 shadow-2xl border-4 border-accent-400 relative md:scale-105">
           <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-warning-700 text-white px-6 py-1.5 rounded-full text-sm font-bold whitespace-nowrap">MOST POPULAR</span>
           <div class="text-center mb-8">
-            <span class="text-5xl block mb-4" aria-hidden="true">&#128568;</span>
+            <Mascot emotion="celebrating" size={80} class="mx-auto mb-4" />
             <h3 class="text-2xl font-bold text-white mb-2">Premium</h3>
             <p class="text-5xl font-bold text-white mb-1">$4.99</p>
             <p class="text-orange-100">Per month</p>
@@ -568,7 +565,7 @@ const schemas = [softwareAppSchema, faqSchema];
         <!-- Family Plan -->
         <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-200 hover:shadow-2xl transition-all">
           <div class="text-center mb-8">
-            <span class="text-5xl block mb-4" aria-hidden="true">&#128049;</span>
+            <Mascot emotion="happy" size={80} class="mx-auto mb-4" />
             <h3 class="text-2xl font-bold text-dark-text mb-2">Family</h3>
             <p class="text-5xl font-bold text-dark-text mb-1">$9.99</p>
             <p class="text-light-text">Per month</p>
@@ -689,7 +686,9 @@ const schemas = [softwareAppSchema, faqSchema];
   <section id="cta" class="bg-gradient-to-br from-cream to-accent-100 py-20 md:py-28">
     <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
       <!-- Cat Mascot -->
-      <div class="text-7xl md:text-8xl mb-8" aria-hidden="true">&#128570;</div>
+      <div class="mb-8">
+        <Mascot emotion="celebrating" size={160} />
+      </div>
 
       <!-- Headline -->
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Ready to take control of your subscriptions?</h2>
@@ -710,15 +709,15 @@ const schemas = [softwareAppSchema, faqSchema];
       <!-- Trust Indicators -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-light-text">
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
           Free forever plan
         </span>
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
           No credit card needed
         </span>
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
           Cancel anytime
         </span>
       </div>

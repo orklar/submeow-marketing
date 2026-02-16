@@ -1,6 +1,7 @@
 ---
 import MarketingLayout from '../../layouts/MarketingLayout.astro';
 import Button from '../../components/Button.astro';
+import Mascot from '../../components/Mascot.astro';
 
 // ============================================
 // Blog Post Data
@@ -218,7 +219,7 @@ function getCategoryClasses(color: string): string {
         <!-- Author -->
         <div class="flex items-center gap-2">
           <div class="w-8 h-8 rounded-full bg-accent-200 flex items-center justify-center shrink-0">
-            <span class="text-sm" aria-hidden="true">&#128058;</span>
+            <Mascot emotion="happy" size={20} />
           </div>
           <span class="font-medium text-dark-text">{fullPost.author}</span>
         </div>

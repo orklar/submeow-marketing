@@ -1,6 +1,9 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
+import Mascot from '../components/Mascot.astro';
+import CheckmarkIcon from '../components/icons/CheckmarkIcon.astro';
+import XCrossIcon from '../components/icons/XCrossIcon.astro';
 ---
 
 <MarketingLayout title="Download - SubMeow" description="Download SubMeow on Android, use it on the web, or get notified when iOS launches. Track your subscriptions on every platform.">
@@ -25,7 +28,9 @@ import Button from '../components/Button.astro';
         </p>
 
         <!-- Bouncing Cat -->
-        <div class="text-6xl md:text-7xl hero-bounce" aria-hidden="true">&#128570;</div>
+        <div class="hero-bounce">
+          <Mascot emotion="happy" size={112} loading="eager" />
+        </div>
       </div>
     </div>
 
@@ -129,7 +134,7 @@ import Button from '../components/Button.astro';
 
           <!-- Cat mascot working on it -->
           <div class="text-center mb-6">
-            <div class="text-5xl mb-3" aria-hidden="true">&#128571;</div>
+            <div class="mb-3"><Mascot emotion="celebrating" size={48} /></div>
             <p class="text-sm text-light-text font-medium">Sub is working hard on the iOS version!</p>
           </div>
 
@@ -402,7 +407,9 @@ import Button from '../components/Button.astro';
   <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-20 md:py-28">
     <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
       <!-- Cat Mascot -->
-      <div class="text-7xl md:text-8xl mb-8 hero-bounce" aria-hidden="true">&#128570;</div>
+      <div class="mb-8 hero-bounce">
+        <Mascot emotion="happy" size={128} />
+      </div>
 
       <!-- Headline -->
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Ready to take control?</h2>
@@ -431,21 +438,15 @@ import Button from '../components/Button.astro';
       <!-- Trust indicators -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-light-text">
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-          </svg>
+          <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
           Free forever plan
         </span>
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-          </svg>
+          <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
           No credit card required
         </span>
         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-success-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-          </svg>
+          <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
           Works offline
         </span>
       </div>

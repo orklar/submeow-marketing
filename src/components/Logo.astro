@@ -1,0 +1,31 @@
+---
+// Logo component - displays SubMeow cat mascot with optional text
+interface Props {
+  size?: 'sm' | 'md' | 'lg';
+  showText?: boolean;
+}
+
+const { size = 'md', showText = true } = Astro.props;
+
+const sizeMap = {
+  sm: { img: 32, text: 'text-xl' },
+  md: { img: 40, text: 'text-2xl' },
+  lg: { img: 48, text: 'text-3xl' },
+} as const;
+
+const { img: imgSize, text: textClass } = sizeMap[size];
+---
+
+<span class="inline-flex items-center gap-2" role="img" aria-label="SubMeow logo">
+  <img
+    src="/images/logo.svg"
+    alt="SubMeow cat mascot"
+    width={imgSize}
+    height={imgSize}
+    class="transition-transform group-hover:scale-110"
+    loading="eager"
+  />
+  {showText && (
+    <span class={`font-bold ${textClass}`}>SubMeow</span>
+  )}
+</span>

@@ -1,6 +1,7 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
+import Mascot from '../components/Mascot.astro';
 ---
 
 <MarketingLayout title="Something Went Wrong - SubMeow" description="Something went wrong on our end. Our team has been notified and is working on a fix.">
@@ -17,7 +18,7 @@ import Button from '../components/Button.astro';
         <!-- Cat mascot with "broken" feeling overlaid -->
         <div class="absolute inset-0 flex items-center justify-center">
           <div class="mascot-wobble">
-            <span class="text-7xl sm:text-8xl md:text-9xl" role="img" aria-label="Sad cat">&#128575;</span>
+            <Mascot emotion="worried" size={160} loading="eager" />
             <!-- Bandage icon floating near the cat -->
             <span class="absolute -top-2 -right-2 text-3xl sm:text-4xl bandage-float" role="img" aria-label="Bandage">&#129657;</span>
           </div>
@@ -74,7 +75,7 @@ import Button from '../components/Button.astro';
       <div class="max-w-lg mx-auto bg-cream/50 rounded-2xl border border-accent-200 p-6">
         <h2 class="text-sm font-semibold text-dark-text uppercase tracking-wider mb-3">While you wait...</h2>
         <div class="flex items-start gap-3">
-          <span class="text-2xl shrink-0" aria-hidden="true">&#128062;</span>
+          <Mascot emotion="worried" size={28} class="shrink-0" />
           <div class="text-left">
             <p class="text-sm font-semibold text-dark-text mb-1">Did you know?</p>
             <p class="text-sm text-light-text leading-relaxed">
