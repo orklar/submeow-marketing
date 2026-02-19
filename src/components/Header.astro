@@ -35,10 +35,10 @@ import Logo from './Logo.astro';
         </a>
       </div>
 
-      <!-- Mobile hamburger button -->
+      <!-- Mobile hamburger button (min 44x44px touch target) -->
       <button
         id="mobile-menu-btn"
-        class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+        class="md:hidden p-2.5 rounded-lg hover:bg-gray-100 transition-colors"
         aria-label="Toggle menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
@@ -56,21 +56,21 @@ import Logo from './Logo.astro';
 
     <!-- Mobile menu (hidden by default) -->
     <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
-      <div class="flex flex-col gap-4">
-        <a href="/features" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Features</a>
-        <a href="/pricing" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Pricing</a>
-        <a href="/blog" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Blog</a>
-        <a href="/download" class="text-dark-text hover:text-accent-500 transition-colors font-medium">Download</a>
-        <hr class="border-gray-100" />
+      <div class="flex flex-col gap-1">
+        <a href="/features" class="text-dark-text hover:text-accent-500 transition-colors font-medium py-3 px-2 rounded-lg hover:bg-gray-50">Features</a>
+        <a href="/pricing" class="text-dark-text hover:text-accent-500 transition-colors font-medium py-3 px-2 rounded-lg hover:bg-gray-50">Pricing</a>
+        <a href="/blog" class="text-dark-text hover:text-accent-500 transition-colors font-medium py-3 px-2 rounded-lg hover:bg-gray-50">Blog</a>
+        <a href="/download" class="text-dark-text hover:text-accent-500 transition-colors font-medium py-3 px-2 rounded-lg hover:bg-gray-50">Download</a>
+        <hr class="border-gray-100 my-2" />
         <a
           href="https://app.submeow.com/auth/login"
-          class="text-dark-text hover:text-accent-500 transition-colors font-medium"
+          class="text-dark-text hover:text-accent-500 transition-colors font-medium py-3 px-2 rounded-lg hover:bg-gray-50"
         >
           Sign In
         </a>
         <a
           href="https://app.submeow.com/auth/signup"
-          class="bg-accent-700 hover:bg-accent-800 text-white px-6 py-2.5 rounded-xl font-semibold text-center transition-all"
+          class="bg-accent-700 hover:bg-accent-800 text-white px-6 py-3 rounded-xl font-semibold text-center transition-all mt-1"
         >
           Get Started Free
         </a>

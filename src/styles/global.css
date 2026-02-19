@@ -38,8 +38,8 @@
 
   /* Brand Neutrals */
   --color-cream: #FEF3C7;
-  --color-dark-text: #1F2937;
-  --color-light-text: #4B5563;
+  --color-dark-text: #1E293B;
+  --color-light-text: #64748B;
   --color-background: #F9FAFB;
 
   /* Typography */
@@ -60,4 +60,27 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* ============================================
+   Smooth Scrolling
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   Reduced Motion Support
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
