@@ -4,42 +4,9 @@ import Button from '../components/Button.astro';
 import Mascot from '../components/Mascot.astro';
 import CheckmarkIcon from '../components/icons/CheckmarkIcon.astro';
 import XCrossIcon from '../components/icons/XCrossIcon.astro';
-
-const softwareAppSchema = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "SubMeow",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Android, Web",
-  "offers": [
-    {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "description": "Free plan"
-    },
-    {
-      "@type": "Offer",
-      "price": "4.99",
-      "priceCurrency": "USD",
-      "description": "Premium monthly"
-    },
-    {
-      "@type": "Offer",
-      "price": "9.99",
-      "priceCurrency": "USD",
-      "description": "Family monthly"
-    }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "ratingCount": "150"
-  }
-});
 ---
 
-<MarketingLayout title="Features - SubMeow" description="Discover all the powerful features SubMeow offers to help you track subscriptions, get smart reminders, scan receipts, and save money." schemaMarkup={[softwareAppSchema]}>
+<MarketingLayout title="Features - SubMeow" description="Discover all the powerful features SubMeow offers to help you track subscriptions, get smart reminders, scan receipts, and save money.">
 
   <!-- ==========================================
        Hero Section
@@ -126,8 +93,8 @@ const softwareAppSchema = JSON.stringify({
             <li class="flex items-start gap-3">
               <CheckmarkIcon class="text-primary-500 shrink-0 mt-0.5" />
               <div>
-                <p class="font-semibold text-dark-text">Custom Categories</p>
-                <p class="text-sm text-light-text">Organize by entertainment, productivity, health, and more</p>
+                <p class="font-semibold text-dark-text">10 Categories</p>
+                <p class="text-sm text-light-text">Organize by entertainment, music, gaming, cloud, productivity, and more</p>
               </div>
             </li>
           </ul>
@@ -310,8 +277,8 @@ const softwareAppSchema = JSON.stringify({
             <li class="flex items-start gap-3">
               <svg class="w-5 h-5 text-purple-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
               <div>
-                <p class="font-semibold text-dark-text">Savings Insights</p>
-                <p class="text-sm text-light-text">Get tips on subscriptions you could downgrade or cancel</p>
+                <p class="font-semibold text-dark-text">Year in Review</p>
+                <p class="text-sm text-light-text">Get a beautiful 6-slide annual summary of your subscription spending</p>
               </div>
             </li>
           </ul>
@@ -453,8 +420,8 @@ const softwareAppSchema = JSON.stringify({
             <li class="flex items-start gap-3">
               <svg class="w-5 h-5 text-cyan-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
               <div>
-                <p class="font-semibold text-dark-text">Secure Encryption</p>
-                <p class="text-sm text-light-text">Your data is encrypted in transit and at rest</p>
+                <p class="font-semibold text-dark-text">Offline-first</p>
+                <p class="text-sm text-light-text">Works without internet and syncs when you reconnect</p>
               </div>
             </li>
             <li class="flex items-start gap-3">
@@ -462,6 +429,312 @@ const softwareAppSchema = JSON.stringify({
               <div>
                 <p class="font-semibold text-dark-text">Cross-platform</p>
                 <p class="text-sm text-light-text">Android, iOS, and web -- all perfectly in sync</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 7: Achievements & Gamification (Rose/Pink) — text left, visual right -->
+  <section class="py-16 md:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Text -->
+        <div>
+          <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">Earn badges, unlock rewards</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Tracking subscriptions should be fun, not a chore. SubMeow turns good financial habits into a game with achievements, streaks, and rewards for your cat mascot.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Achievement Badges</p>
+                <p class="text-sm text-light-text">Earn badges for milestones like adding your first subscription or tracking for 30 days</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Streaks</p>
+                <p class="text-sm text-light-text">Keep your streak alive by staying on top of your subscriptions</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Unlock Cat Accessories</p>
+                <p class="text-sm text-light-text">Achievements unlock hats, glasses, and other accessories for your mascot</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Visual: Achievement badges mockup -->
+        <div class="relative" aria-hidden="true">
+          <div class="max-w-sm mx-auto lg:ml-auto">
+            <!-- Achievement cards -->
+            <div class="space-y-4">
+              <div class="bg-white rounded-2xl p-5 shadow-lg border border-rose-100 flex items-center gap-4">
+                <div class="w-14 h-14 bg-rose-100 rounded-xl flex items-center justify-center text-2xl shrink-0">&#127942;</div>
+                <div>
+                  <p class="font-bold text-dark-text text-sm">First Subscription</p>
+                  <p class="text-xs text-light-text">Added your very first subscription</p>
+                  <div class="mt-1.5 w-full bg-rose-100 rounded-full h-1.5"><div class="bg-rose-500 h-1.5 rounded-full w-full"></div></div>
+                </div>
+              </div>
+              <div class="bg-white rounded-2xl p-5 shadow-lg border border-amber-100 flex items-center gap-4">
+                <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center text-2xl shrink-0">&#128293;</div>
+                <div>
+                  <p class="font-bold text-dark-text text-sm">7-Day Streak</p>
+                  <p class="text-xs text-light-text">Checked in 7 days in a row</p>
+                  <div class="mt-1.5 w-full bg-amber-100 rounded-full h-1.5"><div class="bg-amber-500 h-1.5 rounded-full w-5/6"></div></div>
+                </div>
+              </div>
+              <div class="bg-white rounded-2xl p-5 shadow-lg border border-purple-100 flex items-center gap-4">
+                <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-2xl shrink-0">&#128570;</div>
+                <div>
+                  <p class="font-bold text-dark-text text-sm">Cat Collector</p>
+                  <p class="text-xs text-light-text">Unlocked 5 accessories for your cat</p>
+                  <div class="mt-1.5 w-full bg-purple-100 rounded-full h-1.5"><div class="bg-purple-500 h-1.5 rounded-full w-3/5"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-rose-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 8: Cat Themes & Customization (Violet) — visual left, text right -->
+  <section class="py-16 md:py-24 bg-gradient-to-b from-white to-violet-50/30 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Visual: Theme swatches (first on mobile, second on desktop) -->
+        <div class="relative order-2 lg:order-1" aria-hidden="true">
+          <div class="max-w-sm mx-auto lg:mr-auto">
+            <!-- Theme preview cards -->
+            <div class="grid grid-cols-3 gap-3 mb-4">
+              <div class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl p-4 aspect-square flex flex-col items-center justify-center shadow-lg">
+                <Mascot emotion="happy" size={48} />
+                <p class="text-[10px] text-white font-semibold mt-2">Ocean</p>
+              </div>
+              <div class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-4 aspect-square flex flex-col items-center justify-center shadow-lg">
+                <Mascot emotion="celebrating" size={48} />
+                <p class="text-[10px] text-white font-semibold mt-2">Sunset</p>
+              </div>
+              <div class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl p-4 aspect-square flex flex-col items-center justify-center shadow-lg">
+                <Mascot emotion="curious" size={48} />
+                <p class="text-[10px] text-white font-semibold mt-2">Grape</p>
+              </div>
+              <div class="bg-gradient-to-br from-green-400 to-green-600 rounded-2xl p-4 aspect-square flex flex-col items-center justify-center shadow-lg">
+                <Mascot emotion="happy" size={48} />
+                <p class="text-[10px] text-white font-semibold mt-2">Forest</p>
+              </div>
+              <div class="bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl p-4 aspect-square flex flex-col items-center justify-center shadow-lg">
+                <Mascot emotion="celebrating" size={48} />
+                <p class="text-[10px] text-white font-semibold mt-2">Berry</p>
+              </div>
+              <div class="bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl p-4 aspect-square flex flex-col items-center justify-center shadow-lg">
+                <Mascot emotion="sleeping" size={48} />
+                <p class="text-[10px] text-white font-semibold mt-2">Dark</p>
+              </div>
+            </div>
+            <!-- Accessory chips -->
+            <div class="flex flex-wrap gap-2 justify-center">
+              <span class="bg-white px-3 py-1.5 rounded-full text-xs font-medium text-dark-text shadow-sm border border-gray-100">Top Hat</span>
+              <span class="bg-white px-3 py-1.5 rounded-full text-xs font-medium text-dark-text shadow-sm border border-gray-100">Sunglasses</span>
+              <span class="bg-white px-3 py-1.5 rounded-full text-xs font-medium text-dark-text shadow-sm border border-gray-100">Crown</span>
+              <span class="bg-white px-3 py-1.5 rounded-full text-xs font-medium text-dark-text shadow-sm border border-gray-100">Bow Tie</span>
+              <span class="bg-white px-3 py-1.5 rounded-full text-xs font-medium text-dark-text shadow-sm border border-gray-100">+5 more</span>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-violet-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+        <!-- Text -->
+        <div class="order-1 lg:order-2">
+          <div class="w-14 h-14 bg-violet-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">Make it yours with themes and accessories</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Express yourself with 6 color themes and dress up your cat mascot with 9 unlockable accessories. SubMeow looks as unique as you are.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">6 Color Themes</p>
+                <p class="text-sm text-light-text">Choose from vibrant themes that change the entire app look and feel</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">9 Cat Accessories</p>
+                <p class="text-sm text-light-text">Hats, glasses, bow ties, and more to dress up your SubMeow mascot</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Light, Dark, and System</p>
+                <p class="text-sm text-light-text">Follows your device setting or pick light/dark mode manually</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 9: Security & Privacy (Slate/Gray) — text left, visual right -->
+  <section class="py-16 md:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Text -->
+        <div>
+          <div class="w-14 h-14 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">Your data stays safe</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            SubMeow never asks for bank access. Your subscription data is encrypted, secured with app-level locking, and stored using best-in-class security practices.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-slate-600 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">App Lock with PIN</p>
+                <p class="text-sm text-light-text">Add a PIN code to prevent unauthorized access to your subscription data</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-slate-600 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Encrypted Storage</p>
+                <p class="text-sm text-light-text">Credentials secured with FlutterSecureStorage and encrypted at rest</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-slate-600 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">No Bank Access Needed</p>
+                <p class="text-sm text-light-text">We never connect to your bank -- you stay in full control of your data</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Visual: Lock/Shield mockup -->
+        <div class="relative" aria-hidden="true">
+          <div class="max-w-sm mx-auto lg:ml-auto">
+            <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl p-8 shadow-xl border border-slate-200">
+              <!-- PIN entry mockup -->
+              <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-slate-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg class="w-8 h-8 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                </div>
+                <p class="text-sm font-semibold text-dark-text">Enter your PIN</p>
+              </div>
+              <!-- PIN dots -->
+              <div class="flex justify-center gap-4 mb-6">
+                <div class="w-4 h-4 rounded-full bg-slate-600"></div>
+                <div class="w-4 h-4 rounded-full bg-slate-600"></div>
+                <div class="w-4 h-4 rounded-full bg-slate-300"></div>
+                <div class="w-4 h-4 rounded-full bg-slate-300"></div>
+              </div>
+              <!-- Keypad hint -->
+              <div class="grid grid-cols-3 gap-2">
+                <div class="bg-white rounded-lg py-2.5 text-center text-sm font-semibold text-dark-text shadow-sm">1</div>
+                <div class="bg-white rounded-lg py-2.5 text-center text-sm font-semibold text-dark-text shadow-sm">2</div>
+                <div class="bg-white rounded-lg py-2.5 text-center text-sm font-semibold text-dark-text shadow-sm">3</div>
+                <div class="bg-white rounded-lg py-2.5 text-center text-sm font-semibold text-dark-text shadow-sm">4</div>
+                <div class="bg-white rounded-lg py-2.5 text-center text-sm font-semibold text-dark-text shadow-sm">5</div>
+                <div class="bg-white rounded-lg py-2.5 text-center text-sm font-semibold text-dark-text shadow-sm">6</div>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-slate-100/50 rounded-full blur-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 10: Guest Mode (Emerald/Teal) — visual left, text right -->
+  <section class="py-16 md:py-24 bg-gradient-to-b from-white to-emerald-50/30 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Visual: Guest mode mockup (first on mobile, second on desktop) -->
+        <div class="relative order-2 lg:order-1 flex items-center justify-center">
+          <div class="max-w-sm mx-auto lg:mr-auto">
+            <div class="bg-white rounded-3xl p-6 shadow-xl border border-emerald-100">
+              <div class="flex items-center gap-3 mb-6">
+                <Mascot emotion="happy" size={48} />
+                <div>
+                  <p class="font-bold text-dark-text text-sm">Welcome, Guest!</p>
+                  <p class="text-xs text-light-text">No account needed to get started</p>
+                </div>
+              </div>
+              <!-- Feature bullets in the card -->
+              <div class="space-y-3">
+                <div class="flex items-center gap-2 bg-emerald-50 rounded-lg px-3 py-2">
+                  <CheckmarkIcon size={14} class="text-emerald-500 shrink-0" />
+                  <span class="text-xs text-dark-text">Add unlimited subscriptions</span>
+                </div>
+                <div class="flex items-center gap-2 bg-emerald-50 rounded-lg px-3 py-2">
+                  <CheckmarkIcon size={14} class="text-emerald-500 shrink-0" />
+                  <span class="text-xs text-dark-text">All data stored locally on device</span>
+                </div>
+                <div class="flex items-center gap-2 bg-emerald-50 rounded-lg px-3 py-2">
+                  <CheckmarkIcon size={14} class="text-emerald-500 shrink-0" />
+                  <span class="text-xs text-dark-text">Sign up later to sync across devices</span>
+                </div>
+              </div>
+              <div class="mt-4 text-center">
+                <span class="inline-block bg-emerald-500 text-white text-xs font-semibold px-4 py-2 rounded-full">Continue as Guest</span>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative blob -->
+          <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-emerald-100/50 rounded-full blur-2xl -z-10" aria-hidden="true"></div>
+        </div>
+        <!-- Text -->
+        <div class="order-1 lg:order-2">
+          <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-4">Try it without signing up</h2>
+          <p class="text-lg text-light-text leading-relaxed mb-8">
+            Not ready to create an account? No problem. SubMeow works in guest mode with all core features available. Your data stays on your device until you choose to sign up and sync.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">No Account Required</p>
+                <p class="text-sm text-light-text">Start tracking immediately without email or sign-up</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Local-only Storage</p>
+                <p class="text-sm text-light-text">All guest data stays on your device -- nothing leaves without your permission</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+              <div>
+                <p class="font-semibold text-dark-text">Seamless Migration</p>
+                <p class="text-sm text-light-text">Sign up later and all your guest data automatically merges to your account</p>
               </div>
             </li>
           </ul>
@@ -570,8 +843,8 @@ const softwareAppSchema = JSON.stringify({
           <p class="text-base text-orange-100">Languages</p>
         </div>
         <div>
-          <p class="text-4xl md:text-5xl font-bold mb-2">99.9%</p>
-          <p class="text-base text-orange-100">Uptime</p>
+          <p class="text-4xl md:text-5xl font-bold mb-2">100%</p>
+          <p class="text-base text-orange-100">Free Forever Plan</p>
         </div>
       </div>
     </div>
