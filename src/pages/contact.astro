@@ -53,7 +53,10 @@ import Mascot from '../components/Mascot.astro';
           <h2 class="text-3xl sm:text-4xl font-bold text-dark-text mb-3">We would love to hear from you</h2>
           <p class="text-light-text mb-8 leading-relaxed">Fill out the form below and we will get back to you as soon as possible.</p>
 
-          <form action="#" method="POST" class="space-y-6">
+          <form action="https://formsubmit.co/hello@submeow.com" method="POST" class="space-y-6">
+            <input type="hidden" name="_subject" value="SubMeow Contact Form">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://submeow.com/contact?submitted=true">
             <!-- Name + Email Row -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <!-- Name -->
