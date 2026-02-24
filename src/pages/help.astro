@@ -2,10 +2,9 @@
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
 import Mascot from '../components/Mascot.astro';
-import DocumentIcon from '../components/icons/DocumentIcon.astro';
 ---
 
-<MarketingLayout title="Help Center - SubMeow" description="Find answers to your questions about SubMeow. Browse help categories, popular articles, and get support for managing your subscriptions.">
+<MarketingLayout title="Help Center - SubMeow" description="Find answers to your questions about SubMeow. Browse help categories, FAQs, and get support for managing your subscriptions.">
 
   <!-- ==========================================
        Hero Section
@@ -23,7 +22,7 @@ import DocumentIcon from '../components/icons/DocumentIcon.astro';
 
         <!-- Subtitle -->
         <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto mb-10 leading-relaxed">
-          Everything you need to get the most out of SubMeow. Browse topics, read guides, or search for answers below.
+          Everything you need to get the most out of SubMeow. Browse topics or search for answers below.
         </p>
 
         <!-- Search Bar (visual only) -->
@@ -52,400 +51,254 @@ import DocumentIcon from '../components/icons/DocumentIcon.astro';
   </section>
 
   <!-- ==========================================
-       Category Grid Section
+       FAQ Categories Section
        ========================================== -->
   <section class="py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center mb-16">
         <span class="inline-block bg-accent-100 text-accent-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Browse Topics</span>
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Help categories</h2>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Frequently asked questions</h2>
         <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Find the answers you need, organized by topic</p>
       </div>
 
-      <!-- Categories Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- FAQ Categories -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
         <!-- Getting Started -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-primary-500">
-          <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-5">
-            <!-- Rocket icon -->
-            <svg class="w-7 h-7 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 003.02-10.23A15.07 15.07 0 008.38 1.12a14.98 14.98 0 00-3.02 10.23m10.23 3.02l-5.84 2.58M7.36 14.37L3.51 8.52m3.85 5.85l-3.85 5.85m3.85-5.85l5.84-2.58" />
-            </svg>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-primary-500">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center shrink-0">
+              <!-- Rocket icon -->
+              <svg class="w-7 h-7 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 003.02-10.23A15.07 15.07 0 008.38 1.12a14.98 14.98 0 00-3.02 10.23m10.23 3.02l-5.84 2.58M7.36 14.37L3.51 8.52m3.85 5.85l-3.85 5.85m3.85-5.85l5.84-2.58" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark-text">Getting Started</h3>
           </div>
-          <h3 class="text-xl font-bold text-dark-text mb-4">Getting Started</h3>
-          <ul class="space-y-3 mb-6">
-            <li>
-              <a href="#" class="text-light-text hover:text-primary-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-primary-300 shrink-0 mt-0.5" />
-                Setting up your SubMeow account
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-primary-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-primary-300 shrink-0 mt-0.5" />
-                Adding your first subscription
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-primary-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-primary-300 shrink-0 mt-0.5" />
-                Understanding the dashboard
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="inline-flex items-center text-primary-500 hover:text-primary-600 text-sm font-semibold transition-colors group">
-            View all
-            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </a>
+          <div class="space-y-3">
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How do I create an account?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Sign up with your email address or use Google OAuth for one-tap sign-in. You can also use Guest Mode to start tracking subscriptions without creating an account -- your data stays on your device only.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How do I add my first subscription?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Tap the + button on the home screen, then search the catalog of 270+ services or enter details manually. You can set the name, price, billing cycle, and category. Premium users can also scan a receipt with OCR to auto-fill subscription details.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>What is Guest Mode?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Guest Mode lets you track subscriptions locally without creating an account. Your data stays on your device only and will not sync across devices. When you create an account later, your existing subscriptions are automatically migrated to your new account.</p>
+              </div>
+            </details>
+          </div>
         </div>
 
         <!-- Managing Subscriptions -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-success-500">
-          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
-            <!-- List/clipboard icon -->
-            <svg class="w-7 h-7 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-            </svg>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-success-500">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center shrink-0">
+              <!-- List/clipboard icon -->
+              <svg class="w-7 h-7 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark-text">Managing Subscriptions</h3>
           </div>
-          <h3 class="text-xl font-bold text-dark-text mb-4">Managing Subscriptions</h3>
-          <ul class="space-y-3 mb-6">
-            <li>
-              <a href="#" class="text-light-text hover:text-success-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-green-300 shrink-0 mt-0.5" />
-                Adding, editing, and deleting subscriptions
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-success-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-green-300 shrink-0 mt-0.5" />
-                Organizing with categories
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-success-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-green-300 shrink-0 mt-0.5" />
-                Using the subscription catalog
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-success-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-green-300 shrink-0 mt-0.5" />
-                Managing billing cycles and currencies
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="inline-flex items-center text-success-500 hover:text-green-600 text-sm font-semibold transition-colors group">
-            View all
-            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </a>
+          <div class="space-y-3">
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How do I edit a subscription?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Tap any subscription to view its details, then tap the edit button to change the name, price, billing cycle, or category. Changes are saved immediately and synced across your devices if you have an account.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How do I delete a subscription?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Swipe left on a subscription in the list or tap on it and select delete from the detail screen. Please note that this action cannot be undone.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>What categories are available?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>SubMeow includes 10 built-in categories: Entertainment, Music, Gaming, Cloud, Software, Productivity, Fitness, News, Education, and Other. Each subscription can be assigned to one category to help you organize and analyze your spending.</p>
+              </div>
+            </details>
+          </div>
         </div>
 
         <!-- Reminders & Notifications -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-accent-500">
-          <div class="w-14 h-14 bg-accent-100 rounded-2xl flex items-center justify-center mb-5">
-            <!-- Bell icon -->
-            <svg class="w-7 h-7 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-dark-text mb-4">Reminders & Notifications</h3>
-          <ul class="space-y-3 mb-6">
-            <li>
-              <a href="#" class="text-light-text hover:text-accent-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-accent-300 shrink-0 mt-0.5" />
-                Setting up renewal reminders
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-accent-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-accent-300 shrink-0 mt-0.5" />
-                Notification types and channels
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-accent-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-accent-300 shrink-0 mt-0.5" />
-                Customizing reminder timing
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="inline-flex items-center text-accent-500 hover:text-accent-600 text-sm font-semibold transition-colors group">
-            View all
-            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </a>
-        </div>
-
-        <!-- Premium Features -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-purple-500">
-          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-5">
-            <!-- Star/sparkle icon -->
-            <svg class="w-7 h-7 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-dark-text mb-4">Premium Features</h3>
-          <ul class="space-y-3 mb-6">
-            <li>
-              <a href="#" class="text-light-text hover:text-purple-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-purple-300 shrink-0 mt-0.5" />
-                Upgrading to SubMeow Premium
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-purple-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-purple-300 shrink-0 mt-0.5" />
-                Using OCR to scan receipts
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-purple-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-purple-300 shrink-0 mt-0.5" />
-                Advanced analytics and insights
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-purple-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-purple-300 shrink-0 mt-0.5" />
-                Exporting your data
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="inline-flex items-center text-purple-500 hover:text-purple-600 text-sm font-semibold transition-colors group">
-            View all
-            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </a>
-        </div>
-
-        <!-- Account & Billing -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-warning-500">
-          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-5">
-            <!-- User/cog icon -->
-            <svg class="w-7 h-7 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-dark-text mb-4">Account & Billing</h3>
-          <ul class="space-y-3 mb-6">
-            <li>
-              <a href="#" class="text-light-text hover:text-warning-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-amber-300 shrink-0 mt-0.5" />
-                Managing your profile settings
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-warning-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-amber-300 shrink-0 mt-0.5" />
-                Payment and subscription plans
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-warning-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-amber-300 shrink-0 mt-0.5" />
-                Cancelling your Premium plan
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-warning-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-amber-300 shrink-0 mt-0.5" />
-                Your data and privacy
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="inline-flex items-center text-warning-500 hover:text-amber-600 text-sm font-semibold transition-colors group">
-            View all
-            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </a>
-        </div>
-
-        <!-- Troubleshooting -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-gray-100 hover:-translate-y-1 transition-all border-t-4 border-t-error-500">
-          <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center mb-5">
-            <!-- Wrench/tool icon -->
-            <svg class="w-7 h-7 text-error-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-dark-text mb-4">Troubleshooting</h3>
-          <ul class="space-y-3 mb-6">
-            <li>
-              <a href="#" class="text-light-text hover:text-error-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-red-300 shrink-0 mt-0.5" />
-                Common issues and solutions
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-error-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-red-300 shrink-0 mt-0.5" />
-                Fixing sync problems
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-error-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-red-300 shrink-0 mt-0.5" />
-                App crashes and performance
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-light-text hover:text-error-500 transition-colors text-sm flex items-start gap-2">
-                <DocumentIcon class="w-4 h-4 text-red-300 shrink-0 mt-0.5" />
-                Reporting a bug
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="inline-flex items-center text-error-500 hover:text-red-600 text-sm font-semibold transition-colors group">
-            View all
-            <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       Popular Articles Section
-       ========================================== -->
-  <section class="bg-gradient-to-b from-cream/40 to-white py-20 md:py-28">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <!-- Section Header -->
-      <div class="text-center mb-16">
-        <span class="inline-block bg-primary-100 text-primary-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Most Read</span>
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Popular articles</h2>
-        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">The guides our users find most helpful</p>
-      </div>
-
-      <!-- Articles Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- Article 1 -->
-        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-              </svg>
-            </div>
-            <span class="text-xs font-semibold text-primary-500 bg-primary-50 px-2.5 py-1 rounded-full">Getting Started</span>
-          </div>
-          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-primary-500 transition-colors">How to add your first subscription</h3>
-          <p class="text-sm text-light-text leading-relaxed mb-4">A step-by-step walkthrough to adding your first subscription, choosing a category, and setting a billing cycle.</p>
-          <div class="flex items-center justify-between">
-            <span class="text-xs text-light-text flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              3 min read
-            </span>
-            <svg class="w-4 h-4 text-light-text group-hover:text-primary-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </div>
-        </a>
-
-        <!-- Article 2 -->
-        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-accent-100 rounded-xl flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-accent-500">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-accent-100 rounded-2xl flex items-center justify-center shrink-0">
+              <!-- Bell icon -->
+              <svg class="w-7 h-7 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
               </svg>
             </div>
-            <span class="text-xs font-semibold text-accent-800 bg-accent-50 px-2.5 py-1 rounded-full">Reminders</span>
+            <h3 class="text-xl font-bold text-dark-text">Reminders & Notifications</h3>
           </div>
-          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-accent-500 transition-colors">Setting up smart reminders</h3>
-          <p class="text-sm text-light-text leading-relaxed mb-4">Learn how to configure reminders so you never miss a renewal date or forget about a free trial ending.</p>
-          <div class="flex items-center justify-between">
-            <span class="text-xs text-light-text flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              4 min read
-            </span>
-            <svg class="w-4 h-4 text-light-text group-hover:text-accent-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          <div class="space-y-3">
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How do reminders work?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>SubMeow sends push notifications before subscription renewals and trial endings so you never get caught off guard. You can customize the timing in Settings to receive reminders at the interval that works best for you.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>Can I set custom reminder times?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Premium users can fully customize reminder timing -- choose how many days before a renewal you want to be notified. Free users receive default reminders that are still designed to keep you informed before any charges.</p>
+              </div>
+            </details>
           </div>
-        </a>
+        </div>
 
-        <!-- Article 3 -->
-        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
-            <span class="text-xs font-semibold text-purple-500 bg-purple-50 px-2.5 py-1 rounded-full">Premium</span>
-          </div>
-          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-purple-500 transition-colors">Using OCR to scan receipts</h3>
-          <p class="text-sm text-light-text leading-relaxed mb-4">Snap a photo of any receipt or invoice and let SubMeow automatically extract subscription details for you.</p>
-          <div class="flex items-center justify-between">
-            <span class="text-xs text-light-text flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              5 min read
-            </span>
-            <svg class="w-4 h-4 text-light-text group-hover:text-purple-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </div>
-        </a>
-
-        <!-- Article 4 -->
-        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-success-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-            </div>
-            <span class="text-xs font-semibold text-success-800 bg-green-50 px-2.5 py-1 rounded-full">Analytics</span>
-          </div>
-          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-success-500 transition-colors">Understanding your analytics</h3>
-          <p class="text-sm text-light-text leading-relaxed mb-4">Dive into your spending trends, category breakdowns, and monthly comparisons to make smarter decisions.</p>
-          <div class="flex items-center justify-between">
-            <span class="text-xs text-light-text flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              4 min read
-            </span>
-            <svg class="w-4 h-4 text-light-text group-hover:text-success-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </div>
-        </a>
-
-        <!-- Article 5 -->
-        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <span class="text-xs font-semibold text-warning-700 bg-amber-50 px-2.5 py-1 rounded-full">Account</span>
-          </div>
-          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-warning-500 transition-colors">How to export your data</h3>
-          <p class="text-sm text-light-text leading-relaxed mb-4">Export all your subscription data as CSV or PDF for your records, tax purposes, or backup.</p>
-          <div class="flex items-center justify-between">
-            <span class="text-xs text-light-text flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              2 min read
-            </span>
-            <svg class="w-4 h-4 text-light-text group-hover:text-warning-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </div>
-        </a>
-
-        <!-- Article 6 -->
-        <a href="#" class="group bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <!-- Premium Features -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-purple-500">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center shrink-0">
+              <!-- Star/sparkle icon -->
+              <svg class="w-7 h-7 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
               </svg>
             </div>
-            <span class="text-xs font-semibold text-purple-500 bg-purple-50 px-2.5 py-1 rounded-full">Premium</span>
+            <h3 class="text-xl font-bold text-dark-text">Premium Features</h3>
           </div>
-          <h3 class="text-lg font-bold text-dark-text mb-2 group-hover:text-purple-500 transition-colors">Switching to Premium</h3>
-          <p class="text-sm text-light-text leading-relaxed mb-4">Compare plans, understand what you get with Premium, and learn how to upgrade in just a few taps.</p>
-          <div class="flex items-center justify-between">
-            <span class="text-xs text-light-text flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              3 min read
-            </span>
-            <svg class="w-4 h-4 text-light-text group-hover:text-purple-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          <div class="space-y-3">
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>What is included in Premium?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Premium unlocks unlimited OCR receipt scanning, advanced analytics and spending insights, data export (CSV), cat theme customization, an ad-free experience, and priority support.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How much does Premium cost?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Premium is available for $0.99/month or a one-time lifetime payment of $9.99. Both options unlock all Premium features immediately.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How do I upgrade to Premium?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Go to Settings and tap Premium to see the available upgrade options. You can choose between monthly and lifetime plans. The upgrade takes effect instantly after purchase.</p>
+              </div>
+            </details>
           </div>
-        </a>
+        </div>
+
+        <!-- Account & Billing -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-warning-500">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center shrink-0">
+              <!-- User/cog icon -->
+              <svg class="w-7 h-7 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark-text">Account & Billing</h3>
+          </div>
+          <div class="space-y-3">
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How do I change my password?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Go to the login screen and tap "Forgot Password" to receive a password reset link via email. Follow the link to set a new password. If you signed up with Google OAuth, you do not have a SubMeow password -- manage your credentials through Google instead.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>How do I delete my account?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Contact us at <a href="mailto:hello@submeow.com" class="text-primary-500 hover:text-primary-600 font-semibold transition-colors">hello@submeow.com</a> to request account deletion. Your data will be permanently deleted within 30 days of the request.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>Can I export my data?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Premium users can export their subscription data as a CSV file. Go to Settings and look for the Export option. This is useful for record-keeping, tax purposes, or switching to another service.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-error-500">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center shrink-0">
+              <!-- Wrench/tool icon -->
+              <svg class="w-7 h-7 text-error-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-dark-text">Troubleshooting</h3>
+          </div>
+          <div class="space-y-3">
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>Why are my subscriptions not syncing?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Make sure you are logged in with an account (not Guest Mode) and have an active internet connection. Try pulling down on the subscription list to force a refresh. If the problem persists, try logging out and back in.</p>
+              </div>
+            </details>
+            <details class="faq-item group">
+              <summary class="faq-summary">
+                <span>The app will not open. What do I do?</span>
+                <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </summary>
+              <div class="faq-answer">
+                <p>Try force-closing the app and reopening it. If the issue persists, uninstall and reinstall SubMeow. If you have an account, your data is safely stored in the cloud and will be restored when you sign back in. If you were using Guest Mode, local-only data may be lost -- this is a good reason to create an account.</p>
+              </div>
+            </details>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -513,11 +366,89 @@ import DocumentIcon from '../components/icons/DocumentIcon.astro';
   }
 
   /* ==========================================
+     FAQ Accordion Styles
+     ========================================== */
+  .faq-item {
+    border: 1px solid #f3f4f6;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+  }
+
+  .faq-item:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+  }
+
+  .faq-item[open] {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  }
+
+  .faq-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #1f2937;
+    list-style: none;
+    transition: background-color 0.15s ease;
+  }
+
+  .faq-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-summary::marker {
+    content: '';
+  }
+
+  .faq-summary:hover {
+    background-color: #f9fafb;
+  }
+
+  .faq-chevron {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #9ca3af;
+    shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item[open] .faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    padding: 0 1.25rem 1rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #6b7280;
+  }
+
+  .faq-answer a {
+    text-decoration: none;
+  }
+
+  /* ==========================================
      Reduced Motion
      ========================================== */
   @media (prefers-reduced-motion: reduce) {
     .hero-bounce {
       animation: none;
+    }
+
+    .faq-chevron {
+      transition: none;
+    }
+
+    .faq-item {
+      transition: none;
     }
   }
 </style>
