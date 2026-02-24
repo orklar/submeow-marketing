@@ -31,11 +31,7 @@ const softwareAppSchema = JSON.stringify({
       "description": "Lifetime one-time"
     }
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "ratingCount": "150"
-  }
+  "description": "SubMeow watches all your subscriptions so you never get surprised by charges again. Track trials, get reminders, and save money."
 });
 
 const faqSchema = JSON.stringify({
@@ -146,7 +142,7 @@ const schemas = [softwareAppSchema, faqSchema];
             </span>
             <span class="inline-flex items-center gap-1.5">
               <CheckmarkIcon size={16} class="text-success-500 shrink-0" />
-              10,000+ users
+              Works offline
             </span>
           </div>
         </div>
@@ -320,106 +316,70 @@ const schemas = [softwareAppSchema, faqSchema];
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="bg-white py-20 md:py-28">
+  <!-- Why SubMeow Section -->
+  <section id="why-submeow" class="bg-white py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center mb-16">
-        <span class="inline-block bg-green-100 text-success-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Testimonials</span>
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Loved by thousands of users</h2>
-        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">See what our community has to say about SubMeow</p>
+        <span class="inline-block bg-green-100 text-success-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Why SubMeow?</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Built different from other trackers</h2>
+        <p class="text-lg md:text-xl text-light-text max-w-2xl mx-auto">Here is what makes SubMeow the subscription tracker you can trust</p>
       </div>
 
-      <!-- Testimonial Cards Grid -->
+      <!-- Feature Highlight Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Testimonial 1 -->
+        <!-- Privacy First -->
         <div class="bg-gradient-to-br from-accent-50 to-white rounded-2xl p-8 shadow-lg border border-accent-100">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-full bg-accent-200 shrink-0"></div>
-            <div>
-              <p class="font-bold text-dark-text">Sarah Mitchell</p>
-              <p class="text-sm text-light-text">Freelance Designer</p>
-            </div>
+          <div class="w-14 h-14 bg-accent-200 rounded-2xl flex items-center justify-center mb-5">
+            <span class="text-2xl" aria-hidden="true">&#128274;</span>
           </div>
-          <div class="flex gap-0.5 mb-4 text-warning-500" aria-label="5 out of 5 stars">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p class="text-light-text leading-relaxed">"SubMeow helped me discover I was paying for 3 streaming services I never used! Saved me $40/month. The cat reminders are adorable too!"</p>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Privacy First</h3>
+          <p class="text-light-text leading-relaxed">No bank linking required. You add subscriptions manually, so your financial data stays entirely yours. We never see your accounts.</p>
         </div>
 
-        <!-- Testimonial 2 -->
+        <!-- Works Offline -->
         <div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 shadow-lg border border-primary-100">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-full bg-primary-200 shrink-0"></div>
-            <div>
-              <p class="font-bold text-dark-text">Marcus Chen</p>
-              <p class="text-sm text-light-text">Software Engineer</p>
-            </div>
+          <div class="w-14 h-14 bg-primary-200 rounded-2xl flex items-center justify-center mb-5">
+            <span class="text-2xl" aria-hidden="true">&#128268;</span>
           </div>
-          <div class="flex gap-0.5 mb-4 text-warning-500" aria-label="5 out of 5 stars">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p class="text-light-text leading-relaxed">"Finally a subscription tracker that doesn't require linking my bank account. Privacy-focused and works perfectly. Best $5/month I spend!"</p>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Works Offline</h3>
+          <p class="text-light-text leading-relaxed">Track and manage your subscriptions without an internet connection. Your data syncs automatically when you are back online.</p>
         </div>
 
-        <!-- Testimonial 3 -->
+        <!-- Smart Reminders -->
         <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 shadow-lg border border-green-100">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-full bg-green-200 shrink-0"></div>
-            <div>
-              <p class="font-bold text-dark-text">Emma Rodriguez</p>
-              <p class="text-sm text-light-text">Marketing Manager</p>
-            </div>
+          <div class="w-14 h-14 bg-green-200 rounded-2xl flex items-center justify-center mb-5">
+            <span class="text-2xl" aria-hidden="true">&#128276;</span>
           </div>
-          <div class="flex gap-0.5 mb-4 text-warning-500" aria-label="5 out of 5 stars">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p class="text-light-text leading-relaxed">"The trial reminders saved me from being charged for services I forgot about. Already saved $200+ this year. Highly recommend!"</p>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Smart Reminders</h3>
+          <p class="text-light-text leading-relaxed">Get notified before trial endings and upcoming renewals. Never get surprised by a charge you forgot about again.</p>
         </div>
 
-        <!-- Testimonial 4 -->
+        <!-- Beautiful Analytics -->
         <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg border border-purple-100">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-full bg-purple-200 shrink-0"></div>
-            <div>
-              <p class="font-bold text-dark-text">David Park</p>
-              <p class="text-sm text-light-text">Student</p>
-            </div>
+          <div class="w-14 h-14 bg-purple-200 rounded-2xl flex items-center justify-center mb-5">
+            <span class="text-2xl" aria-hidden="true">&#128200;</span>
           </div>
-          <div class="flex gap-0.5 mb-4 text-warning-500" aria-label="5 out of 5 stars">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p class="text-light-text leading-relaxed">"As a student on a budget, SubMeow helps me keep track of every dollar. The free plan has everything I need. Love the cute cat mascot!"</p>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Beautiful Analytics</h3>
+          <p class="text-light-text leading-relaxed">See exactly where your money goes with clear charts and spending breakdowns by category, month, and year.</p>
         </div>
 
-        <!-- Testimonial 5 -->
+        <!-- Cat Companion -->
         <div class="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-8 shadow-lg border border-pink-100">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-full bg-pink-200 shrink-0"></div>
-            <div>
-              <p class="font-bold text-dark-text">Lisa Thompson</p>
-              <p class="text-sm text-light-text">Small Business Owner</p>
-            </div>
+          <div class="w-14 h-14 bg-pink-200 rounded-2xl flex items-center justify-center mb-5">
+            <Mascot emotion="happy" size={28} />
           </div>
-          <div class="flex gap-0.5 mb-4 text-warning-500" aria-label="5 out of 5 stars">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p class="text-light-text leading-relaxed">"Managing both personal and business subscriptions was chaos. SubMeow's categories and analytics made everything so much clearer!"</p>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Cat Companion</h3>
+          <p class="text-light-text leading-relaxed">Your personal subscription-tracking mascot reacts to your spending habits and keeps the experience fun and engaging.</p>
         </div>
 
-        <!-- Testimonial 6 -->
+        <!-- Free Forever -->
         <div class="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-8 shadow-lg border border-amber-100">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-full bg-amber-200 shrink-0"></div>
-            <div>
-              <p class="font-bold text-dark-text">James Wilson</p>
-              <p class="text-sm text-light-text">Content Creator</p>
-            </div>
+          <div class="w-14 h-14 bg-amber-200 rounded-2xl flex items-center justify-center mb-5">
+            <span class="text-2xl" aria-hidden="true">&#127873;</span>
           </div>
-          <div class="flex gap-0.5 mb-4 text-warning-500" aria-label="5 out of 5 stars">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p class="text-light-text leading-relaxed">"I have subscriptions for so many creative tools. SubMeow keeps me organized and helps me budget for new software. Essential tool!"</p>
+          <h3 class="text-xl font-bold text-dark-text mb-3">Free Forever</h3>
+          <p class="text-light-text leading-relaxed">Core features are free with no time limit. Track up to 10 subscriptions, get reminders, and view spending insights at no cost.</p>
         </div>
       </div>
     </div>
@@ -429,28 +389,28 @@ const schemas = [softwareAppSchema, faqSchema];
   <section id="stats" class="bg-gradient-to-r from-accent-500 to-accent-600 py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-        <!-- Active Users -->
+        <!-- Services Supported -->
         <div>
-          <p class="text-4xl md:text-5xl font-bold mb-2">10K+</p>
-          <p class="text-base text-orange-100">Active Users</p>
+          <p class="text-4xl md:text-5xl font-bold mb-2">270+</p>
+          <p class="text-base text-orange-100">Services Supported</p>
         </div>
 
-        <!-- Money Saved -->
+        <!-- Languages -->
         <div>
-          <p class="text-4xl md:text-5xl font-bold mb-2">$2M+</p>
-          <p class="text-base text-orange-100">Money Saved</p>
+          <p class="text-4xl md:text-5xl font-bold mb-2">13</p>
+          <p class="text-base text-orange-100">Languages</p>
         </div>
 
-        <!-- Subscriptions Tracked -->
+        <!-- Currencies -->
         <div>
-          <p class="text-4xl md:text-5xl font-bold mb-2">50K+</p>
-          <p class="text-base text-orange-100">Subscriptions Tracked</p>
+          <p class="text-4xl md:text-5xl font-bold mb-2">10+</p>
+          <p class="text-base text-orange-100">Currencies</p>
         </div>
 
-        <!-- App Store Rating -->
+        <!-- Cat Themes -->
         <div>
-          <p class="text-4xl md:text-5xl font-bold mb-2">4.9 <span class="text-warning-500">&#9733;</span></p>
-          <p class="text-base text-orange-100">App Store Rating</p>
+          <p class="text-4xl md:text-5xl font-bold mb-2">6</p>
+          <p class="text-base text-orange-100">Cat Themes</p>
         </div>
       </div>
     </div>
@@ -674,7 +634,7 @@ const schemas = [softwareAppSchema, faqSchema];
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-text mb-6">Ready to take control of your subscriptions?</h2>
 
       <!-- Subtext -->
-      <p class="text-lg md:text-xl text-light-text mb-12 max-w-3xl mx-auto">Join thousands of users who are saving money and staying organized with SubMeow</p>
+      <p class="text-lg md:text-xl text-light-text mb-12 max-w-3xl mx-auto">Start saving money and staying organized with SubMeow today</p>
 
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
