@@ -147,9 +147,13 @@ import XCrossIcon from '../components/icons/XCrossIcon.astro';
           <!-- Notify me form -->
           <div class="bg-primary-50 rounded-xl p-5">
             <p class="text-sm font-semibold text-dark-text mb-3 text-center">Get notified when iOS launches</p>
-            <form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
+            <form action="https://formsubmit.co/hello@submeow.com" method="POST" class="flex flex-col gap-3">
+              <input type="hidden" name="_subject" value="iOS Launch Notification Request">
+              <input type="hidden" name="_captcha" value="true">
+              <input type="hidden" name="_next" value="https://submeow.com/download?subscribed=true">
               <input
                 type="email"
+                name="email"
                 placeholder="your@email.com"
                 class="w-full px-4 py-2.5 rounded-xl border border-primary-200 bg-white text-dark-text placeholder:text-light-text text-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all"
                 required

@@ -2,9 +2,144 @@
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 import Button from '../components/Button.astro';
 import Mascot from '../components/Mascot.astro';
+
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I create an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sign up with your email address or use Google OAuth for one-tap sign-in. You can also use Guest Mode to start tracking subscriptions without creating an account -- your data stays on your device only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add my first subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tap the + button on the home screen, then search the catalog of 270+ services or enter details manually. You can set the name, price, billing cycle, and category. Premium users can also scan a receipt with OCR to auto-fill subscription details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Guest Mode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Guest Mode lets you track subscriptions locally without creating an account. Your data stays on your device only and will not sync across devices. When you create an account later, your existing subscriptions are automatically migrated to your new account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I edit a subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tap any subscription to view its details, then tap the edit button to change the name, price, billing cycle, or category. Changes are saved immediately and synced across your devices if you have an account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete a subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Swipe left on a subscription in the list or tap on it and select delete from the detail screen. Please note that this action cannot be undone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What categories are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SubMeow includes 10 built-in categories: Entertainment, Music, Gaming, Cloud, Software, Productivity, Fitness, News, Education, and Other. Each subscription can be assigned to one category to help you organize and analyze your spending."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do reminders work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SubMeow sends push notifications before subscription renewals and trial endings so you never get caught off guard. You can customize the timing in Settings to receive reminders at the interval that works best for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I set custom reminder times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premium users can fully customize reminder timing -- choose how many days before a renewal you want to be notified. Free users receive default reminders that are still designed to keep you informed before any charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in Premium?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premium unlocks unlimited OCR receipt scanning, advanced analytics and spending insights, data export (CSV), cat theme customization, an ad-free experience, and priority support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Premium cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premium is available for $0.99/month or a one-time lifetime payment of $9.99. Both options unlock all Premium features immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I upgrade to Premium?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Settings and tap Premium to see the available upgrade options. You can choose between monthly and lifetime plans. The upgrade takes effect instantly after purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I change my password?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to the login screen and tap Forgot Password to receive a password reset link via email. Follow the link to set a new password. If you signed up with Google OAuth, you do not have a SubMeow password -- manage your credentials through Google instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete my account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact us at hello@submeow.com to request account deletion. Your data will be permanently deleted within 30 days of the request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export my data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premium users can export their subscription data as a CSV file. Go to Settings and look for the Export option. This is useful for record-keeping, tax purposes, or switching to another service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are my subscriptions not syncing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Make sure you are logged in with an account (not Guest Mode) and have an active internet connection. Your data syncs automatically when the app is online and you open the subscriptions screen. If the problem persists, try logging out and back in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The app will not open. What do I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Try force-closing the app and reopening it. If the issue persists, uninstall and reinstall SubMeow. If you have an account, your data is safely stored in the cloud and will be restored when you sign back in. If you were using Guest Mode, local-only data may be lost -- this is a good reason to create an account."
+      }
+    }
+  ]
+});
 ---
 
-<MarketingLayout title="Help Center - SubMeow" description="Find answers to your questions about SubMeow. Browse help categories, FAQs, and get support for managing your subscriptions.">
+<MarketingLayout title="Help Center - SubMeow" description="Find answers to your questions about SubMeow. Browse help categories, FAQs, and get support for managing your subscriptions." schemaMarkup={[faqSchema]}>
 
   <!-- ==========================================
        Hero Section
@@ -285,7 +420,7 @@ import Mascot from '../components/Mascot.astro';
                 <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <div class="faq-answer">
-                <p>Make sure you are logged in with an account (not Guest Mode) and have an active internet connection. Try pulling down on the subscription list to force a refresh. If the problem persists, try logging out and back in.</p>
+                <p>Make sure you are logged in with an account (not Guest Mode) and have an active internet connection. Your data syncs automatically when the app is online and you open the subscriptions screen. If the problem persists, try logging out and back in.</p>
               </div>
             </details>
             <details class="faq-item group">
